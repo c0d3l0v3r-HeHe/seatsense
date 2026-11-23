@@ -1,6 +1,6 @@
 # SeatSense — technical note
 
-*Transport Stack Hackathon 2026 · Problem 2: Crowdedness-aware journey planner · Phase 1*
+*Transport Stack Hackathon 2026 · Problem 2: Crowdedness-aware journey planner · Phase 1 · code: [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)*
 
 ## 1. Summary
 
@@ -133,7 +133,7 @@ python -m crowding.validate
 python -m crowding.api                                    # http://localhost:8000
 ```
 
-Deterministic: same input → same outputs. Code is MIT-licensed.
+Deterministic: same input → same outputs. Code is MIT-licensed: [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense).
 
 ## 9. Next steps (Phase 2)
 

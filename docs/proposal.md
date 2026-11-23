@@ -1,7 +1,7 @@
 # SeatSense — Phase 1 proposal
 
 **Transport Stack Hackathon 2026 · Problem 2: Crowdedness-aware journey planner**
-**Team:** _[team name]_ · _[members]_
+**Team:** _[team name]_ · _[members]_ · **Code:** [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)
 
 ## The problem
 
