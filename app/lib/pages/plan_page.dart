@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../art.dart';
 import '../theme.dart';
 import '../widgets.dart';
 import 'results_page.dart';
@@ -111,9 +112,9 @@ class _PlanPageState extends State<PlanPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const _ModeTab(icon: Icons.directions_bus, label: 'Trips', selected: true),
+              const _ModeTab(art: Art.bus, label: 'Trips', selected: true),
               const SizedBox(width: 22),
-              _ModeTab(icon: Icons.route, label: 'Routes', selected: false, onTap: () => widget.onOpenTab?.call(1)),
+              _ModeTab(art: Art.route, label: 'Routes', selected: false, onTap: () => widget.onOpenTab?.call(1)),
             ]),
           ),
           const SizedBox(height: 14),
@@ -205,10 +206,10 @@ class _PlanPageState extends State<PlanPage> {
               ]),
               const SizedBox(height: 12),
               Row(children: [
-                _SuggestTile(icon: Icons.bolt, label: 'Fastest', onTap: () => _openSearch(pref: 'fastest')),
-                _SuggestTile(icon: Icons.event_seat, label: 'A seat', onTap: () => _openSearch(pref: 'comfortable')),
-                _SuggestTile(icon: Icons.route, label: 'Routes', onTap: () => widget.onOpenTab?.call(1)),
-                _SuggestTile(icon: Icons.local_fire_department, label: 'Hotspots', onTap: () => widget.onOpenTab?.call(2)),
+                _SuggestTile(art: Art.stopwatch, label: 'Fastest', onTap: () => _openSearch(pref: 'fastest')),
+                _SuggestTile(art: Art.seat, label: 'A seat', onTap: () => _openSearch(pref: 'comfortable')),
+                _SuggestTile(art: Art.route, label: 'Routes', onTap: () => widget.onOpenTab?.call(1)),
+                _SuggestTile(art: Art.flame, label: 'Hotspots', onTap: () => widget.onOpenTab?.call(2)),
               ]),
               const SizedBox(height: 26),
               const Text('Ways to plan with SeatSense', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700)),
@@ -219,19 +220,30 @@ class _PlanPageState extends State<PlanPage> {
             height: 196,
             child: ListView(scrollDirection: Axis.horizontal, padding: const EdgeInsets.symmetric(horizontal: 16), children: [
               _WayCard(
-                icon: Icons.wb_twilight,
+                scene: _scene(const Color(0xFFFFE7B3), [
+                  const Positioned.fill(child: ArtView(Art.sunrise, size: 124, aspect: 230 / 124)),
+                  const Positioned(left: 12, bottom: 6, child: ArtView(Art.bus, size: 70, aspect: 1.3)),
+                  Positioned(right: 12, top: 12, child: _chip('09:00')),
+                ]),
                 title: 'Beat the 9 am crush',
                 body: 'See which bus still has seats',
                 onTap: () => _openSearch(pref: 'comfortable', e: _examples[0]),
               ),
               _WayCard(
-                icon: Icons.more_time,
+                scene: _scene(const Color(0xFFD6EBFF), [
+                  const Positioned(left: 20, top: 14, child: ArtView(Art.clock, size: 96)),
+                  Positioned(right: 14, bottom: 14, child: _chip('+15 min')),
+                  const Positioned(right: 22, top: 18, child: ArtView(Art.seat, size: 46)),
+                ]),
                 title: 'Leave 15 min later',
                 body: 'Every trip shows if waiting helps',
                 onTap: () => _runExample(0),
               ),
               _WayCard(
-                icon: Icons.insights,
+                scene: _scene(const Color(0xFFDDF3E4), [
+                  const Positioned(left: 14, top: 10, child: ArtView(Art.route, size: 104)),
+                  const Positioned(right: 18, bottom: 12, child: ArtView(Art.flame, size: 56)),
+                ]),
                 title: 'Check a route',
                 body: 'Crowding hour by hour',
                 onTap: () => widget.onOpenTab?.call(1),
@@ -257,8 +269,8 @@ class _PlanPageState extends State<PlanPage> {
 }
 
 class _ModeTab extends StatelessWidget {
-  const _ModeTab({required this.icon, required this.label, required this.selected, this.onTap});
-  final IconData icon;
+  const _ModeTab({required this.art, required this.label, required this.selected, this.onTap});
+  final Art art;
   final String label;
   final bool selected;
   final VoidCallback? onTap;
@@ -271,8 +283,8 @@ class _ModeTab extends StatelessWidget {
           decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: selected ? context.fg : Colors.transparent, width: 2.5))),
           child: Row(mainAxisSize: MainAxisSize.min, children: [
-            Icon(icon, size: 24, color: selected ? context.fg : context.muted),
-            const SizedBox(width: 7),
+            Opacity(opacity: selected ? 1 : 0.75, child: ArtView(art, size: 30, aspect: 1.15)),
+            const SizedBox(width: 6),
             Text(label,
                 style: TextStyle(
                     fontSize: 19, fontWeight: selected ? FontWeight.w700 : FontWeight.w500, color: selected ? context.fg : context.muted)),
@@ -282,8 +294,8 @@ class _ModeTab extends StatelessWidget {
 }
 
 class _SuggestTile extends StatelessWidget {
-  const _SuggestTile({required this.icon, required this.label, required this.onTap});
-  final IconData icon;
+  const _SuggestTile({required this.art, required this.label, required this.onTap});
+  final Art art;
   final String label;
   final VoidCallback onTap;
 
@@ -291,14 +303,13 @@ class _SuggestTile extends StatelessWidget {
   Widget build(BuildContext context) => Expanded(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 4),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
+          child: Pressable(
             onTap: onTap,
             child: Column(children: [
               Container(
-                height: 58,
-                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(12)),
-                child: Center(child: Icon(icon, size: 28)),
+                height: 64,
+                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14)),
+                child: Center(child: ArtView(art, size: 42)),
               ),
               const SizedBox(height: 6),
               Text(label, style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600)),
@@ -308,32 +319,26 @@ class _SuggestTile extends StatelessWidget {
       );
 }
 
+/// Uber's "Ways to plan" card: a coloured scene, a title with an arrow, one line under it.
 class _WayCard extends StatelessWidget {
-  const _WayCard({required this.icon, required this.title, required this.body, required this.onTap});
-  final IconData icon;
+  const _WayCard({required this.scene, required this.title, required this.body, required this.onTap});
+  final Widget scene;
   final String title, body;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.only(right: 12),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
+        child: Pressable(
           onTap: onTap,
           child: SizedBox(
-            width: 220,
+            width: 230,
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Container(
-                height: 120,
-                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(12)),
-                child: Stack(children: [
-                  Positioned(right: -10, bottom: -14, child: Icon(icon, size: 110, color: context.line)),
-                  Positioned(left: 14, top: 14, child: Icon(icon, size: 34, color: context.fg)),
-                ]),
-              ),
+              ClipRRect(borderRadius: BorderRadius.circular(14), child: SizedBox(height: 124, width: 230, child: scene)),
               const SizedBox(height: 8),
               Row(children: [
                 Flexible(child: Text(title, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14.5))),
+                const SizedBox(width: 4),
                 const Icon(Icons.arrow_forward, size: 16),
               ]),
               Text(body, style: TextStyle(fontSize: 12.5, color: context.muted)),
@@ -342,6 +347,14 @@ class _WayCard extends StatelessWidget {
         ),
       );
 }
+
+Widget _chip(String t) => Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(20)),
+      child: Text(t, style: const TextStyle(color: Pal.white, fontWeight: FontWeight.w700, fontSize: 12)),
+    );
+
+Widget _scene(Color bg, List<Widget> kids) => Container(color: bg, child: Stack(children: kids));
 
 /// "Plan your trip" screen (Uber's destination search): origin, destination, time, day, priority.
 class TripSearchPage extends StatefulWidget {
