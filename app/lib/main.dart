@@ -36,8 +36,13 @@ class HomeShell extends StatefulWidget {
   State<HomeShell> createState() => _HomeShellState();
 }
 
-class _HomeShellState extends State<HomeShell> with SingleTickerProviderStateMixin {
-  late final _fade = AnimationController(vsync: this, duration: const Duration(milliseconds: 260), value: 1);
+class _HomeShellState extends State<HomeShell>
+    with SingleTickerProviderStateMixin {
+  late final _fade = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 260),
+    value: 1,
+  );
 
   void _go(int i) {
     if (i == _tab) return;
@@ -52,12 +57,27 @@ class _HomeShellState extends State<HomeShell> with SingleTickerProviderStateMix
   }
 
   // ?tab=plan|routes|hotspots|about opens a tab directly (handy for demos).
-  int _tab = const {'routes': 1, 'hotspots': 2, 'about': 3}[Uri.base.queryParameters['tab']] ?? 0;
-  late final _pages = [PlanPage(onOpenTab: _go), const ExplorePage(), const HotspotsPage(), const AboutPage()];
+  int _tab =
+      const {
+        'routes': 1,
+        'hotspots': 2,
+        'about': 3,
+      }[Uri.base.queryParameters['tab']] ??
+      0;
+  late final _pages = [
+    PlanPage(onOpenTab: _go),
+    const ExplorePage(),
+    const HotspotsPage(),
+    const AboutPage(),
+  ];
   static const _dest = [
     (Icons.home_outlined, Icons.home, 'Home'),
     (Icons.route_outlined, Icons.route, 'Routes'),
-    (Icons.local_fire_department_outlined, Icons.local_fire_department, 'Hotspots'),
+    (
+      Icons.local_fire_department_outlined,
+      Icons.local_fire_department,
+      'Hotspots',
+    ),
     (Icons.person_outline, Icons.person, 'About'),
   ];
 
@@ -67,39 +87,53 @@ class _HomeShellState extends State<HomeShell> with SingleTickerProviderStateMix
     final body = FadeTransition(
       opacity: CurvedAnimation(parent: _fade, curve: Curves.easeOut),
       child: SlideTransition(
-        position: Tween(begin: const Offset(0, 0.015), end: Offset.zero)
-            .animate(CurvedAnimation(parent: _fade, curve: Curves.easeOutCubic)),
+        position: Tween(
+          begin: const Offset(0, 0.015),
+          end: Offset.zero,
+        ).animate(CurvedAnimation(parent: _fade, curve: Curves.easeOutCubic)),
         child: IndexedStack(index: _tab, children: _pages),
       ),
     );
     return Scaffold(
       body: wide
-          ? Row(children: [
-              NavigationRail(
-                selectedIndex: _tab,
-                labelType: NavigationRailLabelType.all,
-                leading: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Icon(Icons.event_seat, size: 30, color: context.fg),
+          ? Row(
+              children: [
+                NavigationRail(
+                  selectedIndex: _tab,
+                  labelType: NavigationRailLabelType.all,
+                  leading: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Icon(Icons.event_seat, size: 30, color: context.fg),
+                  ),
+                  onDestinationSelected: _go,
+                  destinations: [
+                    for (final d in _dest)
+                      NavigationRailDestination(
+                        icon: Icon(d.$1),
+                        selectedIcon: Icon(d.$2),
+                        label: Text(d.$3),
+                      ),
+                  ],
                 ),
-                onDestinationSelected: _go,
-                destinations: [
-                  for (final d in _dest)
-                    NavigationRailDestination(icon: Icon(d.$1), selectedIcon: Icon(d.$2), label: Text(d.$3)),
-                ],
-              ),
-              VerticalDivider(width: 1, color: context.line),
-              Expanded(child: body),
-            ])
+                VerticalDivider(width: 1, color: context.line),
+                Expanded(child: body),
+              ],
+            )
           : body,
-      bottomNavigationBar: wide ? null : _BottomNav(index: _tab, items: _dest, onTap: _go),
+      bottomNavigationBar: wide
+          ? null
+          : _BottomNav(index: _tab, items: _dest, onTap: _go),
     );
   }
 }
 
 /// Floating bottom bar: white card with a shadow; a grey highlight slides to the tab you pick.
 class _BottomNav extends StatelessWidget {
-  const _BottomNav({required this.index, required this.items, required this.onTap});
+  const _BottomNav({
+    required this.index,
+    required this.items,
+    required this.onTap,
+  });
   final int index;
   final List<(IconData, IconData, String)> items;
   final ValueChanged<int> onTap;
@@ -120,56 +154,87 @@ class _BottomNav extends StatelessWidget {
             borderRadius: BorderRadius.circular(22),
             border: Border.all(color: context.line.withValues(alpha: 0.6)),
             boxShadow: const [
-              BoxShadow(color: Color(0x1F000000), blurRadius: 24, offset: Offset(0, 8)),
-              BoxShadow(color: Color(0x0F000000), blurRadius: 4, offset: Offset(0, 1)),
+              BoxShadow(
+                color: Color(0x1F000000),
+                blurRadius: 24,
+                offset: Offset(0, 8),
+              ),
+              BoxShadow(
+                color: Color(0x0F000000),
+                blurRadius: 4,
+                offset: Offset(0, 1),
+              ),
             ],
           ),
-          child: LayoutBuilder(builder: (context, c) {
-            final w = c.maxWidth / items.length;
-            return Stack(children: [
-              AnimatedPositioned(
+          child: Stack(
+            children: [
+              AnimatedAlign(
                 duration: const Duration(milliseconds: 320),
                 curve: Curves.easeOutCubic,
-                left: w * index,
-                top: 0,
-                bottom: 0,
-                width: w,
-                child: Container(decoration: BoxDecoration(color: pill, borderRadius: BorderRadius.circular(16))),
-              ),
-              Row(children: [
-                for (var i = 0; i < items.length; i++)
-                  Expanded(
-                    child: Semantics(
-                      button: true,
-                      selected: i == index,
-                      label: items[i].$3,
-                      child: GestureDetector(
-                        behavior: HitTestBehavior.opaque,
-                        onTap: () => onTap(i),
-                        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                          AnimatedScale(
-                            scale: i == index ? 1.12 : 1,
-                            duration: const Duration(milliseconds: 220),
-                            curve: Curves.easeOutBack,
-                            child: Icon(i == index ? items[i].$2 : items[i].$1,
-                                size: 23, color: i == index ? context.fg : context.muted),
-                          ),
-                          const SizedBox(height: 3),
-                          AnimatedDefaultTextStyle(
-                            duration: const Duration(milliseconds: 200),
-                            style: TextStyle(
-                                fontSize: 11.5,
-                                fontWeight: i == index ? FontWeight.w700 : FontWeight.w500,
-                                color: i == index ? context.fg : context.muted),
-                            child: Text(items[i].$3),
-                          ),
-                        ]),
-                      ),
+                alignment: Alignment(
+                  items.length == 1 ? 0 : -1 + 2 * index / (items.length - 1),
+                  0,
+                ),
+                child: FractionallySizedBox(
+                  widthFactor: 1 / items.length,
+                  heightFactor: 1,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: pill,
+                      borderRadius: BorderRadius.circular(16),
                     ),
                   ),
-              ]),
-            ]);
-          }),
+                ),
+              ),
+              Row(
+                children: [
+                  for (var i = 0; i < items.length; i++)
+                    Expanded(
+                      child: Semantics(
+                        button: true,
+                        selected: i == index,
+                        label: items[i].$3,
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: () => onTap(i),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              AnimatedScale(
+                                scale: i == index ? 1.12 : 1,
+                                duration: const Duration(milliseconds: 220),
+                                curve: Curves.easeOutBack,
+                                child: Icon(
+                                  i == index ? items[i].$2 : items[i].$1,
+                                  size: 23,
+                                  color: i == index
+                                      ? context.fg
+                                      : context.muted,
+                                ),
+                              ),
+                              const SizedBox(height: 3),
+                              AnimatedDefaultTextStyle(
+                                duration: const Duration(milliseconds: 200),
+                                style: TextStyle(
+                                  fontSize: 11.5,
+                                  fontWeight: i == index
+                                      ? FontWeight.w700
+                                      : FontWeight.w500,
+                                  color: i == index
+                                      ? context.fg
+                                      : context.muted,
+                                ),
+                                child: Text(items[i].$3),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

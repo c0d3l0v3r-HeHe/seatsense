@@ -42,7 +42,7 @@ class AboutPage extends StatelessWidget {
               const SizedBox(height: 18),
               Container(
                 padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(18)),
+                decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(18), boxShadow: softShadow),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   const Text('Checked against a week it never saw',
                       style: TextStyle(color: Pal.white, fontWeight: FontWeight.w800, fontSize: 17)),
@@ -96,7 +96,7 @@ class _Step extends StatelessWidget {
           Container(
             width: 42,
             height: 42,
-            decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle),
+            decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle, boxShadow: smallShadow),
             child: Icon(icon, color: context.bg, size: 21),
           ),
           const SizedBox(width: 14),

@@ -35,7 +35,7 @@ class CrowdBadge extends StatelessWidget {
     final fg = onLevel(level);
     return Container(
       padding: EdgeInsets.symmetric(horizontal: small ? 8 : 12, vertical: small ? 3 : 6),
-      decoration: BoxDecoration(color: levelColors[level], borderRadius: BorderRadius.circular(20)),
+      decoration: BoxDecoration(color: levelColors[level], borderRadius: BorderRadius.circular(20), boxShadow: smallShadow),
       child: Row(mainAxisSize: MainAxisSize.min, children: [
         Icon(levelIcons[level], size: small ? 13 : 16, color: fg),
         const SizedBox(width: 5),
@@ -91,7 +91,7 @@ class BusChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
         padding: EdgeInsets.symmetric(horizontal: large ? 12 : 7, vertical: large ? 7 : 4),
-        decoration: BoxDecoration(color: context.fg, borderRadius: BorderRadius.circular(large ? 10 : 7)),
+        decoration: BoxDecoration(color: context.fg, borderRadius: BorderRadius.circular(large ? 10 : 7), boxShadow: smallShadow),
         child: Row(mainAxisSize: MainAxisSize.min, children: [
           Icon(Icons.directions_bus, size: large ? 20 : 14, color: context.bg),
           SizedBox(width: large ? 6 : 3),
@@ -139,7 +139,7 @@ class ItineraryLine extends StatelessWidget {
   Widget _node(BuildContext c, IconData i) => Container(
         width: 26,
         height: 26,
-        decoration: BoxDecoration(color: c.field, shape: BoxShape.circle, border: Border.all(color: c.line)),
+        decoration: BoxDecoration(color: c.isDark ? Pal.fieldDark : Pal.white, shape: BoxShape.circle, border: Border.all(color: c.line), boxShadow: smallShadow),
         child: Icon(i, size: 15, color: c.fg),
       );
 
@@ -286,7 +286,7 @@ class _StopRow extends StatelessWidget {
         ? Container(
             width: 28,
             height: 28,
-            decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle),
+            decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle, boxShadow: smallShadow),
             child: Icon(icon, size: 16, color: context.bg),
           )
         : Container(
@@ -360,8 +360,10 @@ class _GroupRowState extends State<_GroupRow> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                   decoration: BoxDecoration(
+                    color: context.isDark ? Pal.fieldDark : Pal.white,
                     border: Border.all(color: context.line),
                     borderRadius: BorderRadius.circular(12),
+                    boxShadow: softShadow,
                   ),
                   child: Row(children: [
                     CrowdBadge(lv, small: true),
@@ -467,6 +469,8 @@ class SelectPill extends StatelessWidget {
   Widget build(BuildContext context) => Material(
         color: selected ? context.fg : context.field,
         shape: const StadiumBorder(),
+        elevation: selected ? 4 : 1,
+        shadowColor: const Color(0x55000000),
         child: InkWell(
           customBorder: const StadiumBorder(),
           onTap: onTap,

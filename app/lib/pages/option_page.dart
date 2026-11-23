@@ -115,7 +115,7 @@ class _Stat extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.only(right: 8),
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          decoration: BoxDecoration(color: const Color(0xFF1C1C1C), borderRadius: BorderRadius.circular(12)),
+          decoration: BoxDecoration(color: const Color(0xFF1C1C1C), borderRadius: BorderRadius.circular(12), border: Border.all(color: const Color(0xFF2E2E2E))),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(value, style: const TextStyle(color: Pal.white, fontWeight: FontWeight.w800, fontSize: 15)),
             Text(label, style: const TextStyle(color: Color(0xFFB0B0B0), fontSize: 11.5)),
@@ -134,7 +134,7 @@ class _LegBlock extends StatelessWidget {
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Container(
         padding: const EdgeInsets.all(12),
-        decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14)),
+        decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14), boxShadow: softShadow),
         child: Row(children: [
           BusChip('${leg['number']}', '${leg['direction']}', large: true),
           const SizedBox(width: 12),
@@ -193,7 +193,7 @@ class _LaterRow extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         margin: const EdgeInsets.only(bottom: 8),
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-        decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(12)),
+        decoration: BoxDecoration(color: context.isDark ? Pal.fieldDark : Pal.white, border: Border.all(color: context.line), borderRadius: BorderRadius.circular(12), boxShadow: softShadow),
         child: Row(children: [
           SizedBox(
             width: 92,

@@ -43,7 +43,7 @@ class _ResultsPageState extends State<ResultsPage> {
           child: ListView(padding: const EdgeInsets.fromLTRB(16, 4, 16, 24), children: [
             Container(
               padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(16)),
+              decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(16), boxShadow: softShadow),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Row(children: [
                   Column(children: [
@@ -132,7 +132,7 @@ class OptionCard extends StatelessWidget {
               const SizedBox(height: 10),
               Container(
                 padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(10)),
+                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(10), boxShadow: smallShadow),
                 child: Row(children: [
                   const Icon(Icons.lightbulb_outline, size: 18),
                   const SizedBox(width: 8),

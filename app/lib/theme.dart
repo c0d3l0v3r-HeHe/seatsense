@@ -23,6 +23,15 @@ extension Palette on BuildContext {
   Color get muted => isDark ? Pal.mutedDark : Pal.mutedLight;
 }
 
+/// Soft Uber-like shadows.
+const softShadow = [
+  BoxShadow(color: Color(0x1A000000), blurRadius: 16, offset: Offset(0, 6)),
+  BoxShadow(color: Color(0x0D000000), blurRadius: 3, offset: Offset(0, 1)),
+];
+const smallShadow = [
+  BoxShadow(color: Color(0x1F000000), blurRadius: 8, offset: Offset(0, 3)),
+];
+
 ThemeData buildTheme(Brightness b) {
   final dark = b == Brightness.dark;
   final fg = dark ? Pal.white : Pal.black;
@@ -79,7 +88,8 @@ ThemeData buildTheme(Brightness b) {
     ),
     cardTheme: CardThemeData(
       color: dark ? Pal.cardDark : Pal.white,
-      elevation: 0,
+      elevation: 4,
+      shadowColor: const Color(0x40000000),
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: BorderSide(color: line)),
     ),
@@ -90,6 +100,8 @@ ThemeData buildTheme(Brightness b) {
         disabledBackgroundColor: fg.withValues(alpha: 0.35),
         disabledForegroundColor: bg,
         shape: const StadiumBorder(),
+        elevation: 4,
+        shadowColor: const Color(0x66000000),
         minimumSize: const Size.fromHeight(54),
         textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
       ),

@@ -124,6 +124,8 @@ class _PlanPageState extends State<PlanPage> {
             child: Material(
               color: context.field,
               borderRadius: BorderRadius.circular(30),
+              elevation: 3,
+              shadowColor: const Color(0x40000000),
               child: InkWell(
                 borderRadius: BorderRadius.circular(30),
                 onTap: () => _openSearch(),
@@ -136,6 +138,8 @@ class _PlanPageState extends State<PlanPage> {
                     Material(
                       color: context.bg,
                       shape: const StadiumBorder(),
+                      elevation: 2,
+                      shadowColor: const Color(0x55000000),
                       child: InkWell(
                         customBorder: const StadiumBorder(),
                         onTap: () async {
@@ -170,7 +174,7 @@ class _PlanPageState extends State<PlanPage> {
                   Container(
                     width: 40,
                     height: 40,
-                    decoration: BoxDecoration(color: context.field, shape: BoxShape.circle),
+                    decoration: BoxDecoration(color: context.field, shape: BoxShape.circle, boxShadow: smallShadow),
                     child: _busy == i
                         ? Padding(padding: const EdgeInsets.all(11), child: CircularProgressIndicator(strokeWidth: 2, color: context.fg))
                         : Icon(_examples[i].icon, size: 20),
@@ -308,7 +312,7 @@ class _SuggestTile extends StatelessWidget {
             child: Column(children: [
               Container(
                 height: 64,
-                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14)),
+                decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14), boxShadow: softShadow),
                 child: Center(child: ArtView(art, size: 42)),
               ),
               const SizedBox(height: 6),
@@ -334,7 +338,10 @@ class _WayCard extends StatelessWidget {
           child: SizedBox(
             width: 230,
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              ClipRRect(borderRadius: BorderRadius.circular(14), child: SizedBox(height: 124, width: 230, child: scene)),
+              DecoratedBox(
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(14), boxShadow: softShadow),
+                child: ClipRRect(borderRadius: BorderRadius.circular(14), child: SizedBox(height: 124, width: 230, child: scene)),
+              ),
               const SizedBox(height: 8),
               Row(children: [
                 Flexible(child: Text(title, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14.5))),
@@ -350,7 +357,7 @@ class _WayCard extends StatelessWidget {
 
 Widget _chip(String t) => Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(20)),
+      decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(20), boxShadow: smallShadow),
       child: Text(t, style: const TextStyle(color: Pal.white, fontWeight: FontWeight.w700, fontSize: 12)),
     );
 
@@ -465,7 +472,7 @@ class _TripFields extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(16)),
+      decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(16), boxShadow: softShadow),
       padding: const EdgeInsets.fromLTRB(14, 4, 4, 4),
       child: Row(children: [
         Column(children: [
@@ -500,6 +507,8 @@ class _PrefTile extends StatelessWidget {
     return Material(
       color: selected ? context.fg : context.field,
       borderRadius: BorderRadius.circular(14),
+      elevation: selected ? 6 : 2,
+      shadowColor: const Color(0x55000000),
       child: InkWell(
         borderRadius: BorderRadius.circular(14),
         onTap: onTap,

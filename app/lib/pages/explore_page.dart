@@ -115,7 +115,7 @@ class _ExplorePageState extends State<ExplorePage> {
             const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.fromLTRB(14, 14, 14, 4),
-              decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16)),
+              decoration: BoxDecoration(color: context.isDark ? Pal.fieldDark : Pal.white, border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16), boxShadow: softShadow),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text('Busiest stretch by hour', style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
                 Text('Tap a bar or drag the slider', style: TextStyle(fontSize: 12, color: context.muted)),

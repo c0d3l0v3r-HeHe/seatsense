@@ -53,7 +53,7 @@ class _HotspotsPageState extends State<HotspotsPage> {
           const SizedBox(height: 14),
           Container(
             padding: const EdgeInsets.fromLTRB(16, 14, 16, 4),
-            decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(18)),
+            decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(18), boxShadow: softShadow),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Row(children: [
                 const Icon(Icons.schedule, color: Pal.white, size: 20),
@@ -90,13 +90,13 @@ class _HotspotsPageState extends State<HotspotsPage> {
             Container(
               margin: const EdgeInsets.only(bottom: 10),
               padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16)),
+              decoration: BoxDecoration(color: context.isDark ? Pal.fieldDark : Pal.white, border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16), boxShadow: softShadow),
               child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Container(
                   width: 30,
                   height: 30,
                   alignment: Alignment.center,
-                  decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle),
+                  decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle, boxShadow: smallShadow),
                   child: Text('${i + 1}', style: TextStyle(color: context.bg, fontWeight: FontWeight.w800, fontSize: 13)),
                 ),
                 const SizedBox(width: 12),
