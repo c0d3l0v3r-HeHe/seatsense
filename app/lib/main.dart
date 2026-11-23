@@ -39,12 +39,12 @@ class HomeShell extends StatefulWidget {
 class _HomeShellState extends State<HomeShell> {
   // ?tab=plan|routes|hotspots|about opens a tab directly (handy for demos).
   int _tab = const {'routes': 1, 'hotspots': 2, 'about': 3}[Uri.base.queryParameters['tab']] ?? 0;
-  static const _pages = [PlanPage(), ExplorePage(), HotspotsPage(), AboutPage()];
+  late final _pages = [PlanPage(onOpenTab: (i) => setState(() => _tab = i)), const ExplorePage(), const HotspotsPage(), const AboutPage()];
   static const _dest = [
-    (Icons.directions_bus_outlined, Icons.directions_bus, 'Plan'),
+    (Icons.home_outlined, Icons.home, 'Home'),
     (Icons.route_outlined, Icons.route, 'Routes'),
     (Icons.local_fire_department_outlined, Icons.local_fire_department, 'Hotspots'),
-    (Icons.info_outline, Icons.info, 'About'),
+    (Icons.person_outline, Icons.person, 'About'),
   ];
 
   @override
@@ -71,66 +71,46 @@ class _HomeShellState extends State<HomeShell> {
               Expanded(child: body),
             ])
           : body,
-      bottomNavigationBar: wide ? null : _PillNav(index: _tab, items: _dest, onTap: (i) => setState(() => _tab = i)),
+      bottomNavigationBar: wide ? null : _BottomNav(index: _tab, items: _dest, onTap: (i) => setState(() => _tab = i)),
     );
   }
 }
 
-/// Floating black navigation bar; the current tab is a white pill with its name.
-class _PillNav extends StatelessWidget {
-  const _PillNav({required this.index, required this.items, required this.onTap});
+/// Uber-style bottom bar: full width, white, icon above label; the current tab is black, the rest grey.
+class _BottomNav extends StatelessWidget {
+  const _BottomNav({required this.index, required this.items, required this.onTap});
   final int index;
   final List<(IconData, IconData, String)> items;
   final ValueChanged<int> onTap;
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      top: false,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 6, 16, 12),
-        child: Container(
-          height: 62,
-          padding: const EdgeInsets.all(6),
-          decoration: BoxDecoration(
-            color: Pal.black,
-            borderRadius: BorderRadius.circular(31),
-            border: context.isDark ? Border.all(color: Pal.lineDark) : null,
-            boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 18, offset: Offset(0, 6))],
-          ),
+    return Container(
+      decoration: BoxDecoration(color: context.bg, border: Border(top: BorderSide(color: context.line))),
+      child: SafeArea(
+        top: false,
+        child: SizedBox(
+          height: 64,
           child: Row(children: [
             for (var i = 0; i < items.length; i++)
               Expanded(
-                flex: i == index ? 5 : 3,
                 child: Semantics(
                   button: true,
                   selected: i == index,
                   label: items[i].$3,
-                  child: GestureDetector(
-                    behavior: HitTestBehavior.opaque,
+                  child: InkResponse(
                     onTap: () => onTap(i),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 220),
-                      curve: Curves.easeOut,
-                      decoration: BoxDecoration(
-                        color: i == index ? Pal.white : Colors.transparent,
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                        Icon(i == index ? items[i].$2 : items[i].$1,
-                            size: 21, color: i == index ? Pal.black : Pal.white.withValues(alpha: 0.85)),
-                        if (i == index) ...[
-                          const SizedBox(width: 6),
-                          Flexible(
-                            child: Text(items[i].$3,
-                                maxLines: 1,
-                                overflow: TextOverflow.fade,
-                                softWrap: false,
-                                style: const TextStyle(color: Pal.black, fontWeight: FontWeight.w700, fontSize: 13.5)),
-                          ),
-                        ],
-                      ]),
-                    ),
+                    containedInkWell: true,
+                    highlightShape: BoxShape.rectangle,
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                      Icon(i == index ? items[i].$2 : items[i].$1, size: 24, color: i == index ? context.fg : context.muted),
+                      const SizedBox(height: 4),
+                      Text(items[i].$3,
+                          style: TextStyle(
+                              fontSize: 11.5,
+                              fontWeight: i == index ? FontWeight.w700 : FontWeight.w500,
+                              color: i == index ? context.fg : context.muted)),
+                    ]),
                   ),
                 ),
               ),
