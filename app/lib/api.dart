@@ -16,8 +16,9 @@ class Api {
     if (env.isNotEmpty) return env;
     if (kIsWeb) {
       final u = Uri.base;
-      // Served by the API itself -> same origin. Served by `flutter run` -> API on :8000.
-      if (u.port == 8000 || u.port == 80 || u.port == 443) return u.origin;
+      // Release build is served by the API itself (locally or hosted) -> same origin.
+      // `flutter run` (debug) has its own dev server -> API on :8000.
+      if (kReleaseMode || u.port == 8000) return u.origin;
       return '${u.scheme}://${u.host}:8000';
     }
     return 'http://localhost:8000';

@@ -1,0 +1,9 @@
+# Render Blueprint: one free web service built from the Dockerfile.
+# Deploy: https://render.com/deploy?repo=https://github.com/c0d3l0v3r-HeHe/seatsense
+services:
+  - type: web
+    name: seatsense
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true

@@ -1,0 +1,6 @@
+# Just what the API + web app need at runtime (see Dockerfile). Full list: requirements.txt
+pandas>=2.2
+pyarrow>=15
+numpy>=1.26
+fastapi>=0.110
+uvicorn>=0.29

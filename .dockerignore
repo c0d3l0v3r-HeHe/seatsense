@@ -1,0 +1,6 @@
+*
+!src/crowding/*.py
+!outputs/crowding/*.parquet
+!outputs/crowding/meta.json
+!outputs/validation.json
+!requirements-serve.txt

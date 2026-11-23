@@ -3,11 +3,13 @@
 Run:  python -m crowding.api            -> http://localhost:8000  (docs at /docs)
 """
 import json
+import mimetypes
 import os
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -21,6 +23,7 @@ WEB = Path(os.environ.get('CROWDING_WEB', ROOT / 'app' / 'build' / 'web'))
 app = FastAPI(title='SeatSense API', version='1.0',
               description='Crowding estimates for Delhi buses from October 2026 e-ticket data, and a journey planner that shows them.')
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['GET'], allow_headers=['*'])
+app.add_middleware(GZipMiddleware, minimum_size=1024)   # Flutter's JS/wasm and plan JSON shrink 3-4x
 planner = Planner(DATA)
 validation = json.loads((ROOT / 'outputs' / 'validation.json').read_text()) if (ROOT / 'outputs' / 'validation.json').exists() else {}
 
@@ -87,9 +90,13 @@ if WEB.exists():
     app.mount('/assets', StaticFiles(directory=WEB / 'assets'), name='assets')
 
     @app.get('/{path:path}', include_in_schema=False)
-    def web(path: str):
+    def web(path: str, request: Request):
         f = WEB / path
         if path and f.is_file() and WEB in f.resolve().parents:
+            gz = f.with_name(f.name + '.gz')   # pre-compressed copy (Dockerfile makes these)
+            if gz.is_file() and 'gzip' in request.headers.get('accept-encoding', ''):
+                return FileResponse(gz, media_type=mimetypes.guess_type(f.name)[0] or 'application/octet-stream',
+                                    headers={'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding'})
             return FileResponse(f)
         return FileResponse(WEB / 'index.html')
 

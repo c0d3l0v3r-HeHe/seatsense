@@ -61,6 +61,21 @@ cd app && flutter run -d chrome                           # or: flutter run -d l
 Demo deep links (web): `http://localhost:8000/?from=Badarpur%20Border%20(T)&to=Saket%20Metro%20Station&time=08:30`,
 `/?tab=routes`, `/?tab=hotspots`. A 3-minute demo script is in [docs/demo_script.md](docs/demo_script.md).
 
+## Run it without the raw data (Docker / hosting)
+
+The crowding tables in `outputs/crowding/` are committed, so the API and web app run without the ticket file. The
+[`Dockerfile`](Dockerfile) installs only the serving dependencies, pulls the pre-built Flutter web app from the
+[v1.0-phase1 release](https://github.com/c0d3l0v3r-HeHe/seatsense/releases/tag/v1.0-phase1), and listens on `$PORT`.
+It runs within a free hosting tier (512 MB RAM, 0.1 CPU): about 370 MB in use, ready in ~25 s, a plan in under 0.5 s.
+
+```bash
+docker build -t seatsense . && docker run -p 8000:8000 seatsense   # http://localhost:8000
+```
+
+One-click hosting on Render's free plan uses [`render.yaml`](render.yaml):
+[Deploy to Render](https://render.com/deploy?repo=https://github.com/c0d3l0v3r-HeHe/seatsense). A free service sleeps
+after 15 idle minutes, so the first visit after a pause takes a minute or two to load.
+
 ## Outputs (queryable)
 
 | File | What |
@@ -80,7 +95,8 @@ API (`python -m crowding.api`): `/api/stops?q=`, `/api/plan?from=&to=&day=&time=
 src/crowding/      pipeline (ingest, stops, data, pipeline, validate), planner, API, approach B (graph + ML)
 app/               Flutter app: Plan · Routes · Hotspots · How it works
 notebooks/         01 data exploration · 02 approach A vs B comparison
-docs/              technical note, Phase 1 proposal, demo script, problem brief
+docs/              technical note, Phase 1 proposal, demo script
+Dockerfile, render.yaml   container for the API + web app, and a Render blueprint
 outputs/           generated tables, figures, screenshots (rebuild with scripts/build_all.sh)
 ```
 
