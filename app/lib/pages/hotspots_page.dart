@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../theme.dart';
 import '../widgets.dart';
 
 /// Operator view: crowded stretches carrying the most riders at a given hour (where an extra bus helps most).
@@ -37,63 +38,99 @@ class _HotspotsPageState extends State<HotspotsPage> {
 
   @override
   Widget build(BuildContext context) {
-    final t = Theme.of(context);
     final rows = _rows ?? [];
     final maxR = rows.isEmpty ? 1.0 : rows.map((r) => asDouble(r['riders_eticket'])).reduce((a, b) => a > b ? a : b);
-    return ListView(padding: const EdgeInsets.all(16), children: [
-      Text('Where are buses most overloaded?', style: t.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700)),
-      Text('Crowded stretches ranked by how many riders they carry. For operators deciding where an extra bus helps most.',
-          style: t.textTheme.bodySmall),
-      const SizedBox(height: 12),
-      DaySelector(value: _day, onChanged: (d) {
-        _day = d;
-        _load();
-      }),
-      Slider(
-        value: _hour.toDouble(),
-        min: 5,
-        max: 22,
-        divisions: 17,
-        label: '$_hour:00',
-        onChanged: (x) => setState(() => _hour = x.round()),
-        onChangeEnd: (_) => _load(),
-      ),
-      Text('$_day, $_hour:00 – ${_hour + 1}:00', style: t.textTheme.titleMedium),
-      const SizedBox(height: 8),
-      if (_error != null) ErrorBox(_error!),
-      if (_rows != null && rows.isEmpty) const Text('No crowded stretches with enough data at this hour.'),
-      for (var i = 0; i < rows.length; i++)
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(children: [
-              CircleAvatar(radius: 14, child: Text('${i + 1}', style: const TextStyle(fontSize: 12))),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('Bus ${rows[i]['number']} ${arrow(rows[i]['direction'] as String)} towards ${rows[i]['towards']}',
-                      style: const TextStyle(fontWeight: FontWeight.w700)),
-                  Text('${rows[i]['from']} → ${rows[i]['to']}', style: t.textTheme.bodySmall),
-                  const SizedBox(height: 6),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
-                      value: asDouble(rows[i]['riders_eticket']) / maxR,
-                      minHeight: 6,
-                      color: levelColors[2],
-                      backgroundColor: levelColors[2].withValues(alpha: 0.15),
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text('${rows[i]['crowded_stretches']} of ${rows[i]['n_stretches']} stretches crowded · '
-                      'bus every ~${asInt(rows[i]['headway_min'])} min', style: t.textTheme.bodySmall),
-                ]),
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 680),
+        child: ListView(padding: EdgeInsets.fromLTRB(20, MediaQuery.paddingOf(context).top + 20, 20, 16), children: [
+          const PageTitle('Hotspots',
+              subtitle: 'Crowded stretches ranked by how many riders they carry: where one more bus helps most.'),
+          DaySelector(value: _day, onChanged: (d) {
+            _day = d;
+            _load();
+          }),
+          const SizedBox(height: 14),
+          Container(
+            padding: const EdgeInsets.fromLTRB(16, 14, 16, 4),
+            decoration: BoxDecoration(color: Pal.black, borderRadius: BorderRadius.circular(18)),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Row(children: [
+                const Icon(Icons.schedule, color: Pal.white, size: 20),
+                const SizedBox(width: 8),
+                Text('$_day, $_hour:00 – ${_hour + 1}:00',
+                    style: const TextStyle(color: Pal.white, fontWeight: FontWeight.w800, fontSize: 17)),
+              ]),
+              SliderTheme(
+                data: SliderTheme.of(context).copyWith(
+                  activeTrackColor: Pal.white,
+                  inactiveTrackColor: const Color(0xFF444444),
+                  thumbColor: Pal.white,
+                  valueIndicatorColor: Pal.white,
+                  valueIndicatorTextStyle: const TextStyle(color: Pal.black, fontWeight: FontWeight.w700),
+                  activeTickMarkColor: Pal.black.withValues(alpha: 0.4),
+                  inactiveTickMarkColor: const Color(0xFF777777),
+                ),
+                child: Slider(
+                  value: _hour.toDouble(),
+                  min: 5,
+                  max: 22,
+                  divisions: 17,
+                  label: '$_hour:00',
+                  onChanged: (x) => setState(() => _hour = x.round()),
+                  onChangeEnd: (_) => _load(),
+                ),
               ),
-              const SizedBox(width: 8),
-              const CrowdBadge(2, small: true),
             ]),
           ),
-        ),
-    ]);
+          const SizedBox(height: 16),
+          if (_error != null) ErrorBox(_error!),
+          if (_rows != null && rows.isEmpty) const Text('No crowded stretches with enough data at this hour.'),
+          for (var i = 0; i < rows.length; i++)
+            Container(
+              margin: const EdgeInsets.only(bottom: 10),
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16)),
+              child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Container(
+                  width: 30,
+                  height: 30,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(color: context.fg, shape: BoxShape.circle),
+                  child: Text('${i + 1}', style: TextStyle(color: context.bg, fontWeight: FontWeight.w800, fontSize: 13)),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Row(children: [
+                      BusChip('${rows[i]['number']}', '${rows[i]['direction']}'),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text('towards ${rows[i]['towards']}',
+                            maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w700)),
+                      ),
+                    ]),
+                    const SizedBox(height: 6),
+                    Text('${rows[i]['from']} → ${rows[i]['to']}', style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w500)),
+                    const SizedBox(height: 8),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: LinearProgressIndicator(
+                        value: asDouble(rows[i]['riders_eticket']) / maxR,
+                        minHeight: 6,
+                        color: levelColors[2],
+                        backgroundColor: context.field,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text('${rows[i]['crowded_stretches']} of ${rows[i]['n_stretches']} stretches crowded · '
+                        'bus every ~${asInt(rows[i]['headway_min'])} min', style: TextStyle(fontSize: 12, color: context.muted)),
+                  ]),
+                ),
+              ]),
+            ),
+        ]),
+      ),
+    );
   }
 }

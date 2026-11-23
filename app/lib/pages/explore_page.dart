@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../theme.dart';
 import '../widgets.dart';
 
 /// Route explorer: crowding along a route, hour by hour (for commuters and planners).
@@ -54,84 +55,107 @@ class _ExplorePageState extends State<ExplorePage> {
 
   @override
   Widget build(BuildContext context) {
-    final t = Theme.of(context);
     final v = _view;
-    return ListView(padding: const EdgeInsets.all(16), children: [
-      TextField(
-        controller: _q,
-        decoration: const InputDecoration(
-            prefixIcon: Icon(Icons.search), labelText: 'Route number or terminal', border: OutlineInputBorder()),
-        onChanged: (s) {
-          _debounce?.cancel();
-          _debounce = Timer(const Duration(milliseconds: 300), () => _loadRoutes(s));
-        },
-      ),
-      const SizedBox(height: 8),
-      if (_error != null) ErrorBox(_error!),
-      SizedBox(
-        height: 44,
-        child: ListView(scrollDirection: Axis.horizontal, children: [
-          for (final r in _routes)
-            Padding(
-              padding: const EdgeInsets.only(right: 6),
-              child: ChoiceChip(
-                label: Text('${r['number']} ${arrow(r['direction'] as String)}'),
-                selected: r['route'] == _route,
-                onSelected: (_) => _select(r['route'] as String),
-              ),
-            ),
-        ]),
-      ),
-      if (v != null) ...[
-        const SizedBox(height: 12),
-        Text('Route ${v['number']} ${arrow(v['direction'] as String)}',
-            style: t.textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w800)),
-        Text('${v['from_terminal']} → ${v['towards']}  ·  ${v['n_stops']} stops  ·  ~${asInt(v['end_to_end_min'])} min end to end',
-            style: t.textTheme.bodyMedium),
-        Text('~${asInt(v['weekday_riders_per_day'])} e-ticket riders per weekday · ~${asInt(v['fleet_weekday'])} buses · '
-            'a bus every ~${asInt(v['headway_min'])} min', style: t.textTheme.bodySmall),
-        const SizedBox(height: 12),
-        Wrap(spacing: 12, runSpacing: 8, crossAxisAlignment: WrapCrossAlignment.center, children: [
-          DaySelector(value: _day, onChanged: (d) {
-            _day = d;
-            _select(_route!);
-          }),
-          const LevelLegend(),
-        ]),
-        const SizedBox(height: 12),
-        Text('Busiest stretch by hour — tap a bar', style: t.textTheme.labelLarge),
-        const SizedBox(height: 6),
-        HourBars(
-          byHour: (v['by_hour'] as List).cast<Json>(),
-          selected: _hour,
-          onTap: (h) {
-            _hour = h;
-            _select(_route!);
-          },
-        ),
-        Slider(
-          value: _hour.toDouble(),
-          min: 5,
-          max: 22,
-          divisions: 17,
-          label: '$_hour:00',
-          onChanged: (x) => setState(() => _hour = x.round()),
-          onChangeEnd: (_) => _select(_route!),
-        ),
-        Text('Along the route at $_hour:00', style: t.textTheme.titleMedium),
-        const SizedBox(height: 6),
-        StretchBar((v['stretches'] as List).cast<Json>().map((s) => {...s, 'minutes': 1}).toList(), height: 14),
-        const SizedBox(height: 8),
-        for (final s in (v['stretches'] as List).cast<Json>())
-          ListTile(
-            dense: true,
-            leading: Icon(levelIcons[asInt(s['level'])], color: levelColors[asInt(s['level'])]),
-            title: Text('${s['from']} → ${s['to']}'),
-            subtitle: Text('score ${asDouble(s['score']).round()} / 100  ·  '
-                '${s['confidence'] == 'low' ? 'limited data' : '${s['confidence']} confidence'}'),
-            trailing: Text(levelLabels[asInt(s['level'])]),
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 680),
+        child: ListView(padding: EdgeInsets.fromLTRB(20, MediaQuery.paddingOf(context).top + 20, 20, 16), children: [
+          const PageTitle('Routes', subtitle: 'How full each stretch of a route usually is, hour by hour.'),
+          TextField(
+            controller: _q,
+            decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Route number or terminal'),
+            onChanged: (s) {
+              _debounce?.cancel();
+              _debounce = Timer(const Duration(milliseconds: 300), () => _loadRoutes(s));
+            },
           ),
-      ],
-    ]);
+          const SizedBox(height: 12),
+          if (_error != null) ErrorBox(_error!),
+          SizedBox(
+            height: 40,
+            child: ListView(scrollDirection: Axis.horizontal, children: [
+              for (final r in _routes)
+                Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: SelectPill(
+                    label: '${r['number']} ${arrow(r['direction'] as String)}',
+                    selected: r['route'] == _route,
+                    onTap: () => _select(r['route'] as String),
+                  ),
+                ),
+            ]),
+          ),
+          if (v != null) ...[
+            const SizedBox(height: 18),
+            Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              BusChip('${v['number']}', '${v['direction']}', large: true),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('${v['from_terminal']} → ${v['towards']}',
+                      style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16, height: 1.25)),
+                  const SizedBox(height: 4),
+                  Text('~${asInt(v['weekday_riders_per_day'])} e-ticket riders per weekday',
+                      style: TextStyle(fontSize: 12.5, color: context.muted)),
+                ]),
+              ),
+            ]),
+            const SizedBox(height: 12),
+            Wrap(spacing: 6, runSpacing: 6, children: [
+              Tag('${v['n_stops']} stops'),
+              Tag('~${asInt(v['end_to_end_min'])} min end to end'),
+              Tag('~${asInt(v['fleet_weekday'])} buses'),
+              Tag('a bus every ~${asInt(v['headway_min'])} min'),
+            ]),
+            const SizedBox(height: 16),
+            DaySelector(value: _day, onChanged: (d) {
+              _day = d;
+              _select(_route!);
+            }),
+            const SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.fromLTRB(14, 14, 14, 4),
+              decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(16)),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text('Busiest stretch by hour', style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+                Text('Tap a bar or drag the slider', style: TextStyle(fontSize: 12, color: context.muted)),
+                const SizedBox(height: 10),
+                HourBars(
+                  byHour: (v['by_hour'] as List).cast<Json>(),
+                  selected: _hour,
+                  onTap: (h) {
+                    _hour = h;
+                    _select(_route!);
+                  },
+                ),
+                Slider(
+                  value: _hour.toDouble(),
+                  min: 5,
+                  max: 22,
+                  divisions: 17,
+                  label: '$_hour:00',
+                  onChanged: (x) => setState(() => _hour = x.round()),
+                  onChangeEnd: (_) => _select(_route!),
+                ),
+              ]),
+            ),
+            const SizedBox(height: 20),
+            SectionLabel('Along the route at $_hour:00'),
+            const LevelLegend(),
+            const SizedBox(height: 10),
+            StretchBar((v['stretches'] as List).cast<Json>().map((s) => {...s, 'minutes': 1}).toList(), height: 10),
+            const SizedBox(height: 8),
+            StopTimeline(
+              stretches: (v['stretches'] as List).cast<Json>(),
+              firstIcon: Icons.trip_origin,
+              lastIcon: Icons.flag,
+              firstCaption: 'Start of the route',
+              lastCaption: 'End of the route',
+              showScores: true,
+            ),
+          ],
+        ]),
+      ),
+    );
   }
 }

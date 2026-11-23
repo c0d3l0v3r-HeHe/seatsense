@@ -1,162 +1,210 @@
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../theme.dart';
 import '../widgets.dart';
 
-/// One journey option, leg by leg, with the crowding of every stretch.
+/// One trip, SIStrans-style: a black summary header, then every leg as a stop-by-stop timeline
+/// whose line is coloured by how crowded each stretch usually is.
 class OptionPage extends StatelessWidget {
   const OptionPage(this.o, {super.key});
   final Json o;
 
   @override
   Widget build(BuildContext context) {
-    final t = Theme.of(context);
     final legs = (o['legs'] as List).cast<Json>();
     final later = (o['later'] as List).cast<Json>();
+    const grey = Color(0xFFB0B0B0);
     return Scaffold(
-      appBar: AppBar(title: Text('${o['total_min']} min · ${o['depart']} → ${o['arrive']}')),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 820),
-          child: ListView(padding: const EdgeInsets.all(16), children: [
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Wrap(spacing: 16, runSpacing: 10, crossAxisAlignment: WrapCrossAlignment.center, children: [
-                  CrowdBadge(asInt(o['level'])),
-                  ConfidenceChip(o['confidence'] as String),
-                  Text('On board ${o['ride_min']} min · waiting ~${o['wait_min']} min'
-                      '${asInt(o['walk_min']) > 0 ? ' · walking ${o['walk_min']} min' : ''}'),
-                  Text('Crowded ${o['crowded_min']} min · standing ${o['standing_min']} min'),
+      backgroundColor: context.isDark ? Pal.cardDark : Pal.white,
+      body: ListView(padding: EdgeInsets.zero, children: [
+        Container(
+          color: Pal.black,
+          padding: EdgeInsets.fromLTRB(8, MediaQuery.paddingOf(context).top + 4, 16, 44),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 640),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                IconButton(
+                  tooltip: 'Back',
+                  icon: const Icon(Icons.arrow_back, color: Pal.white),
+                  onPressed: () => Navigator.of(context).maybePop(),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 12),
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+                      Text('${o['total_min']} min',
+                          style: const TextStyle(color: Pal.white, fontSize: 40, fontWeight: FontWeight.w800, letterSpacing: -1)),
+                      const Spacer(),
+                      CrowdBadge(asInt(o['level'])),
+                    ]),
+                    Text(
+                      '${o['depart']} – ${o['arrive']}  ·  ${o['transfers'] == 0 ? 'no change' : '${o['transfers']} change'}'
+                      '${(o['tags'] as List).isEmpty ? '' : '  ·  ${(o['tags'] as List).join(', ')}'}',
+                      style: const TextStyle(color: grey, fontSize: 14),
+                    ),
+                    const SizedBox(height: 18),
+                    Row(children: [
+                      _Stat('On board', '${o['ride_min']} min'),
+                      _Stat('Waiting', '~${o['wait_min']} min'),
+                      _Stat('Standing', '${o['standing_min']} min'),
+                      _Stat('Crowded', '${o['crowded_min']} min'),
+                    ]),
+                  ]),
+                ),
+              ]),
+            ),
+          ),
+        ),
+        Transform.translate(
+          offset: const Offset(0, -24),
+          child: Container(
+            decoration: BoxDecoration(
+              color: context.isDark ? Pal.cardDark : Pal.white,
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+            ),
+            padding: const EdgeInsets.fromLTRB(16, 22, 16, 32),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 640),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                  Row(children: [
+                    const Expanded(child: SectionLabel('Route detail')),
+                    Padding(padding: const EdgeInsets.only(bottom: 8), child: ConfidenceChip(o['confidence'] as String)),
+                  ]),
+                  for (var i = 0; i < legs.length; i++) ...[
+                    if (i > 0) _ChangeRow(prev: legs[i - 1], next: legs[i]),
+                    _LegBlock(legs[i]),
+                  ],
+                  if (later.isNotEmpty) ...[
+                    const SizedBox(height: 18),
+                    const SectionLabel('Leave a little later?'),
+                    _LaterRow(
+                        label: 'As planned', depart: '${o['depart']}', total: o['total_min'], level: asInt(o['level']), crowded: o['crowded_min']),
+                    for (final l in later)
+                      _LaterRow(
+                          label: '+${l['offset_min']} min',
+                          depart: '${l['depart']}',
+                          total: l['total_min'],
+                          level: asInt(l['level']),
+                          crowded: l['crowded_min']),
+                  ],
+                  const SizedBox(height: 18),
+                  Text(
+                    'Crowding = typical riders per bus on each stretch for this hour and day type, from October 2026 '
+                    'e-tickets. Faded line = limited data. Times are estimated from tickets bought on the same bus.',
+                    style: TextStyle(fontSize: 12, color: context.muted, height: 1.4),
+                  ),
                 ]),
               ),
             ),
-            for (final leg in legs) _LegCard(leg),
-            if (later.isNotEmpty)
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text('If you leave a little later', style: t.textTheme.titleMedium),
-                    const SizedBox(height: 8),
-                    _LaterRow(depart: o['depart'], total: o['total_min'], level: asInt(o['level']),
-                        crowded: o['crowded_min'], label: 'As planned'),
-                    for (final l in later)
-                      _LaterRow(depart: l['depart'], total: l['total_min'], level: asInt(l['level']),
-                          crowded: l['crowded_min'], label: '+${l['offset_min']} min'),
-                  ]),
-                ),
-              ),
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Text(
-                'Crowding = typical riders per bus on each stretch for this hour and day type, from October 2026 '
-                'e-tickets. Faded blocks have limited data. Travel times are estimated from tickets bought on the same bus.',
-                style: t.textTheme.bodySmall,
-              ),
-            ),
+          ),
+        ),
+      ]),
+    );
+  }
+}
+
+class _Stat extends StatelessWidget {
+  const _Stat(this.label, this.value);
+  final String label, value;
+
+  @override
+  Widget build(BuildContext context) => Expanded(
+        child: Container(
+          margin: const EdgeInsets.only(right: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          decoration: BoxDecoration(color: const Color(0xFF1C1C1C), borderRadius: BorderRadius.circular(12)),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(value, style: const TextStyle(color: Pal.white, fontWeight: FontWeight.w800, fontSize: 15)),
+            Text(label, style: const TextStyle(color: Color(0xFFB0B0B0), fontSize: 11.5)),
           ]),
         ),
+      );
+}
+
+class _LegBlock extends StatelessWidget {
+  const _LegBlock(this.leg);
+  final Json leg;
+
+  @override
+  Widget build(BuildContext context) {
+    final walk = asInt(leg['walk_min']);
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(color: context.field, borderRadius: BorderRadius.circular(14)),
+        child: Row(children: [
+          BusChip('${leg['number']}', '${leg['direction']}', large: true),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text('towards ${leg['towards']}',
+                  maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              Text('Every ~${asInt(leg['headway_min'])} min · wait ~${leg['wait_min']} min · ${leg['stops']} stops · ${leg['ride_min']} min',
+                  style: TextStyle(fontSize: 12, color: context.muted)),
+            ]),
+          ),
+        ]),
       ),
+      const SizedBox(height: 4),
+      StopTimeline(
+        stretches: (leg['stretches'] as List).cast<Json>(),
+        startTime: '${leg['board_time']}',
+        endTime: '${leg['alight_time']}',
+        firstCaption: walk > 0 ? 'Board here · walk $walk min to the stop' : 'Board here',
+        lastCaption: 'Get off here',
+      ),
+    ]);
+  }
+}
+
+class _ChangeRow extends StatelessWidget {
+  const _ChangeRow({required this.prev, required this.next});
+  final Json prev, next;
+
+  @override
+  Widget build(BuildContext context) {
+    final walk = asInt(next['walk_min']);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(children: [
+        SizedBox(width: 44, child: Icon(walk > 0 ? Icons.directions_walk : Icons.sync_alt, color: context.fg)),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            'Change to bus ${next['number']}${walk > 0 ? ' · walk $walk min' : ''} · wait ~${next['wait_min']} min',
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13.5),
+          ),
+        ),
+      ]),
     );
   }
 }
 
 class _LaterRow extends StatelessWidget {
-  const _LaterRow({required this.depart, required this.total, required this.level, required this.crowded, required this.label});
-  final dynamic depart, total, crowded;
+  const _LaterRow({required this.label, required this.depart, required this.total, required this.level, required this.crowded});
+  final String label, depart;
+  final dynamic total, crowded;
   final int level;
-  final String label;
 
   @override
-  Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.symmetric(vertical: 4),
+  Widget build(BuildContext context) => Container(
+        margin: const EdgeInsets.only(bottom: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        decoration: BoxDecoration(border: Border.all(color: context.line), borderRadius: BorderRadius.circular(12)),
         child: Row(children: [
-          SizedBox(width: 96, child: Text(label, style: const TextStyle(fontWeight: FontWeight.w600))),
-          SizedBox(width: 120, child: Text('leave $depart')),
-          SizedBox(width: 70, child: Text('$total min')),
+          SizedBox(
+            width: 92,
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text('Leave $depart', style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+              Text(label, style: TextStyle(fontSize: 11.5, color: context.muted)),
+            ]),
+          ),
+          SizedBox(width: 58, child: Text('$total min', style: const TextStyle(fontWeight: FontWeight.w600))),
+          Expanded(child: Text('$crowded min crowded', style: TextStyle(fontSize: 12, color: context.muted))),
           CrowdBadge(level, small: true),
-          const SizedBox(width: 10),
-          Expanded(child: Text('$crowded min crowded', style: const TextStyle(fontSize: 12))),
         ]),
       );
-}
-
-class _LegCard extends StatelessWidget {
-  const _LegCard(this.leg);
-  final Json leg;
-
-  @override
-  Widget build(BuildContext context) {
-    final t = Theme.of(context);
-    final st = (leg['stretches'] as List).cast<Json>();
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Row(children: [
-            const Icon(Icons.directions_bus),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text('Bus ${leg['number']} ${arrow(leg['direction'] as String)} towards ${leg['towards']}',
-                  style: t.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
-            ),
-            CrowdBadge(asInt(leg['level']), small: true),
-          ]),
-          const SizedBox(height: 4),
-          Text(
-            [
-              if (asInt(leg['walk_min']) > 0) 'Walk ${leg['walk_min']} min to the stop',
-              'Bus every ~${asInt(leg['headway_min'])} min, wait ~${leg['wait_min']} min',
-              '${leg['stops']} stops, ${leg['ride_min']} min',
-            ].join(' · '),
-            style: t.textTheme.bodySmall,
-          ),
-          const SizedBox(height: 4),
-          ConfidenceChip(leg['confidence'] as String),
-          const Divider(height: 24),
-          _StopLine(time: leg['board_time'], name: leg['board_stop'], board: true),
-          for (final s in st)
-            Padding(
-              padding: const EdgeInsets.only(left: 6),
-              child: IntrinsicHeight(
-                child: Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                  Container(
-                      width: 6,
-                      color: levelColors[asInt(s['level'])].withValues(alpha: s['confidence'] == 'low' ? 0.4 : 1)),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 6),
-                      child: Row(children: [
-                        Icon(levelIcons[asInt(s['level'])], size: 16, color: levelColors[asInt(s['level'])]),
-                        const SizedBox(width: 6),
-                        Expanded(child: Text('to ${s['to']}', style: const TextStyle(fontSize: 13))),
-                        Text(levelLabels[asInt(s['level'])], style: TextStyle(fontSize: 12, color: t.colorScheme.onSurfaceVariant)),
-                      ]),
-                    ),
-                  ),
-                ]),
-              ),
-            ),
-          _StopLine(time: leg['alight_time'], name: leg['alight_stop'], board: false),
-        ]),
-      ),
-    );
-  }
-}
-
-class _StopLine extends StatelessWidget {
-  const _StopLine({required this.time, required this.name, required this.board});
-  final dynamic time, name;
-  final bool board;
-
-  @override
-  Widget build(BuildContext context) => Row(children: [
-        Icon(board ? Icons.radio_button_checked : Icons.location_on, size: 18),
-        const SizedBox(width: 8),
-        Text('$time', style: const TextStyle(fontWeight: FontWeight.w700)),
-        const SizedBox(width: 10),
-        Expanded(child: Text('${board ? 'Board at' : 'Get off at'} $name')),
-      ]);
 }

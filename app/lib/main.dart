@@ -4,6 +4,7 @@ import 'pages/about_page.dart';
 import 'pages/explore_page.dart';
 import 'pages/hotspots_page.dart';
 import 'pages/plan_page.dart';
+import 'theme.dart';
 
 void main() => runApp(const SeatSenseApp());
 
@@ -12,16 +13,17 @@ class SeatSenseApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ThemeData theme(Brightness b) => ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2A78D6), brightness: b),
-          useMaterial3: true,
-          cardTheme: const CardThemeData(elevation: 0.5),
-        );
     return MaterialApp(
       title: 'SeatSense · Delhi bus crowding',
       debugShowCheckedModeBanner: false,
-      theme: theme(Brightness.light),
-      darkTheme: theme(Brightness.dark),
+      theme: buildTheme(Brightness.light),
+      darkTheme: buildTheme(Brightness.dark),
+      // ?theme=dark|light forces a theme (handy for screenshots); otherwise follow the system.
+      themeMode: switch (Uri.base.queryParameters['theme']) {
+        'dark' => ThemeMode.dark,
+        'light' => ThemeMode.light,
+        _ => ThemeMode.system,
+      },
       home: const HomeShell(),
     );
   }
@@ -42,56 +44,99 @@ class _HomeShellState extends State<HomeShell> {
     (Icons.directions_bus_outlined, Icons.directions_bus, 'Plan'),
     (Icons.route_outlined, Icons.route, 'Routes'),
     (Icons.local_fire_department_outlined, Icons.local_fire_department, 'Hotspots'),
-    (Icons.info_outline, Icons.info, 'How it works'),
+    (Icons.info_outline, Icons.info, 'About'),
   ];
 
   @override
   Widget build(BuildContext context) {
     final wide = MediaQuery.sizeOf(context).width >= 900;
-    final body = Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 860),
-        child: IndexedStack(index: _tab, children: _pages),
-      ),
-    );
+    final body = IndexedStack(index: _tab, children: _pages);
     return Scaffold(
-      appBar: AppBar(
-        title: Row(children: [
-          const Icon(Icons.event_seat),
-          const SizedBox(width: 8),
-          const Text('SeatSense', style: TextStyle(fontWeight: FontWeight.w800)),
-          const SizedBox(width: 10),
-          Flexible(
-            child: Text('Delhi buses, with crowding',
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 14, color: Theme.of(context).colorScheme.onSurfaceVariant)),
-          ),
-        ]),
-      ),
       body: wide
           ? Row(children: [
               NavigationRail(
                 selectedIndex: _tab,
                 labelType: NavigationRailLabelType.all,
+                leading: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Icon(Icons.event_seat, size: 30, color: context.fg),
+                ),
                 onDestinationSelected: (i) => setState(() => _tab = i),
                 destinations: [
                   for (final d in _dest)
                     NavigationRailDestination(icon: Icon(d.$1), selectedIcon: Icon(d.$2), label: Text(d.$3)),
                 ],
               ),
-              const VerticalDivider(width: 1),
+              VerticalDivider(width: 1, color: context.line),
               Expanded(child: body),
             ])
           : body,
-      bottomNavigationBar: wide
-          ? null
-          : NavigationBar(
-              selectedIndex: _tab,
-              onDestinationSelected: (i) => setState(() => _tab = i),
-              destinations: [
-                for (final d in _dest) NavigationDestination(icon: Icon(d.$1), selectedIcon: Icon(d.$2), label: d.$3),
-              ],
-            ),
+      bottomNavigationBar: wide ? null : _PillNav(index: _tab, items: _dest, onTap: (i) => setState(() => _tab = i)),
+    );
+  }
+}
+
+/// Floating black navigation bar; the current tab is a white pill with its name.
+class _PillNav extends StatelessWidget {
+  const _PillNav({required this.index, required this.items, required this.onTap});
+  final int index;
+  final List<(IconData, IconData, String)> items;
+  final ValueChanged<int> onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      top: false,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 6, 16, 12),
+        child: Container(
+          height: 62,
+          padding: const EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            color: Pal.black,
+            borderRadius: BorderRadius.circular(31),
+            border: context.isDark ? Border.all(color: Pal.lineDark) : null,
+            boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 18, offset: Offset(0, 6))],
+          ),
+          child: Row(children: [
+            for (var i = 0; i < items.length; i++)
+              Expanded(
+                flex: i == index ? 5 : 3,
+                child: Semantics(
+                  button: true,
+                  selected: i == index,
+                  label: items[i].$3,
+                  child: GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: () => onTap(i),
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 220),
+                      curve: Curves.easeOut,
+                      decoration: BoxDecoration(
+                        color: i == index ? Pal.white : Colors.transparent,
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                        Icon(i == index ? items[i].$2 : items[i].$1,
+                            size: 21, color: i == index ? Pal.black : Pal.white.withValues(alpha: 0.85)),
+                        if (i == index) ...[
+                          const SizedBox(width: 6),
+                          Flexible(
+                            child: Text(items[i].$3,
+                                maxLines: 1,
+                                overflow: TextOverflow.fade,
+                                softWrap: false,
+                                style: const TextStyle(color: Pal.black, fontWeight: FontWeight.w700, fontSize: 13.5)),
+                          ),
+                        ],
+                      ]),
+                    ),
+                  ),
+                ),
+              ),
+          ]),
+        ),
+      ),
     );
   }
 }
