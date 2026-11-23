@@ -1,0 +1,302 @@
+{
+  "crowded_share_by_hour": {
+    "Weekday": {
+      "5": 0.005,
+      "6": 0.028,
+      "7": 0.161,
+      "8": 0.426,
+      "9": 0.43,
+      "10": 0.162,
+      "11": 0.04,
+      "12": 0.01,
+      "13": 0.006,
+      "14": 0.006,
+      "15": 0.006,
+      "16": 0.024,
+      "17": 0.11,
+      "18": 0.231,
+      "19": 0.199,
+      "20": 0.116,
+      "21": 0.049,
+      "22": 0.01
+    },
+    "Saturday": {
+      "5": 0.007,
+      "6": 0.016,
+      "7": 0.092,
+      "8": 0.302,
+      "9": 0.381,
+      "10": 0.176,
+      "11": 0.048,
+      "12": 0.019,
+      "13": 0.013,
+      "14": 0.012,
+      "15": 0.009,
+      "16": 0.016,
+      "17": 0.039,
+      "18": 0.117,
+      "19": 0.131,
+      "20": 0.073,
+      "21": 0.044,
+      "22": 0.014
+    },
+    "Sunday": {
+      "5": 0.002,
+      "6": 0.015,
+      "7": 0.022,
+      "8": 0.066,
+      "9": 0.109,
+      "10": 0.054,
+      "11": 0.025,
+      "12": 0.02,
+      "13": 0.018,
+      "14": 0.011,
+      "15": 0.001,
+      "16": 0.014,
+      "17": 0.028,
+      "18": 0.026,
+      "19": 0.029,
+      "20": 0.021,
+      "21": 0.011,
+      "22": 0.017
+    }
+  },
+  "busiest_stretches_weekday": {
+    "09:00": [
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Mother Dairy",
+        "to_stop": "J&K Pkt Dilshad Garden",
+        "eticket_riders": 9.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "J&K Pkt Dilshad Garden",
+        "to_stop": "Lalita Park",
+        "eticket_riders": 9.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Lalita Park",
+        "to_stop": "Ram Prastha Crossing",
+        "eticket_riders": 9.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Chand Cinema",
+        "to_stop": "Geeta Colony",
+        "eticket_riders": 8.8,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Geeta Colony",
+        "to_stop": "Shyam Giri Mandir",
+        "eticket_riders": 8.8,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Ram Prastha Crossing",
+        "to_stop": "Chand Cinema",
+        "eticket_riders": 8.8,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Super Bazar",
+        "to_stop": "Sdm Office",
+        "eticket_riders": 8.8,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Sdm Office",
+        "to_stop": "Mother Dairy",
+        "eticket_riders": 8.8,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "New Seema Puri",
+        "to_stop": "Super Bazar",
+        "eticket_riders": 8.6,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "YMS(+)UP",
+        "from_stop": "Shyam Giri Mandir",
+        "to_stop": "Gazipur Depot",
+        "eticket_riders": 8.4,
+        "score": 100.0,
+        "confidence": "high"
+      }
+    ],
+    "18:00": [
+      {
+        "route": "DW-1UP",
+        "from_stop": "Iol",
+        "to_stop": "Indian Oil Station",
+        "eticket_riders": 21.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Prehlad Pur ( Palam )",
+        "to_stop": "Palam Colony Flyover",
+        "eticket_riders": 21.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Indian Oil Station",
+        "to_stop": "Prehlad Pur ( Palam )",
+        "eticket_riders": 21.0,
+        "score": 100.0,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Palam Airport / Igi Airport T1",
+        "to_stop": "Iol",
+        "eticket_riders": 20.5,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Palam More",
+        "to_stop": "Palam Airport / Igi Airport T1",
+        "eticket_riders": 19.2,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Shankar Vihar Nh8 / Shankar Vihar",
+        "to_stop": "Palam More",
+        "eticket_riders": 18.8,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Mahipal Pur Extension",
+        "to_stop": "Shankar Vihar Nh8 / Shankar Vihar",
+        "eticket_riders": 17.2,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Aerocity Metro Station",
+        "to_stop": "Mahipal Pur Extension",
+        "eticket_riders": 16.8,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Ampc (Automated Mail Processing Centre)",
+        "to_stop": "Aerocity Metro Station",
+        "eticket_riders": 16.2,
+        "score": 99.9,
+        "confidence": "high"
+      },
+      {
+        "route": "DW-1UP",
+        "from_stop": "Centaur Hotel / New Custom House",
+        "to_stop": "Ampc (Automated Mail Processing Centre)",
+        "eticket_riders": 15.2,
+        "score": 99.8,
+        "confidence": "high"
+      }
+    ]
+  },
+  "mean_score_8_10h": {
+    "Saturday": 64.9,
+    "Sunday": 43.3,
+    "Weekday": 69.7
+  },
+  "holdout_week": {
+    "train_days": 14,
+    "test_days": 5,
+    "cells": 611658,
+    "wmape_riders": 0.34,
+    "bias": -0.002,
+    "busiest_10pct_found": 0.744,
+    "level_agreement": 0.923,
+    "pearson_r": 0.956
+  },
+  "week_to_week_corr_min": 0.912,
+  "approach_comparison": {
+    "known routes | A \u00b7 direct counting": {
+      "WMAPE": 0.298,
+      "bias": 0.001,
+      "MAE (riders/day)": 0.612,
+      "Pearson r": 0.96,
+      "Spearman \u03c1": 0.896,
+      "busiest-10% found": 0.838,
+      "level agreement": 0.853
+    },
+    "known routes | B \u00b7 graph + ML": {
+      "WMAPE": 0.308,
+      "bias": -0.003,
+      "MAE (riders/day)": 0.632,
+      "Pearson r": 0.956,
+      "Spearman \u03c1": 0.897,
+      "busiest-10% found": 0.835,
+      "level agreement": 0.852
+    },
+    "unseen routes | naive network average": {
+      "WMAPE": 1.051,
+      "bias": 0.206,
+      "MAE (riders/day)": 1.865,
+      "Pearson r": 0.415,
+      "Spearman \u03c1": 0.476,
+      "busiest-10% found": 0.322,
+      "level agreement": 0.507
+    },
+    "unseen routes | B \u00b7 graph + ML, no route data": {
+      "WMAPE": 0.776,
+      "bias": -0.071,
+      "MAE (riders/day)": 1.378,
+      "Pearson r": 0.619,
+      "Spearman \u03c1": 0.621,
+      "busiest-10% found": 0.505,
+      "level agreement": 0.668
+    },
+    "unseen routes | A \u00b7 direct counting (has route data)": {
+      "WMAPE": 0.321,
+      "bias": 0.009,
+      "MAE (riders/day)": 0.57,
+      "Pearson r": 0.952,
+      "Spearman \u03c1": 0.88,
+      "busiest-10% found": 0.837,
+      "level agreement": 0.858
+    },
+    "unseen routes | B \u00b7 graph + ML (has route data)": {
+      "WMAPE": 0.331,
+      "bias": 0.002,
+      "MAE (riders/day)": 0.588,
+      "Pearson r": 0.948,
+      "Spearman \u03c1": 0.883,
+      "busiest-10% found": 0.834,
+      "level agreement": 0.858
+    }
+  }
+}

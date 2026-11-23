@@ -1,0 +1,75 @@
+[ 14.4s] ingested October-Delhi.csv.zip -> data/processed/tickets_oct2026.parquet
+[ 25.2s] stop order recovered for 1,091 route-directions (941 from same-bus timing); travel times from 507,189 ticket pairs
+[ 31.7s] 1,834,974 stretch-hour estimates
+[ 46.1s] wrote outputs/crowding/
+{
+  "mean_score_8_10h": {
+    "Saturday": 64.9,
+    "Sunday": 43.3,
+    "Weekday": 69.7
+  },
+  "holdout_week": {
+    "train_days": 14,
+    "test_days": 5,
+    "cells": 611658,
+    "wmape_riders": 0.34,
+    "bias": -0.002,
+    "busiest_10pct_found": 0.744,
+    "level_agreement": 0.923,
+    "pearson_r": 0.956
+  },
+  "week_to_week_corr_min": 0.912
+}
+figures -> outputs/figures
+Resolving dependencies...
+Downloading packages...
+  cupertino_icons 1.0.9 (2.0.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Compiling lib/main.dart for the Web...                          
+Wasm dry run succeeded. Consider building and testing your application with the `--wasm` flag. See docs for more info: https://docs.flutter.dev/platform-integration/web/wasm
+Use --no-wasm-dry-run to disable these warnings.
+Font asset "CupertinoIcons.ttf" was tree-shaken, reducing it from 257628 to 1472 bytes (99.4% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 11552 bytes (99.3% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Compiling lib/main.dart for the Web...                             20.6s
+✓ Built build/web
+Done. Start the demo with: scripts/run_api.sh  ->  http://localhost:8000
+
+real	1m18.643s
+user	1m28.522s
+sys	0m5.243s
+build_all exit 0
+wrote notebooks/02_crowding_approaches.ipynb 23 cells
+[NbConvertApp] Converting notebook notebooks/02_crowding_approaches.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 1466910 bytes to notebooks/02_crowding_approaches.ipynb
+nb02 exit 0
+[NbConvertApp] Converting notebook notebooks/01_data_exploration.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 1059284 bytes to notebooks/01_data_exploration.ipynb
+nb01 exit 0
+{
+  "mean_score_8_10h": {
+    "Saturday": 64.9,
+    "Sunday": 43.3,
+    "Weekday": 69.7
+  },
+  "holdout_week": {
+    "train_days": 14,
+    "test_days": 5,
+    "cells": 611658,
+    "wmape_riders": 0.34,
+    "bias": -0.002,
+    "busiest_10pct_found": 0.744,
+    "level_agreement": 0.923,
+    "pearson_r": 0.956
+  },
+  "week_to_week_corr_min": 0.912
+}
+figures -> outputs/figures
+validate exit 0

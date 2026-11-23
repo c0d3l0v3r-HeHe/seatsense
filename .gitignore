@@ -1,0 +1,17 @@
+# data (download from the hackathon page; not redistributed)
+*.zip
+data/
+# generated (rebuild with scripts/build_all.sh)
+outputs/crowding/*.csv.gz
+outputs/eval_*.parquet
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# flutter
+app/build/
+app/.dart_tool/
+app/.flutter-plugins*
+app/.idea/
+.claude/
+# hackathon brief text belongs to the organisers
+docs/problem2_brief.txt

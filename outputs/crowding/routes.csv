@@ -1,0 +1,1092 @@
+route,route_base,n_stops,order_consistency,order_method,end_to_end_min,first_stop,last_stop,direction,ac_share,weekday_riders_per_day,fleet_weekday,headway_min_est
+03DOWN,03,26,0.9936305732484076,votes,40.0,Shalimar Bagh Desu Colony,Sarai Kale Khan Isbt,DOWN,0.98,15.5,5.6,24.0
+03UP,03,18,0.9938650306748467,time,72.0,Sarai Kale Khan Isbt,Gulabi Bagh,UP,0.99,14.9,5.6,24.0
+0729(NS)DOWN,0729(NS),17,0.9897610921501706,votes,40.0,Kapashera Border,Mori Gate Terminal,DOWN,0.57,11.4,4.6,22.0
+0729(NS)UP,0729(NS),17,1.0,votes,42.0,Super Bazar,Kapashera Border,UP,0.78,12.9,4.6,22.0
+0740(NS)DOWN,0740(NS),17,0.9549180327868853,votes,31.0,Dhaula Kuan,Isbt Anand Vihar,DOWN,0.99,10.3,10.0,12.0
+0740(NS)UP,0740(NS),26,0.9844961240310077,time,71.0,Anand Vihar Isbt,Janak Setu,UP,1.0,28.0,10.0,12.0
+100ADOWN,100A,22,1.0,time,87.0,Badli Railway Staion,Regal,DOWN,1.0,13.4,5.4,20.0
+102DOWN,102,26,0.9641255605381166,time,59.0,Rohini Sec 22 Terminal,Model Town Ii,DOWN,0.03,24.4,4.9,30.0
+102UP,102,31,0.9847560975609756,time,69.0,Nanak Piyau / Dtc Colony,Rohini Sec 23 Pocket 1 (Green Hill Aptt.),UP,0.07,27.2,4.9,30.0
+103DOWN,103,39,1.0,time,74.0,Narela A-9 Terminal,Isbt Nityanand Marg,DOWN,0.43,68.1,17.0,12.0
+103UP,103,40,0.989272030651341,time,113.0,Ip College,New Anaj Mandi Narela,UP,0.45,70.8,17.0,12.0
+105DOWN,105,26,0.9767932489451476,votes,51.0,Ibrahim Pur,Kashmere Gate City Terminal,DOWN,0.98,18.7,4.6,25.0
+105UP,105,25,0.9819587628865979,votes,45.0,Kashmere Gate City Terminal,Nathu Pura Crossing,UP,1.0,15.8,4.6,25.0
+106ADOWN,106A,27,0.978494623655914,time,75.0,Bawana Jj Colony Kl-Block,Azadpur,DOWN,0.98,20.2,8.8,14.0
+106AUP,106A,27,0.9120879120879121,votes,29.0,Old Delhi Railway Station,Prehladpur Village,UP,0.96,13.6,8.8,14.0
+106DOWN,106,65,0.9894394800974817,time,126.0,Katevara Xing,Ggs Ip University,DOWN,0.09,120.8,29.1,10.0
+106UP,106,59,0.9943846513804399,time,146.0,Tis Hazari Animal Hospital,Mangesh Pur,UP,0.11,99.1,29.1,10.0
+107DOWN,107,55,0.9679780420860018,time,107.0,Katewara Village,Exchange Store / Civil Lines Metro Station,DOWN,0.04,67.0,11.8,21.0
+107UP,107,52,0.9408071748878923,time,121.0,Gpo,Bawana Depot,UP,0.04,65.8,11.8,21.0
+108DOWN,108,35,1.0,time,64.0,Hari Nagar Shaheed Pawan Sahni Chowk,Vishwavidhalaya Metro Station,DOWN,0.05,57.2,8.0,20.0
+108UP,108,39,0.9895414320193081,time,74.0,Nehru Vihar,Metal Forging,UP,0.04,70.7,8.0,20.0
+109DOWN,109,37,0.9569190600522193,time,106.0,New Basti Bankner,Ludlow Castle School,DOWN,0.03,41.2,8.8,26.0
+109UP,109,25,1.0,time,106.0,Old Delhi Railway Station (T),Bhor Garh,UP,0.05,26.6,8.8,26.0
+112DOWN,112,37,0.996969696969697,time,97.0,Safiabad Border Shiv Mandir,Isbt Kashmere Gate,DOWN,1.0,60.8,15.3,14.0
+112UP,112,34,0.99830220713073,time,94.0,Old Delhi Railway Station,Bhor Garh,UP,0.99,43.8,15.3,14.0
+113AUP,113A,27,0.9703504043126685,votes,42.0,Shahbad Daulatpur Village/ Shahbad Bank,Sannoth Village,UP,0.01,15.0,6.0,10.0
+113DOWN,113,57,0.9878869448183042,time,106.0,Sannoth Village (T),Ggs University Isbt Kashmere Gate,DOWN,0.05,75.6,13.9,18.0
+113EXTDOWN,113EXT,24,0.99079754601227,time,76.0,Ghoga Village,Gtk Depot,DOWN,0.99,22.6,12.2,13.0
+113EXTUP,113EXT,24,1.0,time,68.0,Adarsh Nagar,Bawana,UP,0.98,27.0,12.2,13.0
+113UP,113,47,0.988394584139265,time,128.0,Model Town Iii,Bawana Jj Colony Crpf Camp Ghogha Airforce Station,UP,0.06,60.7,13.9,18.0
+114ADOWN,114A,57,0.9969291511296337,time,97.0,Auchandi Border,Shalimar Bagh Crossing Ring Road,DOWN,0.66,196.6,50.8,4.0
+114AUP,114A,47,0.9974474769291184,time,100.0,Azadpur Terminal,Qutubgarh Village (Terminal),UP,0.67,210.0,50.8,4.0
+114BDOWN,114B,42,0.99,time,87.0,Katewara Xing-Dc3788,Wazirpur Depot,DOWN,0.03,36.4,10.4,19.0
+114BSTL-RKD-IIUP,114BSTL-RKD-II,23,0.9377289377289377,votes,66.0,Rani Khera Depot Crossing,Kanjhawala Village (T),UP,0.0,11.0,9.6,9.0
+114BUP,114B,36,0.998468606431853,time,90.0,Majlis Park,Qutab Garh,UP,0.03,35.0,10.4,19.0
+114CDOWN,114C,49,0.9833518312985572,time,86.0,Divya Dham Ashram,Badli Crossing,DOWN,0.98,74.5,21.1,10.0
+114CUP,114C,42,0.998674618952949,time,96.0,Jahangir Puri Metro Station,Jonti Village,UP,0.99,79.8,21.1,10.0
+114DOWN,114,56,0.9988992845349477,time,106.0,Qutub Garh Village (T),Nityanand Marg,DOWN,0.16,83.8,13.2,19.0
+114EXTDOWN,114EXT,27,0.9788135593220338,time,91.0,Jonti,Subhash Place Depot -Punjab Ke,DOWN,0.99,14.0,3.6,31.0
+114UP,114,53,0.9979654120040692,time,130.0,Peeli Kothi,Tatesar Village,UP,0.15,86.4,13.2,19.0
+116ADOWN2,116ADOWN2,18,1.0,time,42.0,Bawana Jj Colony Crpf Camp Ghogha Airforce Station,Delhi Engg College Shahbad,,0.99,33.1,10.8,6.0
+116AUP2,116AUP2,21,0.9641350210970464,time,44.0,Rohini Sector 18 Metro Station (T),Dhakewala Bawana,,1.0,28.8,10.0,6.0
+116DOWN,116,44,0.9692307692307692,time,114.0,Bawana J J Colony F-Block,Isbt K.Gate,DOWN,0.99,82.0,27.8,9.0
+116UP,116,44,0.9910256410256411,time,103.0,Old Delhi Railway Station,Dharamshala Pooth Khurd,UP,0.99,84.9,27.8,9.0
+118EXTDOWN,118EXT,38,0.9848537604456824,time,68.0,Sapera Basti Crossing,Subhash Park,DOWN,0.99,239.4,52.4,4.0
+118EXTUP,118EXT,33,0.9912218268090154,time,71.0,Ggs University Isbt Kashmere Gate,Gas Agency (Chilla Sport Complex) / Multi Gym,UP,0.99,194.5,52.4,4.0
+119DOWN,119,25,0.9044585987261147,votes,61.0,Shahbad Dairy Block A,Old Delhi Railway Station,DOWN,0.99,11.8,4.6,36.0
+119UP,119,18,0.9861111111111112,time,84.0,Tis Hazari Animal Hospital,Bawana Dispensary,UP,0.98,14.1,4.6,36.0
+120ADOWN,120A,24,0.9924812030075187,time,39.0,Narela Pocket 2 Sec 10 Sports Complex,Sanjay Gandhi Transport Nagar,DOWN,1.0,64.4,25.0,4.0
+120AUP,120A,22,0.9207507820646507,time,44.0,Jahangirpuri Gt Road,Raja Harish Chandra Hospital,UP,1.0,49.7,25.0,4.0
+120DOWN,120,40,0.998371335504886,time,71.0,Narela Pocket 2 Sec 10 Sports Complex,Mall Road Ring Road,DOWN,0.99,180.4,46.4,4.0
+120EDOWN,120E,20,0.9769585253456221,votes,70.0,Narela Sector 5 & 6,Kendriya Terminal,DOWN,0.99,14.0,3.6,25.0
+120UP,120,50,0.997423887587822,time,103.0,Mori Gate Terminal,Ramdev Chowk (Narela),UP,0.99,203.8,46.4,4.0
+123DOWN,123,28,0.9629629629629629,votes,95.0,Harewali Gaon (T),Mori Gate Terminal,DOWN,0.98,12.6,6.0,19.0
+124DOWN,124,14,0.978448275862069,time,58.0,Mukhmel Pur,Gtb Nagar,DOWN,0.99,23.0,5.7,31.0
+124UP,124,18,0.9811320754716981,time,99.0,Tis Hazari Animal Hospital,Budhpur Village Gt Road,UP,0.99,20.0,5.7,31.0
+125DOWN,125,35,0.998193315266486,time,96.0,Palla Village,Isbt Kashmiri Gate,DOWN,0.99,97.5,26.6,8.0
+125UP,125,36,0.991304347826087,time,107.0,Old Delhi Railway Station,Akbar Pur Majra,UP,0.99,95.9,26.6,8.0
+128DOWN,128,21,1.0,time,64.0,Khera Khurd High School,Clock Tower,DOWN,0.02,20.0,4.6,37.0
+128UP,128,27,0.9944852941176471,time,87.0,Tees Hazari Court,Khera Kalan Gaon,UP,0.01,27.6,4.6,37.0
+129DOWN,129,33,0.9948186528497409,time,84.0,Akbar Pur Majra Crossing,Ggs University Isbt Kashmere Gate,DOWN,0.02,40.1,8.0,23.0
+129STLDOWN,129STL,26,0.9946524064171123,time,79.0,Bakhtawar Pur Village,Mundka Village (Metro Station),DOWN,0.01,15.2,6.3,27.0
+129STLUP,129STL,23,1.0,time,73.0,Rani Khera Depot 1,Pwd Office,UP,0.01,16.3,6.3,27.0
+129UP,129,32,0.9895150720838795,time,83.0,Old Delhi Railway Station (T),Palla More,UP,0.03,44.4,8.0,23.0
+130DOWN,130,36,0.9244186046511628,votes,44.0,Crpf Camp,Old Delhi Railway Station,DOWN,1.0,16.8,7.6,16.0
+130UP,130,37,0.9154929577464789,votes,58.0,Badli Crossing,Ghoga Village,UP,0.99,18.4,7.6,16.0
+131DOWN,131,43,0.9954648526077098,time,94.0,Varishth Nagrik Sewa Sadan Lampur,Model Town Ii,DOWN,0.99,54.6,18.4,14.0
+131UP,131,38,0.9961389961389961,time,139.0,Old Delhi Railway Station,Sarvodaya Vidyalaya Bankner,UP,0.98,53.1,18.4,14.0
+133DOWN,133,31,0.9056603773584906,votes,93.0,Bawana School,Mori Gate Terminal,DOWN,0.06,13.5,4.2,51.0
+133UP,133,39,0.9164086687306502,votes,103.0,Roshnara Bagh,Narela A9 Bus Terminal,UP,0.03,17.2,4.2,51.0
+135DOWN,135,19,0.9941176470588236,time,73.0,Sec A9 Narela / Narela Pocket 13 / A9,Isbt Kashmere Gate (Orr) / Ggs Ip University,DOWN,0.99,16.4,6.2,31.0
+135UP,135,20,0.9912663755458515,time,100.0,Rajghat Ring Road,Bhor Garh,UP,0.98,17.4,6.2,31.0
+136DOWN,136,57,0.9932844932844933,time,123.0,Ghoga Village,Gpo,DOWN,0.02,85.0,13.2,19.0
+136UP,136,50,0.9979508196721312,time,106.0,Old Delhi Railway Station (T),Bharat Mata School,UP,0.02,82.1,13.2,19.0
+137DOWN,137,27,0.9987163029525032,time,69.0,Holambi Kalan Terminal,Isbt Kashmere Gate,DOWN,0.02,41.6,8.0,22.0
+137UP,137,28,0.9718934911242604,time,88.0,Old Delhi Railway Station,Khera Khurd Village (T),UP,0.02,36.6,8.0,22.0
+138DOWN,138,14,0.9743918053777209,time,40.0,Hamid Pur,Jahangir Puri Crossing,DOWN,0.99,49.0,11.8,9.0
+138UP,138,15,0.9987029831387808,time,46.0,Azad Pur Gt Road,Bakauli Village,UP,0.99,51.4,11.8,9.0
+139DOWN,139,20,0.9746376811594203,votes,50.0,Jahangir Puri Metro Station,Shivaji Stadium Terminal,DOWN,0.06,13.6,3.5,20.0
+140DOWN,140,30,0.9961538461538462,time,65.0,Shahbad Dairy,Mall Road,DOWN,0.99,26.3,11.8,13.0
+140UP,140,19,0.9769585253456221,time,69.0,Nityanand Marg,Rohini Sec 17/16,UP,0.99,22.0,11.8,13.0
+141DOWN,141,34,0.9949035311248635,time,70.0,Rohini Sec 23 Pocket 1 (Green Hill Aptt.),Ice Factory (Rani Jhansi Road),DOWN,0.99,127.7,30.1,6.0
+141UP,141,36,0.9016477857878475,time,93.0,Tees Hazari Animal Hospital Mori Gate,Rohini Sec 24 Dear Satguru Sewaram Crossing,UP,0.99,111.6,30.1,6.0
+143DOWN,143,38,0.9932049830124575,time,86.0,Keshav Nagar Mukti Ashram,Hassan Pur Village,DOWN,0.99,88.4,14.4,14.0
+143UP,143,40,0.9894894894894894,time,90.0,Anand Vihar Isbt Main Road,Chetan Bihari Mandir Sant Nagar,UP,1.0,53.2,14.4,14.0
+144ADOWN,144A,38,0.9852216748768473,time,97.0,Singhu Village X-Ing,Jhandewalan,DOWN,0.86,60.8,18.5,11.0
+144AUP,144A,42,0.9970972423802612,time,94.0,Ajmeri Gate,Khampur Village,UP,0.89,73.5,18.5,11.0
+144DOWN,144,39,0.9977440525020509,time,107.0,Singhu Border,Gpo K. Gate,DOWN,0.79,206.6,54.6,4.0
+144STLUP,144STL,6,1.0,time,16.0,Bawana Jj Colony Crpf Camp Ghogha Airforce Station,Singhola Village,UP,0.01,12.8,3.5,10.0
+144UP,144,38,0.9937586685159501,time,73.0,Ice Factory,Tikri Khurd Xing,UP,0.76,231.0,54.6,4.0
+146DOWN,146,24,0.9963369963369964,time,57.0,Hiranki,Gur Mandi,DOWN,0.99,37.3,11.0,12.0
+146UP,146,20,0.9587765957446809,time,55.0,Azadpur Terminal,Bakhtawar Pur School,UP,0.99,36.6,11.0,12.0
+147DOWN,147,25,0.9920634920634921,time,91.0,Sungar Pur,Ggs University Isbt Kashmere Gate,DOWN,0.02,29.8,5.6,38.0
+147UP,147,29,0.9872068230277186,time,102.0,Old Delhi Railway Station (T),Pwd Office,UP,0.03,29.5,5.6,38.0
+148DOWN,148,23,0.9843260188087775,time,64.0,Tikri Khurd,Bara Bagh,DOWN,0.03,21.8,4.4,34.0
+148UP,148,25,0.9355828220858896,votes,64.0,Jahangir Puri Crossing,Tikri Khurd,UP,0.01,14.0,4.4,34.0
+149DOWN,149,18,1.0,time,45.0,Taj Pur Kalan,Bara Bagh,DOWN,0.95,26.2,8.0,17.0
+149UP,149,14,1.0,time,68.0,Azadpur Terminal,Cpwd Office Ali Pur,UP,0.97,19.4,8.0,17.0
+153UP,153,30,0.9083769633507853,votes,50.0,Batra Cinema,Shani Mandir Shiv Vihar / Hastsal Jj Colony,UP,1.0,18.2,5.8,12.0
+154DOWN,154,27,0.9835858585858586,time,77.0,Dahisara Border,Bara Bagh,DOWN,0.99,36.1,12.8,15.0
+154UP,154,29,0.9546460176991151,time,89.0,Gur Mandi,Bakhtawar Pur School,UP,1.0,42.2,12.8,15.0
+158DOWN,158,19,1.0,time,58.0,Ghoga Village,Jahangirpuri Metro Station Gt Road,DOWN,0.01,28.1,6.5,25.0
+158UP,158,18,1.0,time,83.0,Azadpur Terminal,Sannoth Crossing / Ghoga Crossing,UP,0.01,31.4,6.5,25.0
+159DOWN,159,31,0.9990492790366028,time,60.0,Jahangirpuri Eblock,Loha Mandi,DOWN,1.0,267.8,59.4,4.0
+159UP,159,26,0.9986682204095222,time,60.0,Inder Puri,Jahangirpuri Ablock,UP,1.0,267.6,59.4,4.0
+161UP,161,27,0.9959839357429718,time,101.0,Tees Hazari Animal Hospital Mori Gate,Barwala Village,UP,0.02,18.7,4.0,30.0
+162DOWN,162,27,0.992116434202547,time,70.0,Mohamed Pur Village,Vidhan Sabha Metro Station,DOWN,0.99,88.7,12.7,13.0
+162UP,162,30,0.9981572481572482,time,75.0,Mori Gate Terminal,Ramjan Pur Village,UP,0.99,67.9,12.7,13.0
+165ADOWN,165A,49,0.9982993197278912,time,88.0,Shahbad Dairy,Surya Nagar,DOWN,0.99,110.2,29.2,7.0
+165AUP,165A,46,0.9838523644752019,time,97.0,Anand Vihar Isbt,Shahbad Bank,UP,0.99,87.4,29.2,7.0
+165DOWN,165,45,0.9952285283776996,time,87.0,Shahbad Dairy,Ram Prastha,DOWN,0.99,181.6,48.0,4.0
+165UP,165,47,0.9790450928381963,time,96.0,Anand Vihar Isbt,Delhi College Of Engineering Shahbad,UP,0.98,199.6,48.0,4.0
+166DOWN,166,53,0.9948150708606982,time,115.0,Shalimar Bagh Community Centre,Ishpat Bhawan,DOWN,0.99,138.0,30.2,8.0
+166UP,166,43,0.9918032786885246,time,98.0,Nizamuddin Railway Station,Ashok Vihar Ba-Blk.,UP,0.99,113.0,30.2,8.0
+169DOWN,169,26,1.0,time,106.0,Katevara Village (T),Gtb Nagar,DOWN,0.99,16.6,5.6,39.0
+169UP,169,27,1.0,time,90.0,Gtb Nagar,Bawana Depot,UP,0.99,20.3,5.6,39.0
+171DOWN,171,40,0.9980295566502463,time,97.0,Holambi Kalan Jj Colony,Shivaji Park,DOWN,0.01,56.4,7.8,28.0
+171UP,171,36,0.9898403483309144,time,100.0,Shivaji Stadium Terminal,Alipur Village Gt Road,UP,0.01,46.1,7.8,28.0
+172DOWN,172,17,1.0,time,94.0,Holambi Khurd,Golcha Cinema,DOWN,0.2,20.8,5.0,26.0
+172UP,172,26,0.9424460431654677,votes,18.0,Gtk Depot,Holambi Khurd,UP,0.34,19.0,5.0,26.0
+174BDOWN,174B,26,0.8944954128440367,votes,50.0,Karala Crossing,Rithala Metro Station,DOWN,0.97,12.2,3.2,22.0
+174BSTLDOWN,174BSTL,15,0.994413407821229,time,40.0,Jonti Border,Karala Patshala,DOWN,0.02,12.7,7.0,9.0
+174DOWN,174,41,0.9994997498749375,time,64.0,Kanjhawala Village (T),Shalimar Bagh Crossing Ring Road,DOWN,0.02,185.4,25.0,6.0
+174UP,174,38,0.9997473471450228,time,71.0,Azadpur Terminal,Radha Swami Satsang / Rupali Enclave,UP,0.02,174.5,25.0,6.0
+175DOWN,175,36,0.996996996996997,time,100.0,Lampur Village,Gur Mandi,DOWN,1.0,53.0,14.0,16.0
+175UP,175,37,0.9746835443037974,time,106.0,Old Delhi Railway Station,Narela,UP,0.99,47.0,14.0,16.0
+179DOWN,179,21,1.0,time,82.0,Narela Pocket 2 Sec 10 Sports Complex,Jahangirpuri Metro Station Gt Road,DOWN,0.98,30.8,11.5,17.0
+179UP,179,22,0.989406779661017,time,88.0,New Sabzi Mandi Azadpur,Narela Terminal,UP,0.97,45.7,11.5,17.0
+181ADOWN,181A,53,0.9334916864608076,time,125.0,C Block Jahangir Puri,Bhogal (Jungpura),DOWN,0.99,78.8,26.9,9.0
+181AUP,181A,47,0.9987244897959183,time,103.0,Nizamuddin Railway Station,Azadpur / Kewal Park,UP,0.99,77.3,26.9,9.0
+181DOWN,181,67,0.9834352701325179,time,123.0,E Block Jahangir Puri Terminal,Cgo Complex,DOWN,0.98,198.6,56.4,5.0
+181UP,181,56,0.9938007695596409,time,119.0,Nizamuddin Railway Station,Adarsh Nagar Metro Station,UP,0.99,196.2,56.4,5.0
+182ADOWN,182A,36,0.9971461187214612,time,90.0,Kanjhawala Chowk,Roshnara Road,DOWN,0.31,77.8,16.4,13.0
+182AUP,182A,46,0.9988518943742825,time,111.0,Isbt Nityanand Marg,Shiv Vihar Bheem Chowk,UP,0.3,74.8,16.4,13.0
+185DOWN,185,42,0.978343949044586,time,82.0,Nathu Pura,Regal,DOWN,0.99,84.3,18.6,11.0
+185UP,185,47,0.9770992366412213,time,102.0,Kendriya Terminal,Burari Garhi,UP,0.99,60.4,18.6,11.0
+188DOWN,188,38,0.9883720930232558,time,105.0,Dariyapur Gaon,Mandi House,DOWN,0.23,42.4,5.4,51.0
+188LINKSTLDOWN,188LINKSTL,10,1.0,time,21.0,Burari Crossing,Isbt Kashmere Gate (Orr),DOWN,0.99,26.4,15.2,4.0
+188LINKSTLUP,188LINKSTL,11,1.0,votes,14.0,Isbt Ring Road,Burari Crossing,UP,0.98,18.2,15.2,4.0
+188UP,188,34,0.9951338199513382,time,151.0,Kendriya Terminal (Pt. Pant Marg),Bawana,UP,0.17,32.8,5.4,51.0
+191DOWN,191,41,0.998165137614679,time,97.0,Harewali Gaon (T),Mall Road,DOWN,0.99,36.7,13.0,18.0
+191UP,191,39,0.9818181818181818,time,115.0,Ludlow Castle,Dariyapur Kalan School Bawana,UP,0.99,39.0,13.0,18.0
+192DOWN,192,26,1.0,time,53.0,Keshav Nagar,Mall Road,DOWN,0.99,122.2,29.6,5.0
+192UP,192,28,0.9929278642149929,time,69.0,Kashmere Gate City Terminal,Amrit Vihar Colony,UP,0.99,117.4,29.6,5.0
+193ADOWN,193A,17,0.9838709677419355,time,33.0,Sec A 5 Crossing Narela,Swaroop Nagar Gt Road,DOWN,0.02,13.6,6.1,15.0
+193AUP,193A,11,0.9795918367346939,time,39.0,Mukraba Chowk / Sanjay Gandhi Transport Nagar,Singhu Border Crossing,UP,0.03,20.4,6.1,15.0
+193DOWN,193,33,0.987885462555066,time,69.0,Ram Dev Chowk,Gtb Nagar,DOWN,0.04,47.6,8.6,19.0
+193UP,193,31,0.9954476479514416,time,75.0,Isbt Nityanand Marg,Singhu Border,UP,0.03,41.2,8.6,19.0
+199DOWN,199,20,0.9716312056737588,time,94.0,Badli Railway Station,Gpo K. Gate,DOWN,0.99,16.1,8.6,20.0
+199UP,199,22,0.9948849104859335,votes,60.0,Old Delhi Railway Station,Badli Railway Station,UP,0.97,14.6,8.6,20.0
+19DOWN,19,47,0.9431939978563773,votes,61.0,E Block Jahangir Puri,Nizamuddin Railway Station,DOWN,1.0,38.8,11.6,12.0
+19UP,19,36,0.9134438305709024,votes,54.0,Bhogal,E Block Jahangir Puri,UP,1.0,24.0,11.6,12.0
+205DOWN,205,25,1.0,time,52.0,Shalimar Garden,Isbt Nityanand Marg,DOWN,0.99,61.8,16.5,7.0
+205UP,205,31,0.9729257641921397,votes,50.0,Old Delhi Railway Station,New Seema Puri,UP,0.99,40.2,16.5,7.0
+206ADOWN,206A,35,0.9959090909090909,time,78.0,Kerla School,Babar Pur Extn,DOWN,0.99,104.2,30.4,6.0
+206AUP,206A,36,0.9890943575154102,time,77.0,Bhajanpura,New Kondli A-I,UP,1.0,110.4,30.4,6.0
+207DOWN,207,26,0.979381443298969,time,79.0,Bapu Dham,Shastri Park Pusta Road / Shashtri Park Crossing,DOWN,1.0,22.0,7.0,21.0
+207UP,207,20,0.9913294797687862,time,47.0,Bhajanpura,Karol Bagh Terminal,UP,1.0,22.4,7.0,21.0
+208ADOWN,208A,36,0.977205153617443,time,80.0,Karampura Terminal,Nand Nagri Depot,DOWN,0.99,93.2,25.2,7.0
+208AUP,208A,40,0.9861267341582303,time,84.0,Gagan Cinema,Shadi Pur Depot,UP,0.99,110.4,25.2,7.0
+208DOWN,208,26,0.9972067039106145,time,69.0,Moti Nagar Industrial Area,Seelam Pur Petrol Pump,DOWN,0.99,73.6,15.6,11.0
+208UP,208,30,0.9828571428571429,time,85.0,Shalimar Bagh Xing,Shadi Pur Depot,UP,0.98,47.6,15.6,11.0
+210DOWN,210,32,0.9927095990279465,time,69.0,Gagan Cinema (Wazirabad Road),Super Bazar,DOWN,1.0,61.2,18.2,10.0
+210UP,210,34,0.9621489621489622,time,90.0,Ndpo,Dr. B.R. Ambedkar Collage /Loni Road Xing,UP,1.0,54.0,18.2,10.0
+211DOWN,211,36,0.9637532885121309,time,56.0,Csd Market,Shyam Giri Mandir,DOWN,0.99,163.5,36.2,4.0
+211UP,211,33,0.9983940042826552,time,73.0,Mori Gate Terminal,New Kondali,UP,0.99,156.2,36.2,4.0
+212ADOWN,212A,47,0.9390519187358917,votes,60.0,Anand Vihar Isbt Terminal,Anand Parvat Terminal,DOWN,0.99,50.2,16.5,10.0
+212AUP,212A,34,0.900398406374502,votes,88.0,Hansraj College / Malka Ganj,Anand Vihar Isbt Main Road,UP,0.99,13.2,16.5,10.0
+212DOWN,212,21,0.9900990099009901,time,57.0,Mig Flats Loni Road,Model Basti,DOWN,0.99,25.0,22.4,8.0
+212UP,212,42,0.9923404255319149,time,103.0,Dev Nagar Khalsa College,Surya Nagar (Gazipur Road),UP,0.98,59.4,22.4,8.0
+213DOWN,213,30,0.9799764428739693,time,74.0,Gagan Cinema Xing,Zakir Hussain College,DOWN,0.99,87.3,25.0,6.0
+213UP,213,37,0.9821996185632549,votes,59.0,N.D. Rly. Station Gate No. 2,Harsh Vihar,UP,0.99,56.4,25.0,6.0
+214DOWN,214,25,0.9969040247678018,time,59.0,New Seema Puri,Darya Ganj,DOWN,0.99,126.8,36.3,4.0
+214UP,214,28,0.9879725085910653,time,68.0,Jawahar Lal Nehru Marg,Shahdara Border,UP,0.99,106.4,36.3,4.0
+215AUP,215A,14,0.975177304964539,votes,23.0,Shahbad Dairy,Dhakewala Bawana,UP,1.0,10.6,6.8,6.0
+215DOWN,215,49,0.9887640449438202,time,116.0,Bawana Jj Colony Terminal,Red Fort,DOWN,0.99,67.6,16.2,14.0
+215UP,215,52,0.9762658227848101,time,98.0,Darya Ganj Golcha Cinema,Utsav Residency Gate No 3,UP,0.99,57.9,16.2,14.0
+217DOWN,217,15,0.9963636363636363,votes,22.0,Maujpur / Babarpur Ext Maujpur Crossing,Old Delhi Railway Station (T),DOWN,0.99,12.8,4.9,9.0
+218DOWN,218,24,0.9915333960489181,time,54.0,Shadi Pur Depot,Isbt Nityanand Marg,DOWN,1.0,47.3,19.2,7.0
+218UP,218,32,0.9769858945805494,time,65.0,Babar Pur Extention,West Patel Nagar,UP,1.0,71.0,19.2,7.0
+219DOWN,219,35,0.9944954128440368,time,81.0,Hiran Kudna Crossing,Gpo Kasmeri Gate,DOWN,0.3,31.3,9.8,17.0
+219UP,219,34,0.9910714285714286,time,64.0,Ice Factory (Rani Jhansi Road),Mundka Village (Metro Station),UP,0.27,23.6,9.8,17.0
+221DOWN,221,15,1.0,time,38.0,Anand Vihar Isbt,Shyam Giri Mandir,DOWN,0.99,74.0,27.6,4.0
+221UP,221,15,1.0,time,47.0,Mori Gate Terminal,Ramprashta,UP,0.99,79.3,27.6,4.0
+227ADOWN,227A,19,0.9972279972279973,time,42.0,Sabha Pur X-Ing,Shastri Park Metro Depot,DOWN,0.99,138.6,25.8,4.0
+227AUP,227A,18,0.99644128113879,time,44.0,Old Delhi Railway Station,Khajoori Khaas,UP,1.0,71.7,25.8,4.0
+229DOWN,229,21,0.9809523809523809,time,42.0,Bank Colony,Maurice Nagar Ii,DOWN,0.99,17.6,5.5,22.0
+229UP,229,19,0.9649805447470817,time,57.0,Shastri Nagar Metro Station,Nand Nagari Depot,UP,1.0,16.6,5.5,22.0
+232DOWN,232,24,0.9935275080906149,time,74.0,Mangol Puri D - Block,Isbt Nityanand Marg,DOWN,0.01,20.4,8.2,19.0
+232UP,232,24,0.9834905660377359,votes,58.0,Old Delhi Railway Station,Mangol Puri D - Block,UP,0.01,15.8,8.2,19.0
+234ADOWN,234A,48,0.9935408103347034,time,83.0,Harsh Vihar Terminal,Raja Garden,DOWN,0.99,79.5,21.6,9.0
+234AUP,234A,47,0.9974193548387097,time,81.0,Sant Pura Tilak Nagar,Dr. B.R. Ambedkar Collage /Loni Road Xing,UP,0.99,69.3,21.6,9.0
+234DOWN,234,38,0.9992257065427798,time,98.0,Gagan Cinema Crossing,Campa Cola,DOWN,0.99,131.2,34.2,5.0
+234STLDOWN,234STL,21,0.9768211920529801,votes,32.0,Maurice Nagar Ii,Shadi Pur Depot,DOWN,1.0,12.4,7.8,7.0
+234UP,234,39,0.9538461538461539,time,68.0,Karampura Terminal,Dr. B.R. Ambedkar Collage /Loni Road Xing,UP,0.99,136.8,34.2,5.0
+235DOWN,235,28,0.9983552631578947,time,74.0,Bank Colony,Ashok Vihar Crossing,DOWN,0.99,35.3,11.2,16.0
+235UP,235,34,0.9072327044025157,votes,89.0,Shalimar Bagh Xing,Nand Nagri (T.),UP,0.98,26.6,11.2,16.0
+236DOWN,236,34,0.9923761118170267,time,99.0,Quamruddin Nagar,Dilshad Garden Gt Road,DOWN,0.94,45.0,17.2,13.0
+236EXTDOWN,236EXT,35,0.9657534246575342,time,105.0,M Block Savda Jj Colony,Ram Prastha Crossing,DOWN,0.98,30.0,14.4,17.0
+236EXTUP,236EXT,31,0.9760869565217392,time,125.0,Anand Vihar Isbt,Ghevra Savda J.J. Colony Xing,UP,0.98,30.1,14.4,17.0
+236UP,236,40,0.9555555555555556,time,98.0,Anand Vihar Isbt,Udhyog Nagar,UP,0.91,40.8,17.2,13.0
+237DOWN,237,25,0.9916743755781684,time,59.0,Vijay Park / Kabir Nagar,Jahangirpuri Metro Station Gt Road,DOWN,0.98,52.6,15.9,9.0
+237UP,237,26,0.9989200863930886,time,69.0,C Block Jahangir Puri,B Block Yamuna Vihar,UP,0.99,50.3,15.9,9.0
+241DOWN,241,19,0.9423076923076923,time,69.0,E-Block Nand Nagri,Mandi House,DOWN,0.99,31.0,6.9,30.0
+241UP,241,29,0.9886039886039886,votes,118.0,Shivaji Stadium,Nand Nagri (T.),UP,0.99,15.2,6.9,30.0
+243DOWN,243,39,1.0,time,110.0,Shalimar Garden X-Ing,Govindpuri Gali No 5,DOWN,0.98,39.3,8.2,25.0
+243UP,243,28,1.0,time,73.0,Dda Flats Kalkaji,Karkardooma Court,UP,0.97,31.2,8.2,25.0
+244DOWN,244,20,0.9700598802395209,time,79.0,Nehru Place (T.),Bhajanpura,DOWN,0.99,22.8,7.1,19.0
+244UP,244,37,0.9823943661971831,votes,38.0,Nand Nagri Depot,Nehru Place (T.),UP,0.97,23.9,7.1,19.0
+247DOWN,247,33,1.0,time,82.0,Kanjhawla Chowk,Shastri Nagar Metro Station,DOWN,0.99,91.2,25.7,8.0
+247UP,247,41,0.9701573521432447,time,104.0,K.Gate Isbt,Desu Office Karala,UP,0.99,86.2,25.7,8.0
+253DOWN,253,14,1.0,time,35.0,C-Block Yamuna Vihar,Shyam Giri Mandir,DOWN,1.0,54.6,13.9,6.0
+253UP,253,11,0.9981751824817519,time,29.0,Isbt Nityanand Marg,Bhajanpura,UP,1.0,30.9,13.9,6.0
+254ADOWN,254A,36,0.9994949494949495,time,66.0,Qamruddin Nagar Terminal,Gurudwara Nanak Sar Crossing (Signature Bridge),DOWN,0.01,104.0,17.6,9.0
+254AUP,254A,35,0.934971098265896,time,72.0,Bhajanpura,Sultan Puri Crossing,UP,0.01,81.0,17.6,9.0
+254DOWN,254,40,0.9979935794542536,time,70.0,Qamruddin Nagar Terminal,Bhajanpura (Karawal Nagar Road),DOWN,0.02,135.6,19.8,8.0
+254UP,254,45,0.9689699296225208,time,77.0,Mauj Pur Babar Pur Metro Station,Inder Enclave,UP,0.02,173.2,19.8,8.0
+255DOWN,255,17,0.8099762470308789,time,36.0,Sabha Pur X-Ing,Shyam Giri Mandir,DOWN,0.99,30.6,9.0,11.0
+255UP,255,15,0.9806763285024155,time,42.0,Mori Gate Terminal,Gamri / Garhi Maidu,UP,0.99,35.0,9.0,11.0
+258DOWN,258,25,1.0,time,45.0,Chauhan Patti (Terminal),Ludlow Castle School,DOWN,1.0,326.6,34.6,4.0
+258SPLDOWN,258SPL,30,0.9990574929311969,time,85.0,Sabhapur Village/Chauhan Patti,Jama Masjid,DOWN,1.0,94.6,12.8,14.0
+258SPLUP,258SPL,21,0.9956521739130435,time,72.0,Delhi Gate,Pusta No -1,UP,1.0,31.4,12.8,14.0
+258UP,258,24,0.999061473486626,time,43.0,Isbt Kashmere Gate Terminal,Check Post / Mcd Toll Tax,UP,0.99,165.6,34.6,4.0
+259DOWN,259,32,1.0,time,89.0,Harsh Vihar Terminal,Jahangirpuri Metro Station Gt Road,DOWN,0.98,73.3,21.3,9.0
+259UP,259,35,0.9961290322580645,time,73.0,E Block Jahangir Puri Terminal,Nand Nagari Depot,UP,0.98,70.6,21.3,9.0
+261DOWN,261,37,0.986815415821501,time,89.0,Gagan Cinema Xing,I P Power House,DOWN,0.99,49.5,16.4,13.0
+261UP,261,34,0.9635922330097088,time,98.0,Gandhi Darshan,Dr. B.R. Ambedkar College,UP,0.99,51.4,16.4,13.0
+270DOWN,270,29,0.898936170212766,votes,77.0,Dayal Chowk / Dayal Pur / Dayal Pur Water Tank,Kendriya Terminal (Pt. Pant Marg),DOWN,1.0,17.8,5.2,19.0
+274DOWN,274,28,0.9970695970695971,time,98.0,Okhla Extn Abdul Fazal Encl.,Express Building,DOWN,0.98,71.8,11.0,19.0
+274UP,274,36,0.9873303167420815,time,95.0,Babar Pur Extn,Shahin Bagh,UP,0.98,59.6,11.0,19.0
+281DOWN,281,26,0.9836867862969005,votes,52.0,New Seema Puri,Kendriya Terminal (Pt. Pant Marg),DOWN,0.99,26.6,4.9,28.0
+281UP,281,17,1.0,time,66.0,Kendriya Terminal (Pt. Pant Marg),Hargovind Enclave,UP,0.98,20.6,4.9,28.0
+306DOWN,306,19,0.9966996699669967,time,55.0,Kalyan Puri,Kalkaji Mandir,DOWN,0.99,26.2,8.4,18.0
+306UP,306,24,0.99568345323741,votes,78.0,Kalkaji Mandir,Kalyan Puri,UP,0.99,25.4,8.4,18.0
+307ADOWN,307A,21,1.0,time,36.0,Kalyan Puri Terminal,Lnjp Hospital,DOWN,0.98,76.8,16.2,7.0
+307AUP,307A,17,1.0,time,50.0,Kamala Market / Ajmeri Gate,Patparganj More / Patparganj,UP,0.99,69.3,16.2,7.0
+307DOWN,307,20,0.9988483685220729,time,42.0,Trilok Pur 27 Block/31 Block,Lnjp Hospital,DOWN,0.98,173.0,29.2,4.0
+307UP,307,19,0.9993804213135068,time,37.0,Jawahar Lal Nehru Marg,Iti Khichiri Pur,UP,0.98,184.3,29.2,4.0
+309DOWN,309,28,0.9992533598805375,time,59.0,Kalyan Puri,Karol Bagh Terminal,DOWN,0.99,181.3,33.5,5.0
+309UP,309,30,0.9935549525101763,time,79.0,Prehlad Market,Trilok Puri 13-Block,UP,0.98,140.8,33.5,5.0
+310DOWN,310,28,0.99830220713073,time,75.0,Jheel,Toda Pur,DOWN,0.98,33.0,6.6,24.0
+310UP,310,27,0.978494623655914,time,65.0,Inderpuri Ablock,Ito-Agcr,UP,0.98,39.2,6.6,24.0
+311ADOWN,311A,42,0.9813302217036173,time,98.0,Anand Vihar Isbt Terminal,Dda Flats Kalkaji,DOWN,0.98,55.6,16.6,11.0
+311AUP,311A,35,0.9886291850915983,time,69.0,Hamdard Nagar / Sangam Vihar,Gazi Pur Dda Flats,UP,0.98,71.2,16.6,11.0
+316DOWN,316,16,1.0,time,62.0,Khajoori,East Patel Nagar,DOWN,0.99,15.8,4.8,37.0
+316UP,316,26,0.9976133651551312,time,97.0,Moti Nagar Industrial Area,Khajoori,UP,0.99,25.4,4.8,37.0
+317DOWN,317,26,0.9783845278725825,time,43.0,Shahdara Terminal,Bal Bhawan Ddu Marg,DOWN,0.98,92.7,14.1,8.0
+317UP,317,23,0.998085513720485,time,46.0,Shivaji Stadium Terminal ( Connaught Place ),Swaran Cinema,UP,0.98,83.0,14.1,8.0
+319DOWN,319,33,1.0,time,76.0,Chhalera Village,Swaran Cinema,DOWN,1.0,39.2,12.4,14.0
+319UP,319,31,0.977491961414791,time,77.0,Shahdara Terminal,Noida Sector 37,UP,1.0,46.0,12.4,14.0
+320DOWN,320,16,0.9886363636363636,votes,24.0,Shahdara Terminal,Krishi Bhawan,DOWN,0.96,13.5,2.4,18.0
+323DOWN,323,18,0.9965753424657534,time,67.0,Chhalera Village,R.K. Puram More,DOWN,1.0,18.4,6.5,20.0
+323UP,323,15,0.9966442953020134,time,46.0,Satya Niketan,Maharani Bagh,UP,1.0,18.6,6.5,20.0
+333DOWN,333,34,0.8819188191881919,votes,77.0,Anand Vihar Isbt,Gtb Nagar,DOWN,0.98,13.6,5.2,40.0
+333UP,333,31,0.8464730290456431,votes,109.0,Azadpur,Anand Vihar Isbt Main Road,UP,0.99,14.4,5.2,40.0
+334DOWN,334,29,0.9885386819484241,time,74.0,Mehrauli Terminal,Supreme Court / Supreme Court Metro Station,DOWN,0.04,16.4,3.4,46.0
+334UP,334,23,1.0,time,61.0,Delhi Gate,Mmtc / Adhchini Village,UP,0.09,17.2,3.4,46.0
+335DOWN,335,41,0.9931412894375857,time,93.0,Mig Flats Loni Road,Green Park,DOWN,1.0,41.6,9.0,25.0
+335UP,335,33,0.9959349593495935,time,110.0,Hauz Khas Terminal,Shiv Mandir(Chajju Pur),UP,0.99,26.6,9.0,25.0
+336DOWN,336,33,0.9649805447470817,time,77.0,R K Puram Sec-4,Shakarpur Crossing,DOWN,0.99,49.6,7.2,22.0
+336UP,336,49,0.8934221482098251,votes,65.0,New Seema Puri,Munirka Village (T),UP,0.99,49.8,7.2,22.0
+33ADOWN,33A,42,0.9413265306122449,time,115.0,Chhalera Village,Khajuri Khas,DOWN,1.0,30.2,10.2,23.0
+33AUP,33A,45,0.9974842767295597,time,101.0,Chauhan Patti (Terminal),Telephone Exch Noida Sector-19,UP,1.0,43.9,10.2,23.0
+33DOWN,33,58,0.987599831862127,time,111.0,Noida Sec-43 Police Chowki,Vijay Park,DOWN,1.0,190.0,42.0,6.0
+33UP,33,53,0.9887133182844243,time,104.0,B Block Yamuna Vihar,Botanical Garden Metro Station,UP,1.0,238.5,42.0,6.0
+340DOWN,340,29,0.9955456570155902,time,84.0,Nand Nagari Terminal,Ps Parliament Street,DOWN,0.99,36.3,7.0,23.0
+340UP,340,33,0.9479166666666666,votes,59.0,Mandi House,New Seema Puri,UP,0.99,31.6,7.0,23.0
+344DOWN,344,21,0.9902912621359223,votes,32.0,National Art Galery,Hauz Khas,DOWN,1.0,13.6,3.4,15.0
+347DOWN,347,34,0.9831730769230769,time,84.0,Noida Sector-34,G P O Kasmiri Gate,DOWN,1.0,72.6,12.4,14.0
+347UP,347,26,0.9951690821256038,time,65.0,Guru Govind Singh University (Kashmere Gate),Noida Sec-19B,UP,1.0,39.2,12.4,14.0
+348DOWN,348,37,0.9897959183673469,time,81.0,Mayur Vihar Phase Iii (T) Paper Market,Subhash Park,DOWN,0.99,114.1,25.6,7.0
+348UP,348,28,0.9857433808553971,time,71.0,Isbt Kashmiri Gate,Kalyan Puri X-Ing / (Ghazipur Road),UP,0.99,82.4,25.6,7.0
+349DOWN,349,19,1.0,votes,25.0,Government Model School,Kendriya Terminal,DOWN,0.97,12.2,2.2,20.0
+34ADOWN,34A,50,1.0,time,107.0,Noida Sect-12 A Block,Said Ul Zeb Village,DOWN,1.0,97.3,13.7,16.0
+34AUP,34A,39,1.0,time,93.0,Said Ul Zeb Village,Noida Sec-10/21,UP,1.0,86.8,13.7,16.0
+34DOWN,34,56,0.960205739036275,time,90.0,Sector-22 Noida H Block,Lado Sarai,DOWN,1.0,160.2,38.6,5.0
+34UP,34,52,1.0,time,95.0,Mehrauli,Noida Sec-10/21,UP,1.0,186.0,38.6,5.0
+352DOWN,352,34,0.9946332737030411,time,95.0,Arjun Nagar,Inder Lok Metro Station,DOWN,0.99,32.2,10.2,20.0
+352UP,352,40,0.9940374787052811,time,88.0,Wazir Pur Jj Colony,East Azad Nagar,UP,0.99,59.8,10.2,20.0
+353DOWN,353,24,0.8257756563245824,votes,71.0,Shakarpur,Anand Parvat,DOWN,0.95,19.0,4.6,32.0
+353UP,353,27,0.9504373177842566,votes,58.0,Paharganj Dispensary,Babar Pur Extn,UP,0.99,16.0,4.6,32.0
+354DOWN,354,31,0.937007874015748,votes,84.0,Shahdara Terminal,Inder Lok Metro Station,DOWN,0.98,18.2,5.0,38.0
+354UP,354,19,0.9947916666666666,time,87.0,Shastri Nagar E Block,Swaran Cinema,UP,0.97,18.2,5.0,38.0
+356DOWN,356,32,0.9822294022617124,time,109.0,Lado Sarai Xing,Old Kondli Chowk,DOWN,0.99,38.0,5.9,41.0
+356UP,356,45,0.9484276729559749,time,110.0,Sapera Basti,Lado Sarai Xing,UP,0.98,39.2,5.9,41.0
+359DOWN,359,24,0.9972870320130223,time,68.0,Mayur Vihar Phase Iii (T) Paper Market,Statesman House,DOWN,0.99,112.0,21.8,7.0
+359UP,359,26,0.9929099876695437,time,55.0,Shivaji Stadium Terminal ( Connaught Place ),Gas Agency (Chilla Sport Complex) / Multi Gym,UP,0.98,159.2,21.8,7.0
+374DOWN,374,17,0.9534883720930233,time,75.0,Moj Pur Crossing,Pant Nagar,DOWN,0.98,17.9,4.5,21.0
+378DOWN,378,29,0.9920255183413078,time,68.0,Bharti Public School,Gurudwara Bangla Sahib,DOWN,0.98,33.7,9.8,15.0
+378UP,378,37,0.9639546858908342,votes,61.0,Ndpo,Mayur Vihar Ph Iii Paper Market,UP,0.99,39.4,9.8,15.0
+391DOWN,391,20,0.8577661431064573,time,37.0,Kalyan Puri,Mandi House,DOWN,0.99,55.5,6.8,16.0
+391UP,391,18,0.9963008631319359,time,51.0,Patel Chowk,Government Model School,UP,0.99,51.0,6.8,16.0
+392BDOWN,392B,29,0.9619377162629758,time,82.0,Forist Hospital,Air Traffic Control (Atc),DOWN,1.0,27.8,6.0,31.0
+392BUP,392B,20,0.9927536231884058,time,82.0,Cargo Terminal,Rajni Gandha Chowk,UP,1.0,16.8,6.0,31.0
+392DOWN,392,37,0.9982616253802694,time,81.0,Neelkanth Apptt Sec-62,Hyatt Hotel,DOWN,1.0,96.9,16.2,11.0
+392UP,392,37,0.9835526315789473,time,75.0,Satya Niketan,U-Flex / Royal Tower,UP,1.0,110.2,16.2,11.0
+39ADOWN,39A,35,0.9955106621773289,time,95.0,Tri Nagar Jai Mata Market Terminal,Jagriti Enclave,DOWN,0.99,47.7,13.6,15.0
+39AUP,39A,29,0.9829302987197724,time,85.0,Dayanand Vihar,Sarai Rohella,UP,0.99,48.6,13.6,15.0
+39DOWN,39,44,0.9883720930232558,time,91.0,A 1 Keshav Puram,Rashid Market,DOWN,0.99,156.7,32.3,7.0
+39UP,39,42,0.9787778061876757,time,106.0,Jheel Terminal,C 8 Keshav Puram,UP,0.98,175.2,32.3,7.0
+400DOWN,400,16,0.9363636363636364,time,40.0,Shahin Bagh,Andrews Ganj,DOWN,0.98,16.7,2.0,30.0
+402DOWN,402,31,0.9857199523998413,time,82.0,Okhla Extn Abdul Fazal Encl.,Subhash Park,DOWN,0.99,111.8,18.4,9.0
+402UP,402,28,0.9917081260364843,time,70.0,Ggs Ip University,Batla House,UP,0.98,69.6,18.4,9.0
+403DOWN,403,31,0.9554140127388535,time,67.0,Okhla Extn Abdul Fazal Encl.,Jama Masjid,DOWN,0.99,105.4,19.5,8.0
+403UP,403,32,0.9724430312665607,time,64.0,Old Delhi Railway Station,Ansari Stadium,UP,0.99,85.5,19.5,8.0
+405DOWN,405,37,0.9863729699458652,time,70.0,Badarpur Border,Golcha Cinema,DOWN,0.99,245.2,56.5,4.0
+405UP,405,41,0.9995933306222041,time,77.0,Isbt Nityanand Marg,Jaitpur Xing,UP,0.99,289.3,56.5,4.0
+408DOWN,408,33,1.0,time,65.0,Nizamuddin Railway Station,Moti Nagar Market,DOWN,0.99,41.4,10.8,15.0
+408UP,408,39,0.9793650793650793,time,78.0,A-Blk Raghubir Nagar,Bharti Nagar,UP,0.99,40.6,10.8,15.0
+410DOWN,410,38,0.9837733773377337,time,75.0,Delhi Jal Board Lajpat Nagar,Moti Nagar,DOWN,0.99,160.8,29.4,7.0
+410UP,410,50,0.9964883846569422,time,100.0,Subhash Nagar Crossing / Mukherji Park,Sri Niwaspuri / Pg Dav College,UP,0.99,161.8,29.4,7.0
+411DOWN,411,42,0.9948453608247423,time,96.0,Said Ul Zeb Village,Subhash Park,DOWN,0.99,108.5,17.4,13.0
+411UP,411,51,0.9944055944055944,time,111.0,Gpo Kasmeri Gate,Asian Market,UP,0.99,110.0,17.4,13.0
+412DOWN,412,27,0.9693877551020408,votes,51.0,Bhajanpura,Nehru Place Terminal,DOWN,1.0,14.7,4.4,16.0
+413DOWN,413,25,0.9863981628687511,time,51.0,Mehrauli Terminal,Nehru Nagar,DOWN,0.99,260.8,22.8,5.0
+413UP,413,25,0.9984420209214333,time,51.0,Nizamuddin Railway Station,Qutab,UP,0.98,227.3,22.8,5.0
+418ADOWN,418A,50,0.9793906810035843,time,103.0,Badarpur Border (T),Kanti Nagar Extension,DOWN,0.99,102.8,20.6,10.0
+418AUP,418A,57,0.998630605956864,time,86.0,Shahdara (Shyam Lal College),Jaitpur Crossing,UP,0.99,159.4,20.6,10.0
+419ADOWN,419A,25,0.9983810037776578,time,57.0,Saidul-A-Jab / Saket Metro Station,Supreme Court / Pragati Maidan Metro Station,DOWN,0.98,82.0,13.3,10.0
+419AUP,419A,16,0.9673202614379085,time,60.0,Ito,Khanpur Ambedkar Nagar,UP,0.98,13.2,13.3,10.0
+419DOWN,419,36,0.9943830404058707,time,60.0,Said Ul Zeb Village,Darya Ganj,DOWN,0.99,230.2,37.6,4.0
+419UP,419,41,0.9859390693003013,time,80.0,Kashmere Gate City (T),Said Ul Zeb Village,UP,0.99,247.4,37.6,4.0
+422ADOWN,422A,20,1.0,time,56.0,Badarpur Border (T),Indraprastha Depot,DOWN,1.0,23.0,6.2,23.0
+422AUP,422A,23,0.9904761904761905,time,65.0,Ito Ring Road,Badarpur Village,UP,0.99,23.2,6.2,23.0
+422DOWN,422,25,0.9937027707808564,time,54.0,Badarpur Border (T),Ip Power Station / Ito Ring Road,DOWN,0.99,77.8,15.8,9.0
+422UP,422,26,0.9908376963350786,time,67.0,Isbt Kashmere Gate (Orr),Badarpur Village,UP,0.99,60.6,15.8,9.0
+423DOWN,423,32,0.9977002683020314,time,68.0,Lado Sarai Firni Road,Delhi Gate,DOWN,0.99,112.2,11.2,14.0
+423UP,423,34,0.9988399071925754,time,68.0,Isbt Ring Road,Said Ul Zeb Village,UP,0.99,74.9,11.2,14.0
+424DOWN,424,34,0.9949452401010952,time,63.0,Institutional Area Vasant Kunj (Isid),Os Communications,DOWN,0.99,132.4,14.2,10.0
+424UP,424,31,0.96,time,54.0,Nehru Place Terminal,Mandella Marg,UP,0.99,101.7,14.2,10.0
+425ADOWN,425A,28,0.9775967413441955,votes,52.0,Hamdard Nagar / Sangam Vihar,Delhi Gate / Ambedkar Stadium,DOWN,0.95,20.4,5.6,24.0
+425AUP,425A,18,1.0,time,64.0,Delhi Gate,Tughlaqabad Extn,UP,0.96,18.0,5.6,24.0
+425CLDOWN,425CL,20,0.9939393939393939,votes,25.0,Hamdard Nagar / Sangam Vihar,Kashmere Gate City Bus Terminal,DOWN,0.98,14.0,5.9,8.0
+425DOWN,425,30,0.9993084370677732,time,61.0,Hamdard Nagar,Delhi Gate,DOWN,0.99,189.0,33.9,5.0
+425UP,425,36,0.9971301020408163,time,85.0,Kashmere Gate City Bus Terminal,Guru Ravidass Marg,UP,0.99,205.0,33.9,5.0
+427DOWN,427,33,0.9989703459637562,time,59.0,Mehrauli Terminal,Ashram (Hari Nagar),DOWN,0.99,402.6,50.2,4.0
+427UP,427,33,0.9993949661181026,time,67.0,Nizamuddin Railway Station,Mehrauli / Qutub Minar,UP,0.99,355.4,50.2,4.0
+428DOWN,428,32,0.9982920580700256,time,58.0,Aya Nagar Terminal,Pumposh Enclave,DOWN,0.99,168.2,22.0,6.0
+428UP,428,30,0.9760066188637617,time,61.0,Nehru Place Terminal,Air Station Ghitorni,UP,0.99,157.8,22.0,6.0
+429DOWN,429,37,0.9947898575894408,time,69.0,Dda Market Kalkaji,Gpo K. Gate,DOWN,0.99,131.6,27.6,6.0
+429UP,429,34,0.9564838990426457,time,66.0,Kashmere Gate City Bus Terminal,Punj Sons,UP,0.99,114.5,27.6,6.0
+433ADOWN,433A,25,0.996996996996997,time,79.0,Central Workshop Ii,Kidwai Nagar,DOWN,0.99,55.7,13.4,11.0
+433ASTL-KJDDOWN,433ASTL-KJD,23,0.9858356940509915,time,54.0,Majeedia Hospital,Aiims,DOWN,1.0,15.4,6.6,19.0
+433ASTL-KJDUP,433ASTL-KJD,20,1.0,time,54.0,Safdurjung Terminal,Dda Kalkaji Extension / Kalkaji Extension Pocket A-13,UP,0.99,19.2,6.6,19.0
+433AUP,433A,22,0.964035964035964,time,45.0,Ina Metro Station( Dilli Haat),Desu Office (Bses) Power House,UP,0.99,43.1,13.4,11.0
+433BDOWN,433B,33,0.9980719794344473,time,71.0,Badarpur Border (T),Rail Bhawan Metro Station / Krishi Bhawan / Central Secretariat Metro Station,DOWN,0.99,65.4,12.7,14.0
+433BUP,433B,37,0.9986431478968792,time,83.0,New Delhi Railway Station Gate 2,Surajkund Crossing,UP,0.99,75.8,12.7,14.0
+433DOWN,433,38,0.9954930868535635,time,87.0,Badarpur Border (T),Regal / Palika Kendra,DOWN,1.0,540.0,87.8,4.0
+433STL-KJDUP,433STL-KJD,10,0.995049504950495,time,19.0,Kalkaji Depot,Pul Pehladpur (Badarpur),UP,1.0,22.3,14.0,4.0
+433UP,433,45,0.9994879672299027,time,90.0,New Delhi Railway Station Gate 2,Badarpur Jaitpur Crossing,UP,0.99,519.8,87.8,4.0
+434DOWN,434,48,0.9981163666806195,time,93.0,Bhatti Mines,Sarita Vihar K Block,DOWN,0.99,194.5,31.6,6.0
+434UP,434,42,0.9978199258774798,time,87.0,Jasola Vihar,Rs Satsang,UP,0.99,202.9,31.6,6.0
+440ADOWN,440A,38,0.992741935483871,time,79.0,Badarpur Border (T),Scindia House,DOWN,0.99,97.2,15.6,11.0
+440AUP,440A,38,1.0,time,70.0,New Delhi Railway Station Gate 2,Lal Kuan,UP,0.99,96.2,15.6,11.0
+440DOWN,440,44,0.9992674887071176,time,90.0,Saket Metro Station,Scindia House,DOWN,0.99,323.5,43.8,5.0
+440UP,440,51,0.9964624131396084,time,108.0,New Delhi Railway Station Gate 2,Saket Metro Sation / Said-Ul-Ajaib,UP,0.99,307.0,43.8,5.0
+442DOWN,442,41,0.9986695050558808,time,89.0,Nehru Place Terminal,Prem Bari Pull,DOWN,0.99,164.3,43.1,5.0
+442UP,442,40,0.9994306860233418,time,87.0,Azadpur Metro Station,Sant Nagar,UP,0.99,164.0,43.1,5.0
+443DOWN,443,44,0.9969992498124531,time,94.0,Badarpur Border,Radhey Puri,DOWN,1.0,71.2,10.8,20.0
+443UP,443,55,0.9895366218236173,time,98.0,Shahdara Terminal,Onida Factory,UP,1.0,94.2,10.8,20.0
+445ADOWN,445A,31,0.9941690962099126,time,57.0,Hamdard Nagar / Sangam Vihar,Zoo,DOWN,0.99,53.4,10.8,15.0
+445AUP,445A,35,0.9972826086956522,time,88.0,New Delhi Railway Station Gate 2,Tara Apartment,UP,0.99,54.0,10.8,15.0
+447DOWN,447,26,0.9674267100977199,votes,53.0,Nizamuddin Railway Station,Bhalaswa Crossing / Bhalaswa Golf Course,DOWN,1.0,11.9,5.1,20.0
+447UP,447,24,0.844311377245509,votes,29.0,Gandhi Vihar,Nizamuddin Railway Station,UP,0.97,14.6,5.1,20.0
+448BDOWN,448B,31,0.9989680082559339,time,85.0,Ambedkar Nagar Terminal,Punjabi Bagh,DOWN,0.99,41.1,11.9,12.0
+448BUP,448B,24,0.9419354838709677,votes,32.0,Moti Bagh,Ambedkar Nagar Terminal,UP,0.97,15.0,11.9,12.0
+448DOWN,448,50,0.984248018460921,time,86.0,Hamdard Nagar,Maya Puri Depot,DOWN,0.99,391.6,63.4,4.0
+448UP,448,52,0.9991073705687324,time,103.0,Punjabi Bagh Club,Batra Hospital,UP,0.99,347.2,63.4,4.0
+450DOWN,450,21,1.0,time,57.0,Jal Vihar Terminal,Chitra Gupta Rd.,DOWN,0.99,63.4,8.6,15.0
+450UP,450,27,0.9927338782924614,time,53.0,Anand Parvat,Pt College Kotla,UP,0.99,52.8,8.6,15.0
+456DOWN,456,36,0.9753320683111955,time,74.0,Ambedkar Nagar Depot,Shivaji Park,DOWN,0.99,50.0,7.6,27.0
+456UP,456,47,0.9734278122232064,time,110.0,New Delhi Railway Station Gate 2,Madangir Dda Flats,UP,1.0,55.8,7.6,27.0
+460DOWN,460,37,0.9984691924990432,time,62.0,Badarpur Border,Krishi Bhawan,DOWN,0.99,337.7,48.8,4.0
+460UP,460,41,0.9992242048099301,time,69.0,Minto Road Terminal,Badarpur,UP,0.99,339.2,48.8,4.0
+463DOWN,463,35,0.9892031958540272,time,77.0,Mehrauli,Unani Research Center,DOWN,0.99,374.2,48.9,4.0
+463UP,463,37,0.99705485335624,time,77.0,Okhla Extn Abdul Fazal Encl.,Lado Sarai,UP,0.99,336.9,48.9,4.0
+465ADOWN,465A,22,0.9800884955752213,time,66.0,Mithapur Chowk,Hauz Khas,DOWN,1.0,21.2,5.0,30.0
+465AUP,465A,23,0.9641255605381166,time,66.0,Sarojini Nagar Police Station,Badarpur,UP,0.99,17.8,5.0,30.0
+465DOWN,465,24,0.8440366972477065,votes,55.0,Madanpur Khadar Jj Colony,Safdarjung Terminal,DOWN,1.0,14.0,3.7,34.0
+465UP,465,24,0.892128279883382,votes,51.0,S.J. Hospital,Madanpur Khadar Jj Colony,UP,0.99,15.0,3.7,34.0
+469DOWN,469,50,0.9982893799002138,time,104.0,Saket Xing,Hasan Pur Village,DOWN,0.99,298.6,44.3,5.0
+469UP,469,54,0.9998778700537372,time,111.0,Isbt Anand Vihar,Said Ul Zeb Village,UP,0.99,321.8,44.3,5.0
+473DOWN,473,46,0.99791037845368,time,84.0,Badarpur Border,Ram Prastha Crossing,DOWN,0.99,382.0,52.0,4.0
+473UP,473,45,0.9957189253026277,time,82.0,Yamuna Sports Complex,Jaitpur Xing,UP,0.99,359.7,52.0,4.0
+479DOWN,479,42,0.9989041095890411,time,86.0,Badarpur Border,Rajdhani College Raja Garden,DOWN,0.99,222.4,38.8,5.0
+479UP,479,43,0.9982398793060095,time,87.0,Punjabi Bagh Club,Power House Badarpur,UP,0.99,205.8,38.8,5.0
+47ADOWN,47A,46,0.9558521560574949,time,98.0,Esi Hospital Okhla,Loha Mandi,DOWN,0.99,49.5,8.8,24.0
+47AUP,47A,46,0.9918809201623816,time,95.0,Inder Puri,Clal Chowk,UP,1.0,40.2,8.8,24.0
+492UP,492,25,0.9962264150943396,votes,22.0,Modi Mills,Sarai Kale Khan Isbt,UP,1.0,12.4,2.6,16.0
+500UP,500,22,0.984375,time,76.0,Shivaji Park,Begam Pur,UP,0.98,16.6,3.1,31.0
+502DOWN,502,33,0.998021978021978,time,83.0,Mehrauli Terminal,Gpo K. Gate,DOWN,0.99,371.0,44.5,4.0
+502UP,502,36,0.9969072164948454,time,77.0,Kashmere Gate City (T),Tb Hospital,UP,0.99,361.9,44.5,4.0
+505DOWN,505,26,0.9992779783393502,time,54.0,Mehrauli Terminal,Janpath Market,DOWN,0.99,124.6,17.0,8.0
+505UP,505,28,0.9968982630272953,time,64.0,Vivekanand Marg,Pts,UP,0.99,125.4,17.0,8.0
+507DOWN,507,40,0.9940818102697998,time,100.0,Okhla Extension (Abul Fazl Encalve),South Moti Bagh,DOWN,0.03,230.0,19.6,10.0
+507UP,507,39,0.996191282268303,time,69.0,Nanak Pura Gurudwara Moti Bagh,Ansari Auditorium,UP,0.03,196.4,19.6,10.0
+511ADOWN,511A,44,0.9998491590617694,time,89.0,Satya Niketan,Badarpur Jaitpur Crossing,DOWN,0.69,629.2,58.2,4.0
+511ASTLDOWN,511ASTL,8,1.0,votes,18.0,Tehkhand Depot Dtc,Badarpur Border (T),DOWN,0.97,12.2,9.5,4.0
+511AUP,511A,46,0.9872287522603979,time,78.0,Badarpur Border (T),Satya Niketan,UP,0.72,708.6,58.2,4.0
+511DOWN,511,34,0.9319444444444445,time,75.0,R.K. Puram Sec-12,Tara Apartment,DOWN,0.54,84.6,14.0,12.0
+511EDOWN,511E,26,0.9283276450511946,votes,69.0,Satya Niketan (Orr),Nehru Place Terminal,DOWN,0.15,23.6,2.9,46.0
+511EUP,511E,24,0.9363449691991786,votes,45.0,Nehru Place,Arsd College ( Dhaula Kuan),UP,0.2,20.4,2.9,46.0
+511UP,511,37,0.9813532232285562,time,74.0,Badarpur Border (T),Mohan Singh Market / R K Puram Sec-6,UP,0.5,92.2,14.0,12.0
+516DOWN,516,31,0.9967511371020142,time,70.0,Dera Village,Green Park,DOWN,0.98,65.6,11.2,15.0
+516UP,516,29,0.995221027479092,time,73.0,Ina Cly,Dera More,UP,0.98,48.2,11.2,15.0
+517DOWN,517,17,1.0,time,53.0,Aya Nagar,Green Park,DOWN,0.99,13.5,2.0,60.0
+517UP,517,20,0.9910313901345291,time,62.0,Kidwai Nagar,Ghitorani Village,UP,0.98,11.6,2.0,60.0
+518DOWN,518,23,0.9947368421052631,time,82.0,Janak Puri District Centre,Lajpat Nagar (Ring Road),DOWN,0.99,16.8,6.6,29.0
+518UP,518,29,0.980246913580247,time,87.0,Nizamuddin Railway Station,Tilak Nagar Crossing (Najafgarh Road),UP,0.99,25.0,6.6,29.0
+519DOWN,519,24,0.9853528628495339,time,63.0,Sardar Patel Vidya Niketan,Green Park,DOWN,0.99,81.1,12.3,13.0
+519UP,519,28,0.9931662870159453,time,73.0,Vikas Sadan,Pahari Mandir,UP,0.99,73.4,12.3,13.0
+521DOWN,521,35,0.8932225063938619,time,69.0,Pushp Bhawan,West Patel Nagar,DOWN,0.99,65.3,10.0,18.0
+521UP,521,43,0.999231950844854,time,95.0,Moti Nagar,Seikh Sarai Ph-Ii,UP,0.99,73.8,10.0,18.0
+522ADOWN,522A,50,0.999236641221374,time,95.0,Hamdrad Nagar,Punchkuain Road / Banwari Lal Hosp.,DOWN,0.99,57.4,11.4,20.0
+522AUP,522A,55,0.9771473601260835,time,109.0,Rajinder Nagar Market,Rajinder Nagar R-Block,UP,0.98,64.4,11.4,20.0
+522BDOWN2,522BDOWN2,30,0.9992997198879552,time,48.0,Inder Puri Krishi Kunj,National Muesum,,0.44,65.0,12.5,5.0
+522BUP,522B,27,1.0,time,57.0,Lodhi Colony,Monitoringandreceiving Station,UP,0.48,72.6,15.6,5.0
+522DOWN,522,54,0.9990327380952381,time,98.0,Inder Puri,Saket Metro Sation / Said-Ul-Ajaib,DOWN,0.67,541.6,64.9,4.0
+522UP,522,50,0.9798642867679599,time,94.0,Saket Metro Station,Inderpuri Ablock,UP,0.7,580.8,64.9,4.0
+523ADOWN,523A,28,0.9598997493734336,votes,52.0,Rajpur Crossing,Satya Niketan,DOWN,0.04,15.3,4.7,19.0
+523AUP,523A,34,0.9552238805970149,votes,16.0,South Moti Bagh,Chhatarpur Ext / Nanda Hospital,UP,0.07,34.4,4.7,19.0
+523DOWN,523,44,0.9992743105950653,time,84.0,Bhatti Mines,Nanak Pura Gurudwara,DOWN,0.01,296.8,23.4,8.0
+523UP,523,45,0.9805481874447391,time,83.0,Satya Niketan,Vyas Bhawan,UP,0.02,287.3,23.4,8.0
+525ASTL-ANDDOWN,525ASTL-AND,14,1.0,time,45.0,Mehrauli Terminal,Batra Hospital / Satya Narayan Mandir,DOWN,1.0,50.7,8.2,10.0
+525ASTL-ANDUP,525ASTL-AND,18,0.9984848484848485,votes,16.0,Dr Karni Singh Shooting Rang,Mehrauli Terminal,UP,0.98,24.8,8.2,10.0
+525DOWN,525,36,1.0,time,70.0,Aya Nagar Terminal,Badarpur M B Road / Rajiv Gandhi Stadium,DOWN,0.99,296.0,34.2,5.0
+525STLDOWN,525STL,26,1.0,time,56.0,Mehrauli Terminal,Badarpur Road,DOWN,1.0,510.6,54.2,4.0
+525STLUP,525STL,27,0.9994696367011403,time,49.0,Badarpur Border (T),Lado Sarai Crossing,UP,1.0,498.7,54.2,4.0
+525UP,525,34,0.9990936555891239,time,74.0,Badarpur Border (T),Ghitorni School,UP,0.99,277.8,34.2,5.0
+534ADOWN,534A,65,0.9905154639175258,time,129.0,Air Traffic Control (Atc),Mandawali Government School,DOWN,0.99,196.2,43.4,6.0
+534AUP,534A,77,0.9695624603677869,time,125.0,Anand Vihar Isbt Main Road,Santoor Hotel,UP,0.99,263.4,43.4,6.0
+534DOWN,534,55,0.9966707021791767,time,93.0,Mehrauli Terminal,Gazipur Depot,DOWN,0.99,558.0,73.1,4.0
+534UP,534,58,0.9891263592050994,time,101.0,Isbt Anand Vihar,Tb Hospital,UP,0.99,499.7,73.1,4.0
+539ADOWN,539A,47,0.9977941176470588,time,101.0,Jharonda X-Ing,Qutab Metro Station,DOWN,0.98,177.6,27.0,9.0
+539AUP,539A,56,0.998338410412628,time,121.0,Lado Sarai Firni Road (T),Jharoda Village,UP,0.98,141.8,27.0,9.0
+539DOWN,539,69,0.9975895694094445,time,131.0,Qamruddin Nagar Terminal,Lado Sarai Crossing (Aurobindo Marg),DOWN,0.04,426.4,33.4,9.0
+539UP,539,67,0.9905347384855582,time,136.0,Qutub Minar,Qamruddin Nagar Crossing,UP,0.04,448.0,33.4,9.0
+540DOWN,540,29,1.0,time,57.0,Tara Apartment Ternimal G.K.-2,Udhyog Bhawan,DOWN,0.99,90.1,11.5,12.0
+540UP,540,30,0.9955156950672646,time,56.0,Kendriya Terminal,Greater Kailash Ii E Block,UP,1.0,67.9,11.5,12.0
+543ADOWN,543A,43,0.9939577039274925,time,97.0,Kapashera Border,Gazi Pur Village,DOWN,0.99,351.4,60.2,4.0
+543AUP,543A,48,0.9806267806267807,time,105.0,Anand Vihar Main Road,Samalkha Xing,UP,0.99,382.4,60.2,4.0
+543DOWN,543,23,0.9292307692307692,votes,12.0,Kidwai Nagar,Anand Vihar Isbt,DOWN,0.99,23.7,2.5,28.0
+543UP,543,21,1.0,votes,39.0,Anand Vihar Main Road,Aiims,UP,0.99,11.8,2.5,28.0
+544DOWN,544,43,0.9912274342057565,time,89.0,Badarpur Border (T),Mohammadpur Village,DOWN,0.99,514.6,54.7,4.0
+544UP,544,46,0.9986364589888819,time,90.0,R K Puram Sec-4,Badarpur M B Road / Rajiv Gandhi Stadium,UP,1.0,383.0,54.7,4.0
+546ADOWN,546A,28,0.9952153110047847,time,51.0,Batra Hospital / Satya Narayan Mandir,South Moti Bagh,DOWN,0.98,18.7,5.4,25.0
+546AUP,546A,29,0.997907949790795,time,63.0,Satya Niketan (Orr),Khanpur Extension / Devli Xing,UP,0.99,25.0,5.4,25.0
+546DOWN,546,58,0.992056856187291,time,95.0,Hamdard Nagar / Sangam Vihar,Tilak Nagar Terminal,DOWN,0.99,106.7,17.2,13.0
+546STL-GHD-IIDOWN,546STL-GHD-II,37,0.9948051948051948,time,62.0,Ghuman Hera /Ghuman Hera Dtc Depot Crossing,Prem Nagar,DOWN,0.99,79.2,54.7,4.0
+546STL-GHD-IIUP,546STL-GHD-II,24,0.9246298788694481,time,49.0,Uttam Nagar Terminal / Uttam Nagar East Metro Station,Khera Village,UP,0.99,70.4,54.7,4.0
+546UP,546,53,0.9924480805538074,time,110.0,Janak Puri District Centre,Khanpur Extension / Devli Xing,UP,0.99,81.4,17.2,13.0
+548DOWN,548,38,0.9942627653471027,time,69.0,Hamdard Nagar / Sangam Vihar,Regal / Palika Kendra,DOWN,0.99,142.0,24.9,7.0
+548UP,548,40,0.9975298476739399,time,87.0,Minto Road Terminal,Khanpur Extension / Devali Road Xing,UP,0.99,143.2,24.9,7.0
+567ADOWN,567A,33,1.0,time,101.0,Swarn Park,Kailash Colony,DOWN,0.05,22.6,5.0,50.0
+567AUP,567A,31,1.0,time,127.0,Paras,Sultan Puri Crossing,UP,0.06,23.1,5.0,50.0
+567BSTLDOWN,567BSTL,36,1.0,time,64.0,Ghuman Hera Village Main Road,Qamruddin Nagar Crossing,DOWN,0.99,116.9,50.6,4.0
+567BSTLUP,567BSTL,30,0.9983961507618284,time,77.0,Qamruddin Nagar Terminal,Pandwala Crossing,UP,1.0,129.0,50.6,4.0
+567DOWN,567,53,0.9971428571428571,time,108.0,Qumruddin Nagar,Maharani Bagh,DOWN,0.98,96.7,28.0,8.0
+567UP,567,42,0.9865591397849462,time,97.0,Sarai Kale Khan Isbt,Peera Garhi Metro Station,UP,0.97,77.7,28.0,8.0
+568DOWN,568,35,0.9905183312262958,time,78.0,Mangol Puri E Block,Kidwai Nagar,DOWN,0.33,81.0,20.0,9.0
+568UP,568,32,0.9958368026644463,time,83.0,Safdarjung Terminal,New Multan Nagar,UP,0.42,71.7,20.0,9.0
+569ADOWN,569A,20,0.9577464788732394,time,37.0,Sultan Puri (T),Punjabi Bagh Terminal,DOWN,0.82,15.0,9.4,12.0
+569AUP,569A,16,0.9421487603305785,time,54.0,Maya Puri Crossing (Ring Road),B Block Mangol Puri,UP,0.9,10.6,9.4,12.0
+569DOWN,569,43,0.9977095739807604,time,74.0,Sultanpuri D Block,S.J. Hospital,DOWN,0.25,126.8,19.3,10.0
+569UP,569,39,0.9785290086797624,time,102.0,Ina Colony,Mangol Puri S Block,UP,0.23,112.0,19.3,10.0
+578ADOWN,578A,23,0.9416195856873822,votes,28.0,Kapashera Border,Safdarjung Terminal,DOWN,0.94,21.4,4.8,12.0
+578AUP,578A,23,0.9727891156462585,votes,11.0,S.J. Hospital,Kapashera Border,UP,0.97,23.6,4.8,12.0
+578DOWN,578,52,0.9904032084795531,time,89.0,Dichau Kalan Depot,Raj Nagar,DOWN,0.99,565.1,67.1,4.0
+578UP,578,53,0.9353743760399335,time,98.0,Ina Colony,Jharoda More,UP,0.99,590.4,67.1,4.0
+580DOWN,580,24,0.9770992366412213,votes,50.0,Pushpa Bhawan,Lodhi Estate,DOWN,1.0,16.8,2.2,32.0
+588DOWN,588,29,0.9978494623655914,time,60.0,Vikas Puri Crossing,Sj Airport,DOWN,0.91,109.2,14.0,11.0
+588LSTLDOWN,588LSTL,8,1.0,time,18.0,Lajwanti Garden (Carriappa Marg),Dhaula Kuan,DOWN,0.02,34.0,11.6,4.0
+588UP,588,32,0.9880404783808647,time,68.0,Sunehari Pulla Depot / Jawahar Lal Nehru Stadium Terminal,Janak Puri Check Post,UP,0.96,115.8,14.0,11.0
+604DOWN,604,42,0.9998070987654321,time,82.0,Chhatarpur Metro Station,Shivaji Park,DOWN,1.0,219.8,37.3,5.0
+604UP,604,43,0.9995688726018539,time,71.0,New Delhi Railway Station Gate 2,Vasant Kunj Sec A Pkt B/C,UP,1.0,227.4,37.3,5.0
+605BDOWN,605B,26,0.9933862433862434,time,47.0,Verma Farm,Kidwai Nagar,DOWN,0.99,34.8,3.4,36.0
+605BUP,605B,18,0.9875518672199171,time,54.0,S.J. Terminal,Mother Dairy Kishan Garh,UP,0.99,26.4,3.4,36.0
+605DOWN,605,32,0.9425287356321839,time,73.0,Verma Farm Isic Hospital,Delhi Gate,DOWN,0.07,31.2,6.3,28.0
+605UP,605,31,0.9710391822827938,time,84.0,Ggs University Isbt Kashmere Gate,Kathuria Public School (Sai Darbar Mandir),UP,0.08,31.6,6.3,28.0
+610AUP,610A,37,0.9929824561403509,time,77.0,Anand Parvat,Shopping Mall Hill Area,UP,1.0,31.1,8.6,11.0
+610DOWN,610,49,0.9980590899288333,time,90.0,Rk Puram Sec 1,B 4 Keshav Puram,DOWN,0.99,210.8,28.6,7.0
+610UP,610,54,0.9925013390465989,time,92.0,Britania,Mohammed Pur,UP,0.99,196.6,28.6,7.0
+611BDOWN,611B,22,0.9747292418772563,votes,47.0,Sarai Kale Khan Isbt,Mayur Vihar Phase Iii (T) Paper Market,DOWN,0.99,10.4,8.2,15.0
+611BUP,611B,23,0.9911504424778761,votes,59.0,Kerala School,Lajpat Nagar (Ring Road),UP,0.99,14.4,8.2,15.0
+611DOWN,611,34,0.9960127591706539,time,79.0,Satya Niketan,Samas Pur Village,DOWN,0.99,71.8,20.4,10.0
+611UP,611,49,0.9912008281573499,time,101.0,Csd Market,Mohan Singh Market,UP,0.99,79.0,20.4,10.0
+620UP,620,13,0.9923664122137404,time,41.0,Super Bazar Con Place,Vasant Vihar Depot,UP,1.0,12.8,2.0,30.0
+621DOWN,621,23,0.9590443686006825,time,73.0,Jnu Xing,Supreme Court,DOWN,0.99,20.6,5.3,30.0
+621UP,621,25,0.9933184855233853,time,64.0,Isbt Ring Road,Mohammad Pur,UP,1.0,27.8,5.3,30.0
+623DOWN,623,60,0.9990075848869355,time,122.0,Isic Hospital,Krishna Nagar A Block,DOWN,0.99,633.0,68.6,4.0
+623UP,623,70,0.9758393473486037,time,103.0,Shahdara Terminal,Kathuria Public School (Sai Darbar Mandir),UP,0.99,648.4,68.6,4.0
+628DOWN,628,19,0.884393063583815,time,73.0,Uttam Nagar Terminal (Out Gate),S.J. Hospital,DOWN,0.99,11.8,3.4,27.0
+628LSTLDOWN,628LSTL,29,0.9808481532147743,votes,40.0,Krishna Nagar / Gopal Nagar,Uttam Nagar Terminal (Out Gate),DOWN,0.98,27.4,15.6,6.0
+628LSTLUP,628LSTL,20,0.9718670076726342,votes,29.0,Uttam Nagar Bus Terminal (In Gate) Uttam Nagar East Metro Station,Surhera Crossing,UP,0.99,15.0,15.6,6.0
+628STLDOWN,628STL,32,1.0,time,64.0,Jhuljhuli Check Post / Ghumanhera Crossing,Nawada,DOWN,0.98,105.4,44.6,4.0
+628STLUP,628STL,27,0.9953617810760668,time,73.0,Uttam Nagar Bus Terminal (In Gate) Uttam Nagar East Metro Station,Mitraon School,UP,0.97,63.8,44.6,4.0
+680DOWN,680,47,0.9958606416005519,time,72.0,Ps Madan Gir,Udyog Bhawan,DOWN,1.0,140.8,14.9,12.0
+680UP,680,49,0.9933929265448892,time,88.0,Kendriya Terminal (Pt. Pant Marg),Asian Market,UP,0.99,123.5,14.9,12.0
+701DOWN,701,36,0.9963235294117647,time,143.0,Dk Depot,Narela,DOWN,0.99,25.8,7.8,25.0
+701UP,701,28,0.9914040114613181,votes,33.0,Nangloi,Najafgarh Health Center,UP,0.97,15.9,7.8,25.0
+702DOWN,702,24,0.9628571428571429,votes,61.0,Shahdara Terminal,Nehru Nagar,DOWN,0.98,14.2,3.0,27.0
+703DOWN,703,24,0.8705357142857143,time,89.0,Tilak Pull,Ito-Agcr,DOWN,0.07,20.8,2.9,60.0
+703UP,703,26,0.9601990049751243,time,88.0,Khureji,C2B Janak Puri,UP,0.06,17.1,2.9,60.0
+706ADOWN,706A,21,1.0,time,59.0,Kapashera Border,Talkatora Stadium,DOWN,0.01,144.8,27.1,5.0
+706AUP,706A,24,0.9958881578947368,time,58.0,Kendriya Terminal / Gurudwara Rakab Gunj,Kapashera Crossing,UP,0.0,152.1,27.1,5.0
+706DOWN,706,40,0.9908675799086758,time,78.0,Kapashera Border,Rajghat Ring Road,DOWN,0.01,292.3,29.8,6.0
+706STLUP,706STL,7,1.0,time,15.0,Bharthal Under Pass,Kapashera Crossing,UP,0.01,27.8,12.0,4.0
+706UP,706,46,0.9948892674616695,time,95.0,Isbt Nityanand Marg,Kapashera Crossing,UP,0.01,249.2,29.8,6.0
+708DOWN,708,53,0.9885449670972459,time,113.0,Jai Vihar,Narela,DOWN,0.97,187.9,52.5,5.0
+708UP,708,60,0.983054892601432,time,145.0,Narela A-9 Terminal,Jharoda Xing,UP,0.93,178.9,52.5,5.0
+709DOWN,709,36,0.9968017057569296,time,88.0,Sultan Puri (T),Aerocity Metro Station,DOWN,0.99,53.8,14.5,13.0
+709UP,709,27,0.9908592321755028,time,80.0,Igi Airport Terminal 2 (Air India Office),B Block Mangol Puri,UP,0.99,37.2,14.5,13.0
+711ADOWN,711A,35,0.9642384105960264,time,99.0,Sarai Kale Khan,Sagar Pur Vashishth Park,DOWN,0.99,40.8,12.6,17.0
+711AUP,711A,39,0.9976608187134502,time,90.0,Uttam Nagar Terminal,Nehru Nagar,UP,0.98,46.8,12.6,17.0
+711DOWN,711,37,0.9971148297749567,time,86.0,Sarai Kale Khan Isbt,Janak Puri C 2,DOWN,0.99,236.3,58.9,4.0
+711UP,711,41,0.9989776793320838,time,82.0,A1 Janakpuri,Maharani Bagh,UP,0.99,251.3,58.9,4.0
+715ADOWN,715A,34,0.9959294436906377,time,100.0,Goela Dairy More,Jain Mandir,DOWN,0.97,34.6,4.1,48.0
+715AUP,715A,23,1.0,time,76.0,Mehrauli Terminal,Nhai Building,UP,0.98,19.8,4.1,48.0
+715DOWN,715,32,0.9915161466885605,time,66.0,Mehrauli Terminal,Palam Health Centre,DOWN,0.35,156.2,14.3,10.0
+715UP,715,30,0.9980353634577603,time,61.0,Mangla Puri,Qutab,UP,0.34,155.6,14.3,10.0
+716DOWN,716,24,0.8989169675090253,time,77.0,Dwarka Court,Bhart Sadhu Samaj,DOWN,0.99,21.1,5.9,29.0
+716UP,716,29,0.9850746268656716,time,77.0,Ndpo,Dwarka Sec-19/20 X-Ing,UP,1.0,21.6,5.9,29.0
+717ADOWN,717A,45,0.9995407155651495,time,85.0,Kapashera Border,Badarpur Jaitpur Crossing,DOWN,0.64,986.4,79.0,4.0
+717AUP,717A,50,0.9917994595098313,time,87.0,Badarpur Border (T),Kapashera Crossing,UP,0.63,972.0,79.0,4.0
+717BDOWN,717B,44,0.9988658702555573,time,87.0,Air Traffic Control Office,Badarpur M B Road / Rajiv Gandhi Stadium,DOWN,0.69,582.4,44.6,4.0
+717BUP,717B,41,0.9600979772439949,time,73.0,Badarpur Border (T),Centaur Hotel / New Custom House,UP,0.69,524.9,44.6,4.0
+717CDOWN,717C,13,1.0,time,41.0,Shahbad Mohammad Pur,Rang Puri (Nh8 Circle),DOWN,0.05,28.4,18.4,5.0
+717CUP,717C,16,0.9758241758241758,time,37.0,Mahipal Pur Crossing,Spg Complex Dwarka Sector-8,UP,0.01,47.6,18.4,5.0
+717DOWN,717,53,1.0,time,105.0,Shahbad Mohammad Pur,Badarpur M B Road / Rajiv Gandhi Stadium,DOWN,0.29,470.6,57.6,4.0
+717EDOWN,717E,29,0.9962092494313874,time,70.0,Kapashera Border,Asian Market,DOWN,0.05,74.6,11.8,13.0
+717EUP,717E,34,0.9829907866761163,time,68.0,Ambedkar Nagar Terminal / Dipsar,Kapashera Crossing,UP,0.04,75.5,11.8,13.0
+717UP,717,55,0.9897187526552809,time,109.0,Badarpur Border (T),Dwarka Sector 8 Metro Station,UP,0.31,480.2,57.6,4.0
+718DOWN,718,29,0.9979773462783171,time,57.0,Kapashera Border,A1 Janakpuri,DOWN,0.99,133.4,22.4,6.0
+718UP,718,30,1.0,time,55.0,A1 Janakpuri,Kapashera Xing,UP,0.99,140.0,22.4,6.0
+719DOWN,719,19,0.994413407821229,time,74.0,Chhawla Village,S J Madrasa / Lodhi Road Crossing,DOWN,0.99,17.1,2.6,36.0
+720DOWN,720,37,0.986734693877551,time,87.0,C-5A Janak Puri,Swaran Cinema,DOWN,0.99,57.0,12.2,18.0
+720UP,720,48,0.9960337134357957,time,109.0,Shahdara Terminal,Desu Colony Janakpuri,UP,0.99,104.0,12.2,18.0
+721DOWN,721,53,0.9999073645206114,time,98.0,Mangla Puri,Tis Hazari Court,DOWN,0.99,434.9,53.6,4.0
+721UP,721,54,0.9987602025002583,time,97.0,Isbt Kashmere Gate,Mangla Puri Xing,UP,0.99,392.6,53.6,4.0
+723DOWN,723,41,0.9840595111583422,time,99.0,Mangla Puri Terminal,Hassan Pur Depot,DOWN,0.99,49.9,7.3,32.0
+723UP,723,36,0.976911976911977,time,117.0,Anand Vihar Isbt Main Road,Dwarka Flyover Palam Village,UP,0.99,42.0,7.3,32.0
+724ADOWN,724A,47,0.9952893674293405,time,105.0,Badarpur Border,Janakpuri C2B,DOWN,0.04,76.0,8.0,28.0
+724AUP,724A,46,0.9895076674737692,time,96.0,Uttam Nagar Terminal,Ali Village,UP,0.04,74.0,8.0,28.0
+724DOWN,724,35,0.9858836815358555,time,79.0,Nehru Place Terminal,Janakpuri C4H,DOWN,0.91,179.6,36.1,5.0
+724EXTDOWN,724EXT,26,0.9766536964980544,time,70.0,Nehru Place,Dwarka Sec 1/2,DOWN,1.0,14.4,3.5,49.0
+724EXTUP,724EXT,28,0.9763513513513513,time,80.0,Madhu Vihar,Kailash Colony,UP,0.99,20.2,3.5,49.0
+724UP,724,37,0.9997686791579922,time,76.0,Uttam Nagar Terminal,Sant Nagar,UP,0.95,220.8,36.1,5.0
+725DOWN,725,39,0.998286203941731,time,81.0,Inder Puri Jj Colony,Qutab,DOWN,0.06,66.2,5.6,30.0
+725UP,725,35,0.9967793880837359,time,68.0,Mehrauli Terminal,Toda Pur,UP,0.07,60.2,5.6,30.0
+727BDOWN,727B,29,0.9988412514484357,time,77.0,Binda Pur Terminal,Andrews Ganj,DOWN,0.44,39.3,12.0,14.0
+727BUP,727B,34,0.9778434268833087,time,77.0,Ishpat Bhawan,Dwarka Crossing / Maharaja Agrasen Hospital,UP,0.65,32.4,12.0,14.0
+727DOWN,727,45,0.991588785046729,time,97.0,Dwarka More Metro Station (Terminal),Pant Nagar,DOWN,0.49,191.0,27.5,8.0
+727UP,727,44,0.9908860759493671,time,96.0,Sunehari Pulla Depot / Jawahar Lal Nehru Stadium Terminal,Dwarka Sec 13,UP,0.48,219.0,27.5,8.0
+729BDOWN,729B,22,0.9917525773195877,votes,36.0,Kapashera Border,Kendriya Terminal (Pt. Pant Marg),DOWN,0.02,68.8,24.0,4.0
+729BUP,729B,26,0.9665242165242165,votes,24.0,Kendriya Terminal (Pt. Pant Marg),Kapashera Border,UP,0.21,50.4,24.0,4.0
+729DOWN,729,37,0.9984454494064443,time,89.0,Kapashera Border,Subhash Park,DOWN,0.15,652.6,81.0,4.0
+729UP,729,47,0.9944709084722695,time,90.0,Isbt Nityanand Marg,Kapashera Crossing,UP,0.15,669.6,81.0,4.0
+73DOWN,73,48,0.9975604582095885,time,98.0,Hari Nagar Shaheed Pawan Sahni Chowk,Hasan Pur Depot,DOWN,0.99,390.4,62.5,4.0
+73UP,73,49,0.9995427003544072,time,97.0,Anand Vihar Isbt Main Road,Dda Flats Hari Nagar / Lig Flats,UP,0.99,371.8,62.5,4.0
+740ADOWN,740A,31,0.9901960784313726,time,111.0,Mangla Puri,Hasan Pur Depot,DOWN,1.0,16.4,2.6,50.0
+740CDOWN,740C,51,0.9959239130434783,time,127.0,Kheri Baba Pul Bairagi Road,Hasan Pur Village,DOWN,0.99,41.8,5.4,47.0
+740CUP,740C,37,0.944954128440367,time,106.0,Anand Vihar Isbt Main Road,Shani Mandir Shiv Vihar / Hastsal Jj Colony,UP,0.99,22.0,5.4,47.0
+740DOWN,740,56,0.9850746268656716,time,93.0,A1 Janakpuri,Balco Apartment,DOWN,0.99,165.2,22.0,10.0
+740EXTDOWN,740EXT,59,0.9892215568862276,time,107.0,Uttam Nagar Terminal (Out Gate),Hasan Pur Village,DOWN,0.99,146.8,30.0,7.0
+740EXTUP,740EXT,55,0.9988564894225271,time,92.0,Maharaj Pur Check Post,Janak Cinema,UP,0.99,157.7,30.0,7.0
+740UP,740,54,0.9948375341633768,time,108.0,Isbt Anand Vihar,Janakpuri C4E,UP,0.99,160.0,22.0,10.0
+741DOWN,741,54,0.9967302452316076,time,102.0,Jonti Village,Dashrath Puri Metro Station / Mahaveer Enclave 3,DOWN,0.99,90.0,17.6,13.0
+741UP,741,59,0.9922760041194645,time,101.0,Health Centre,Radhaswami Satsang,UP,0.99,82.8,17.6,13.0
+743BDOWN,743B,18,0.9726027397260274,time,66.0,Bharthal Under Pass,Andrews Ganj,DOWN,0.06,11.8,2.3,60.0
+743BUP,743B,28,0.9537366548042705,time,89.0,Isbt Sarai Kale Khan,Rajokari Crossing Nh8,UP,0.03,17.2,2.3,60.0
+745DOWN,745,36,1.0,time,94.0,Shikar Pur Crossing,S J Madrasa / Lodhi Road Crossing,DOWN,0.98,48.8,8.1,29.0
+745UP,745,35,0.9445438282647585,time,118.0,Cgo Complex,Chhawla Village Kangan Heri Road,UP,0.98,31.2,8.1,29.0
+751ADOWN,751A,24,0.9512195121951219,votes,40.0,Mayapuri Metro Station,Kakrola Village (Mata Sahaj Kaur Barat Bhawan),DOWN,0.98,14.8,5.4,23.0
+751AUP,751A,24,0.9953488372093023,time,62.0,Kakrola Village (Mata Sahaj Kaur Barat Bhawan),Metal Forging,UP,0.99,22.2,5.4,23.0
+752ADOWN,752A,33,0.9971305595408895,time,66.0,Dhool Siras Village,Shadipur Colony,DOWN,0.01,33.8,10.8,15.0
+752AUP,752A,33,0.9896193771626297,time,74.0,East Patel Nagar,Dwarka Sector 19 / 20 Crossing,UP,0.02,28.4,10.8,15.0
+752DOWN,752,49,0.9944108057755007,time,91.0,Dhool Siras Village,Sucheta Kriplani Hospital / Lady Harding Hospital,DOWN,0.08,94.9,16.6,13.0
+752UP,752,49,0.9947871416159861,time,100.0,New Delhi Railway Station Gate 2,Dwarka Sector 19 / 20 Crossing,UP,0.06,101.8,16.6,13.0
+753BDOWN,753B,24,0.9958333333333333,time,45.0,Uttam Nagar Terminal (In Gate),Payal Cinema,DOWN,0.99,58.8,18.8,6.0
+753BUP,753B,22,0.9937106918238994,time,43.0,Inderpuri Ablock,C2 Janak Puri,UP,1.0,53.2,18.8,6.0
+753DOWN,753,47,0.9955817378497791,time,116.0,A1 Janakpuri,Subhash Park,DOWN,0.99,226.2,54.2,5.0
+753EXTDOWN,753EXT,30,0.9945652173913043,time,106.0,Kheri Baba Pul Bairagi Road,Ajmeri Gate / N.D Rly Station Gate No-2,DOWN,1.0,21.6,7.2,31.0
+753EXTUP,753EXT,20,0.9954337899543378,time,97.0,Ajmeri Gate / Kamla Market,Uttam Nagar (Najafgarh Road),UP,1.0,14.4,7.2,31.0
+753UP,753,46,0.9976214073339941,time,108.0,Ggs University Isbt Kashmere Gate,Tilak Pul / Chander Nagar,UP,0.98,220.7,54.2,5.0
+761DOWN,761,52,0.9998653923812088,time,111.0,Majlis Park,Mangla Puri Xing,DOWN,0.78,338.2,54.5,4.0
+761UP,761,53,0.9981351981351981,time,82.0,Mangla Puri Xing,Shalimar Bagh Xing,UP,0.81,260.8,54.5,4.0
+764BDOWN,764B,22,0.9974937343358395,time,70.0,Nehru Place Terminal,Dwarka Crossing / Maharaja Agrasen Hospital,DOWN,0.99,17.8,4.4,33.0
+764BUP,764B,24,0.996742671009772,time,56.0,Sfs Flat Sec2 Power House,Masjid Moth,UP,0.97,18.0,4.4,33.0
+764DOWN,764,74,0.9954720087815587,time,129.0,Nehru Place Terminal,Jharoda Village,DOWN,0.99,573.0,119.6,4.0
+764UP,764,75,0.9962114834147163,time,116.0,Jharoda Kalan,Pumposh Enclave,UP,0.98,543.2,119.6,4.0
+765UP,765,34,0.9858657243816255,time,105.0,Bakarwala Jj Cly.,Vasant Vihar Depot,UP,0.99,20.8,3.9,32.0
+770DOWN,770,32,0.9538904899135446,votes,56.0,Madhu Vihar,Delhi Secretariat,DOWN,0.56,15.8,4.4,17.0
+772DOWN,772,40,0.9975352112676056,time,81.0,Igi Airport Terminal 2 (Air India Office),C1 Janak Puri,DOWN,0.99,116.2,9.8,17.0
+772UP,772,38,0.9766277128547579,time,63.0,Uttam Nagar Terminal / A1 Janakpuri,New Custom House,UP,0.99,106.6,9.8,17.0
+773DOWN,773,17,1.0,time,65.0,Bharthal Village,Firoz Shah Road,DOWN,0.01,27.2,3.2,52.0
+773UP,773,23,1.0,time,83.0,Ito,Puspanjali G Block,UP,0.0,22.8,3.2,52.0
+774BDOWN,774B,22,0.9951851851851852,time,49.0,Nhai / District Court / Ig Hospital Dwarka Sec 10,Poorvi Marg Rk Puram Sec 5,DOWN,0.02,99.4,28.2,4.0
+774BUP,774B,18,0.9791894852135816,time,40.0,Poorvi Marg Rk Puram Sec 5,Princess Park/ Airforce Noval Office Enclave,UP,0.01,89.4,28.2,4.0
+774DOWN,774,52,0.952242658922233,time,89.0,President Cabinet Apartments,Badar Pur M.B. Road,DOWN,0.08,488.4,42.6,4.0
+774UP,774,47,0.9407378335949764,time,79.0,Badarpur Border (T),Princess Park/ Airforce Noval Office Enclave,UP,0.09,451.4,42.6,4.0
+775EDOWN,775E,49,0.9744389027431422,time,100.0,Nhai / District Court / Ig Hospital Dwarka Sec 10,Paharganj Police Station,DOWN,0.72,69.0,9.8,21.0
+775EUP,775E,45,0.9574132492113565,time,89.0,Ps Kamla Market,Princess Park/ Airforce Noval Office Enclave,UP,0.64,52.0,9.8,21.0
+776DOWN,776,20,0.9947089947089947,time,60.0,Desu Colony Janakpuri,Kidwai Nagar Metro Station,DOWN,0.99,22.6,8.4,19.0
+776UP,776,26,0.9848197343453511,time,82.0,Sunehari Pulla Depot / Jawahar Lal Nehru Stadium Terminal,C2 Janak Puri,UP,0.97,37.0,8.4,19.0
+778DOWN,778,34,0.9995092425977425,time,84.0,Madhu Vihar,Dcm Chemical,DOWN,1.0,312.6,56.8,4.0
+778STL-MPDDOWN,778STL-MPD,19,0.8870967741935484,time,32.0,Dwarka Sec 2/6,Metal Forging,DOWN,1.0,15.4,12.4,8.0
+778STL-MPDUP,778STL-MPD,18,0.9659090909090909,time,43.0,Government Press,Dwarka Sec 2/6,UP,1.0,11.7,12.4,8.0
+778UP,778,39,0.9967815475392249,time,60.0,Inder Lok Metro Station,Dwarka Sector 2/6 Xing,UP,0.99,296.3,56.8,4.0
+780DOWN,780,17,0.9777777777777777,time,53.0,Igi Airport Terminal 2 (Air India Office),Regal / Palika Kendra,DOWN,0.98,19.8,3.8,37.0
+780UP,780,28,0.9912023460410557,time,66.0,New Delhi Railway Station Gate 2,Centaur Hotel / New Custom House,UP,1.0,39.3,3.8,37.0
+781DOWN,781,24,0.9928825622775801,time,67.0,Rajapuri,Ps Parliament / Jantar Mantar,DOWN,0.99,20.6,3.8,46.0
+781UP,781,30,0.9899598393574297,time,88.0,New Delhi Railway Station Gate 2,Dwarka Crossing / Maharaja Agrasen Hospital,UP,1.0,26.0,3.8,46.0
+783DOWN,783,20,0.98125,time,82.0,Kakrola Bridge / Dwarka More,Le Meridian Hotel,DOWN,0.99,25.4,6.1,32.0
+783UP,783,26,0.8654545454545455,time,96.0,Tilak Bridge,Uttam Nagar Bus Terminal (In Gate) Uttam Nagar East Metro Station,UP,0.99,23.4,6.1,32.0
+784DOWN,784,23,0.9926650366748166,votes,33.0,C-4 Yamuna Vihar / C4 Yamuna Vihar Crossing,Ajmeri Gate / Kamla Market,DOWN,1.0,16.2,5.4,10.0
+78DOWN,78,29,0.9993803253292022,time,44.0,Inder Puri Kirshi Kunj,Shalimar Bagh Xing,DOWN,1.0,303.1,55.9,4.0
+78UP,78,27,1.0,time,51.0,Azadpur Metro Station,Bentax,UP,0.99,295.8,55.9,4.0
+790ADOWN,790A,20,1.0,time,71.0,Najafgarh Terminal,Dhaula Kuan,DOWN,0.97,13.7,2.8,60.0
+790AUP,790A,17,0.9416342412451362,time,92.0,Ravinder Rangshala,Goyla Dairy Crossing,UP,0.97,15.4,2.8,60.0
+790DOWN,790,29,1.0,time,95.0,Najafgarh Terminal,Kendriya Terminal / Gurudwara Rakab Gunj,DOWN,0.81,28.0,6.6,33.0
+790UP,790,26,0.9933035714285714,time,104.0,Bhartiya Sadhu Samaj,Chhawla Stand Najafgarh,UP,0.73,24.3,6.6,33.0
+793DOWN,793,24,0.9816091954022989,time,79.0,District Center,Firoz Shah Road,DOWN,0.99,30.6,7.0,20.0
+793UP,793,25,0.8382749326145552,votes,41.0,Mandi House,Janak Setu,UP,0.99,18.6,7.0,20.0
+794ADOWN2,794ADOWN2,45,0.9991204925241864,time,96.0,Nhai / District Court / Ig Hospital Dwarka Sec 10,Ps Nizamuddin (Dargah / Markaz),,0.03,57.8,5.5,21.0
+794AUP2,794AUP2,42,0.9876543209876543,time,106.0,Bhogal (Jungpura),Dwarka Sec 5/11 Crossing,,0.03,35.4,5.6,22.0
+794DOWN,794,46,0.9877264757451782,time,86.0,Manglapuri / Palam Village,Police Station Nizamuddin (Dargah),DOWN,0.11,96.3,15.0,13.0
+794UP,794,44,0.9983016304347826,time,87.0,Nizamuddin Railway Station,Dwarka Sector 1,UP,0.32,139.4,15.0,13.0
+801-IGI-INDDOWN,801-IGI-IND,59,0.9972862957937585,time,108.0,Air Traffic Control Office,Dcm Chemical,DOWN,0.03,316.8,33.8,4.0
+801-IND-IGIUP,801-IND-IGI,58,0.9995119570522206,time,91.0,Inder Lok,Cargo / Express Terminal Gate 6,UP,0.03,310.7,31.2,4.0
+801-KAP-UTTDOWN,801-KAP-UTT,37,0.9987416107382551,time,93.0,Kapashera Border,B2A Janakpuri,DOWN,0.01,107.1,15.6,7.0
+801-UTT-KAPUP,801-UTT-KAP,40,0.9983660130718954,time,83.0,Janak Puri District Centre (Shivaji Marg),Kapashera Village,UP,0.01,147.6,16.0,6.0
+801ADOWN,801A,17,0.99644128113879,votes,38.0,Centaur Hotel / New Custom House,Dwarka Sector 8 Metro Station,DOWN,0.1,26.6,17.6,5.0
+801AUP,801A,12,0.998220640569395,time,24.0,Dwarka Sec8 Metro Station,Cargo / Express Terminal Gate 6,UP,0.06,33.0,17.6,5.0
+801STL-DW-2DOWN,801STL-DW-2,24,0.9922027290448343,time,52.0,Igi Airport Terminal 2 (Air India Office),Royal Residency (Dwarka),DOWN,0.93,65.6,38.8,4.0
+801STL-DW-2UP,801STL-DW-2,23,0.9987379049221708,time,52.0,Dwarka Sec-2 Depot,Air Traffic Control Office,UP,0.96,149.0,38.8,4.0
+801STL-IGI-DWS-22DOWN,801STL-IGI-DWS-22,11,1.0,time,25.0,Air Traffic Control Office,G- Block Pushpanjali,DOWN,0.03,33.3,25.2,4.0
+801STL-IGI-DWS-22UP,801STL-IGI-DWS-22,9,0.9987893462469734,time,14.0,Bharthal Under Pass,Cargo / Express Terminal Gate 6,UP,0.04,58.4,25.2,4.0
+801STL-KAP-DWS-22UP,801STL-KAP-DWS-22,7,1.0,time,10.0,Dwarka Sec 22 Depot,Kapashera Crossing,UP,0.02,16.2,10.2,4.0
+803DOWN,803,36,0.9914841849148418,time,72.0,Dwarka Sector 2/6 Xing,Meghdoot Bhawan,DOWN,0.99,36.0,6.2,28.0
+803UP,803,38,0.9977851605758582,time,84.0,Shivaji Stadium Terminal,Dashrath Puri,UP,0.99,38.1,6.2,28.0
+804DOWN,804,25,1.0,time,91.0,Kapashera Border,Shalimar Bagh Xing,DOWN,0.96,39.5,9.1,24.0
+804UP,804,40,0.9763663220088626,time,109.0,C Block Jahangir Puri,Samalka Village,UP,0.99,45.2,9.1,24.0
+806DOWN,806,36,0.994263862332696,time,77.0,Jhatikara Crossing,Subhash Nagar Crossing / Mukherji Park,DOWN,0.02,29.4,5.9,34.0
+806UP,806,36,0.9966996699669967,time,102.0,Moti Nagar,Jhatikra Crossing Pandwala Road,UP,0.04,27.7,5.9,34.0
+807ADOWN,807A,24,0.9745222929936306,time,72.0,Uttam Nagar Terminal (Out Gate),Paharganj Police Station,DOWN,0.03,39.9,8.9,21.0
+807AUP,807A,39,0.9985283296541575,time,97.0,Ggs University Isbt Kashmere Gate,Sagarpur Vashisht Park,UP,0.03,65.8,8.9,21.0
+807BDOWN,807B,18,1.0,time,58.0,Uttam Nagar Terminal (Out Gate),Shadipur Colony,DOWN,0.02,16.2,6.8,11.0
+813DOWN,813,45,0.8836833602584814,time,92.0,Mangla Puri,Vishva Vidyalaya Metro Station,DOWN,0.98,38.2,14.8,15.0
+813UP,813,42,0.9704724409448819,time,112.0,Kashmere Gate City Bus Terminal,Dwarka Sec 1,UP,0.98,31.4,14.8,15.0
+816DOWN,816,33,0.9123595505617977,votes,62.0,Uttam Nagar Terminal (Out Gate),Old Delhi Railway Station (T),DOWN,0.3,19.0,6.6,24.0
+816UP,816,24,0.9437751004016064,time,79.0,Maurice Nagar Ii,Janak Puri District Centre,UP,0.24,19.2,6.6,24.0
+817DOWN,817,47,0.9923273657289002,time,94.0,Kair Village,Esi Dispensary/Cghs Dispensary,DOWN,0.98,73.3,35.8,6.0
+817NDOWN,817N,26,0.9772727272727273,time,107.0,Jharoda Kalan Border (Satyam Puram),Zakhira,DOWN,1.0,22.0,14.8,17.0
+817NUP,817N,48,0.9927113702623906,time,121.0,Isbt Nityanand Marg,Crpf Jharoda,UP,0.99,34.4,14.8,17.0
+817UP,817,49,0.9519473950429944,time,97.0,Inder Lok,Mitraon Village (Kair Village Road),UP,0.97,84.5,35.8,6.0
+818ADOWN,818A,11,1.0,time,27.0,Jhatikra Village,Chhawla Stand Najafgarh,DOWN,0.02,12.9,2.3,20.0
+818DOWN,818,38,0.9988485895221646,time,81.0,Jathikra Village,Nangli Jalib,DOWN,0.21,73.7,17.2,10.0
+818UP,818,33,0.9839876033057852,time,68.0,Tilak Nagar,Jathikra Xing,UP,0.2,82.8,17.2,10.0
+819DOWN,819,25,0.9977827050997783,time,69.0,Pandwala Khurd,Uttam Nagar (Najafgarh Road),DOWN,0.98,24.6,7.2,23.0
+819UP,819,25,0.8087318087318087,time,78.0,Tilak Nagar Crossing (Najafgarh Road),Bdo Office Roshan Pura,UP,0.99,23.8,7.2,23.0
+821DOWN,821,26,0.9544072948328267,votes,56.0,Rawta Xing,Tilak Nagar,DOWN,0.98,14.6,8.8,15.0
+821UP,821,22,0.9790794979079498,time,60.0,Tilak Nagar,Mitraon,UP,0.96,21.6,8.8,15.0
+822DOWN,822,38,0.9977638640429338,time,88.0,Choudhary Mohalla,Mahaveer Enclave Part Ii And Iii,DOWN,0.02,117.6,17.4,11.0
+822UP,822,36,1.0,time,87.0,Janak Puri Check Post,Kazipur Village,UP,0.03,141.4,17.4,11.0
+824DOWN,824,30,0.9602272727272727,votes,43.0,Kair Depot,Uttam Nagar (Najafgarh Road),DOWN,0.99,20.1,18.6,8.0
+824UP,824,25,0.9454545454545454,time,78.0,Tilak Nagar Crossing (Najafgarh Road),Nanak Piyau,UP,0.99,25.8,18.6,8.0
+825ADOWN,825A,21,0.823728813559322,time,72.0,Tikri Border,Uttam Nagar (Najafgarh Road),DOWN,1.0,16.2,9.0,14.0
+825ASTLUP,825ASTL,12,1.0,time,34.0,Kair Depot,Bangali Colony,UP,1.0,15.9,12.0,4.0
+825AUP,825A,25,0.935933147632312,votes,33.0,Kakrola More,Tikri Border,UP,1.0,14.9,9.0,14.0
+825DOWN,825,25,0.9710691823899371,time,77.0,Satyapuram Jharoda,Dholi Piao,DOWN,0.98,33.1,16.0,10.0
+825UP,825,21,0.9841986455981941,time,61.0,Uttam Nagar (Najafgarh Road),Crpf Jharoda,UP,0.99,34.8,16.0,10.0
+826DOWN,826,26,0.9909638554216867,time,69.0,Surehra Crossing,Vikas Puri Crossing,DOWN,0.05,16.6,4.5,36.0
+826UP,826,25,0.9937694704049844,time,75.0,Jankpuri East Metro Station / Janakpuri East Nangli Zalib,Mitraon (Dhansa Road),UP,0.04,16.4,4.5,36.0
+827BSTL-KPDUP,827BSTL-KPD,18,0.9796747967479674,votes,24.0,Dwarka More Metro Station (Terminal),Najafgarh Dhansa Stand / Dhansa Crossing,UP,1.0,11.1,9.3,5.0
+827DOWN,827,34,0.9950738916256158,time,90.0,Dauralla Border,Uttam Nagar (Najafgarh Road),DOWN,0.97,63.0,28.4,7.0
+827UP,827,38,0.9853658536585366,time,89.0,Jankpuri East Metro Station / Janakpuri East Nangli Zalib,Rawta Village,UP,0.97,81.6,28.4,7.0
+828UP,828,18,0.9727272727272728,time,58.0,Tilak Nagar,Krishna Nagar / Gopal Nagar,UP,0.72,11.1,3.2,24.0
+829DOWN,829,27,0.9979777553083923,time,61.0,Shikar Pur Village,Vikas Puri Crossing,DOWN,1.0,46.0,12.8,12.0
+829UP,829,22,1.0,time,71.0,Tilak Nagar Crossing (Najafgarh Road),Jhatikra Crossing Pandwala Road,UP,0.99,40.9,12.8,12.0
+832DOWN,832,35,0.9988310929281122,time,56.0,A 1 Keshav Puram,District Park Janak Puri,DOWN,0.99,93.4,26.8,5.0
+832UP,832,33,0.9850926672038679,time,62.0,D Block Janakpuri,Kanhaiya Nagar,UP,0.99,113.9,26.8,5.0
+833ADOWN,833A,38,0.995774647887324,time,81.0,Goyla Village,Janak Puri Check Post,DOWN,0.01,45.3,7.5,27.0
+833AUP,833A,39,0.9966832504145937,time,99.0,Moti Nagar Market,Goyla Dairy / Nehru Bus Stand,UP,0.02,34.2,7.5,27.0
+834DOWN,834,31,0.9961389961389961,time,84.0,Nanak Heri Village,Vikas Puri Crossing,DOWN,0.06,24.8,3.6,53.0
+834UP,834,27,0.9978858350951374,time,87.0,Tilak Nagar Terminal,Kangan Heri Ii,UP,0.03,25.5,3.6,53.0
+835DOWN,835,43,1.0,time,85.0,Dhansa Border,Nangli Jalib,DOWN,0.19,145.8,35.0,5.0
+835LSTLDOWN,835LSTL,22,1.0,time,59.0,Dhansa Border (T),Goela Dairy Crossing,DOWN,0.03,22.0,17.3,8.0
+835LSTLUP,835LSTL,26,0.9975267930750206,time,55.0,Purani Basti Rewla Khanpur,Dhansa Village,UP,0.02,62.4,17.3,8.0
+835UP,835,43,0.999247554552295,time,86.0,Ganesh Nagar,Dhansa Village,UP,0.2,130.3,35.0,5.0
+836DOWN,836,35,0.999251497005988,time,71.0,Mundhela Kalan Village,Vikas Puri Crossing,DOWN,0.28,61.7,19.5,10.0
+836STLDOWN,836STL,13,0.983451536643026,time,31.0,Mundhela Kalan School,Najafghar Dhansa Stand More / Dhansa Stand Najafgarh Metro Station,DOWN,0.99,22.4,20.4,4.0
+836UP,836,39,0.9939799331103679,time,104.0,B2A Janakpuri,Mitraon Crossing,UP,0.27,70.2,19.5,10.0
+838DOWN,838,19,1.0,time,55.0,Uttam Nagar Bus Terminal (In Gate) Uttam Nagar East Metro Station,Pusa Road Petrol Pump Sadhu Vaswani Marg,DOWN,0.65,14.8,5.9,29.0
+838UP,838,30,0.9974160206718347,time,95.0,Red Fort,Tilak Nagar Terminal,UP,0.6,18.9,5.9,29.0
+83DOWN,83,17,1.0,time,64.0,S. Pawansahani Chowk,Faiz Road,DOWN,0.98,17.4,3.9,35.0
+83UP,83,18,0.9885057471264368,time,51.0,Dispensary Paharganj,Metal Forging,UP,0.98,15.8,3.9,35.0
+840DOWN,840,27,0.984251968503937,time,91.0,Mangla Puri Terminal,Talkatora Stadium,DOWN,0.98,17.8,3.9,47.0
+840UP,840,26,0.9887640449438202,time,73.0,Kendriya Terminal / Gurudwara Rakab Gunj,Mahaveer Enclave Part Ii And Iii,UP,0.99,19.4,3.9,47.0
+842DOWN,842,29,0.9539641943734015,votes,30.0,Moti Nagar Industrial Area,Kashmere Gate City Terminal,DOWN,0.97,15.6,5.0,20.0
+842UP,842,17,1.0,time,52.0,Kashmere Gate City Terminal,Moti Nagar,UP,1.0,16.1,5.0,20.0
+845DOWN,845,26,1.0,time,68.0,Pandwala Xing,Uttam Nagar Terminal,DOWN,0.98,21.6,6.8,23.0
+845UP,845,20,0.9690265486725663,time,67.0,District Center,Rewla Khanpur Xing,UP,0.98,20.2,6.8,23.0
+847DOWN,847,34,0.9643765903307888,time,117.0,Dholi Piao,Seelampur Metro Station,DOWN,0.99,22.8,9.8,26.0
+847UP,847,31,0.9948186528497409,time,115.0,Anand Gram,Tilak Nagar Terminal,UP,0.99,18.6,9.8,26.0
+848DOWN,848,23,0.9973190348525469,time,64.0,Bakkar Garh Crossing,Uttam Nagar (Najafgarh Road),DOWN,0.98,23.8,12.8,11.0
+848UP,848,17,1.0,time,60.0,Dwarka More Metro Station (Terminal),Surehra Crossing,UP,0.99,14.4,12.8,11.0
+849DOWN,849,25,0.99,time,56.0,Qamruddin Nagar Terminal,Da Block Hari Nagar,DOWN,0.99,24.4,5.8,23.0
+849STLUP,849STL,7,1.0,time,12.0,Rani Khera Depot 2,Swarn Park,UP,0.01,19.7,9.2,4.0
+849UP,849,20,0.9344262295081968,time,60.0,Fateh Nagar,Madipur Jj Colony,UP,0.99,16.3,5.8,23.0
+850DOWN,850,52,0.9990942028985508,time,103.0,Najafghar Health Centre,Sanatan Dharam Mandir Shankar Road / New Rajender Nagar,DOWN,0.99,60.8,14.8,16.0
+850UP,850,55,0.985519591141397,time,108.0,Talkatora Road,Nangli Dairy,UP,0.99,53.3,14.8,16.0
+857DOWN,857,32,0.8554913294797688,votes,43.0,Moti Nagar Industrial Area,Isbt Anand Vihar,DOWN,0.99,16.6,3.3,19.0
+858DOWN,858,24,1.0,time,85.0,Najafgarh Terminal,Bhartiya Sadhu Samaj,DOWN,0.99,29.0,5.4,42.0
+858UP,858,24,1.0,time,123.0,Shivaji Park,Bdo Office Roshan Pura,UP,0.98,17.5,5.4,42.0
+85DOWN,85,45,0.9994724347137959,time,82.0,New Moti Nagar B Block,Hasan Pur Village,DOWN,0.99,469.2,55.1,4.0
+85EXTDOWN,85EXT,53,0.9796858071505958,time,102.0,West Enclave,Ashirwad Apartment,DOWN,1.0,147.9,24.3,10.0
+85EXTUP,85EXT,54,0.998019801980198,time,114.0,Anand Vihar Isbt Main Road,Raja Park,UP,1.0,128.3,24.3,10.0
+85UP,85,51,0.9840441176470588,time,94.0,Mahrajpur Check Post,Moti Nagar Industrial Area,UP,0.99,513.8,55.1,4.0
+861ADOWN,861A,34,0.9980142970611596,time,85.0,E Block Jahangir Puri Terminal,B2A Janakpuri,DOWN,0.81,133.4,49.9,4.0
+861AUP,861A,28,0.9991786447638604,time,70.0,Uttam Nagar (Najafgarh Road),Jahangirpuri Metro Station Gt Road,UP,0.81,126.8,49.9,4.0
+861DOWN,861,29,0.9850968703427719,votes,45.0,Jahangirpuri Ablock,Subhash Nagar Crossing / Mukherji Park,DOWN,0.77,25.0,3.3,30.0
+861UP,861,28,0.9861286254728878,votes,35.0,Tilak Nagar Terminal,Jahangirpuri Eblock,UP,0.75,29.8,3.3,30.0
+871DOWN,871,24,0.9654255319148937,votes,58.0,Moti Nagar Industrial Area,Shivaji Stadium Terminal,DOWN,0.99,14.9,5.5,21.0
+871UP,871,18,0.981651376146789,votes,35.0,Karol Bagh Metro Station,Raja Garden,UP,0.99,10.6,5.5,21.0
+872DOWN,872,26,1.0,time,79.0,Surakh Pur Village,Dholi Piao,DOWN,0.02,30.2,6.7,25.0
+872UP,872,29,0.989010989010989,time,70.0,Tilak Nagar Terminal,Jharoda Crossing Jharoda Road,UP,0.02,39.2,6.7,25.0
+873DOWN,873,30,0.9981412639405205,time,66.0,Goela School,Vikas Puri Xing,DOWN,0.99,45.7,19.0,9.0
+873UP,873,28,0.9667590027700831,time,81.0,District Center,Shyam Vihar,UP,0.99,37.8,19.0,9.0
+874EDOWN,874E,55,0.9977490151941475,time,120.0,Badarpur Border (T),Jivan Park,DOWN,0.02,168.5,10.8,23.0
+874EUP,874E,54,0.9993585631815266,time,109.0,Uttam Nagar Terminal (Out Gate),Pul Pehladpur (Badarpur),UP,0.02,172.9,10.8,23.0
+878DOWN,878,14,0.9741935483870968,time,48.0,Malik Pur Village,Jharoda Crossing / Najafgarh,DOWN,0.95,12.0,3.6,19.0
+879ADOWN,879A,50,0.9971212666426772,time,80.0,Rohini Sec-15 Pkt. E-2,Desu Colony Janakpuri,DOWN,0.97,129.6,31.8,6.0
+879AUP,879A,43,0.999168744804655,time,83.0,D Block Janakpuri,Rohini Sec-18A,UP,0.97,118.1,31.8,6.0
+879BDOWN,879B,28,0.9699570815450643,time,81.0,Shahbad Dairy Block A,Janak Puri C-1,DOWN,0.97,21.2,9.5,20.0
+879BUP,879B,38,0.9615384615384616,votes,88.0,D Blk Janak Puri,Shahbad Dairy,UP,0.97,20.4,9.5,20.0
+879DOWN,879,51,0.9975258659469186,time,87.0,Shahbad Dairy,Janak Cinema,DOWN,0.8,202.2,44.1,4.0
+879UP,879,50,0.9980870396939263,time,90.0,D Block Janakpuri,Engineering College,UP,0.82,192.8,44.1,4.0
+882ADOWN,882A,50,0.9950347567030785,time,124.0,A-9 Narela Terminal,District Centre Janak Puri,DOWN,1.0,54.4,14.4,16.0
+882AUP,882A,39,0.997275204359673,time,87.0,Uttam Nagar Terminal,Singhu Border,UP,1.0,42.6,14.4,16.0
+883DOWN,883,50,0.9872767310986054,time,84.0,Uttam Nagar Terminal (Out Gate),Vishwa Vidyalaya Metro Station,DOWN,0.99,176.6,61.6,4.0
+883UP,883,52,0.996656378600823,time,90.0,Kashmere Gate City Bus Terminal,Oxford School,UP,0.99,190.6,61.6,4.0
+885DOWN,885,33,0.9456384323640961,time,67.0,Rewla Khanpur Village,Dholi Piao,DOWN,0.06,35.4,13.8,13.0
+885EDOWN,885E,20,0.9775784753363229,time,48.0,Rewla Tajpur Crossing,Sewak Park Dwarka More Metro Station,DOWN,0.2,19.6,13.8,8.0
+885EUP,885E,19,0.9818181818181818,votes,45.0,Uttam Nagar (Najafgarh Road),Rewla Khanpur Crossing,UP,0.14,17.8,13.8,8.0
+885UP,885,28,0.9864583333333333,time,92.0,Tilak Nagar Terminal,Jhatikra Crossing Pandwala Road,UP,0.09,44.1,13.8,13.0
+886DOWN,886,41,0.9981998199819982,time,93.0,Najafgarh Health Centre / Delhi Gate,Lado Sarai Crossing (Aurobindo Marg),DOWN,0.99,49.8,6.1,33.0
+886UP,886,36,0.9987951807228915,time,91.0,Qutub Minar,Bdo Office Roshan Pura,UP,0.96,36.0,6.1,33.0
+889DOWN,889,41,0.9950738916256158,time,90.0,Rohini Sec-27 Temple,Metal Forging,DOWN,0.99,101.2,27.6,8.0
+889UP,889,44,0.9987755102040816,time,104.0,Govt. Press,Rohini Sector-28,UP,1.0,106.9,27.6,8.0
+88ADOWN,88A,24,0.9822064056939501,time,72.0,Jj Colony Wazir Pur / Shanti Nagar / Tri Nagar,Karkardooma Crossing,DOWN,0.98,20.8,5.0,34.0
+88AUP,88A,28,0.9807692307692307,time,77.0,Anand Vihar Isbt Main Road,Shastri Nagar Metro Station,UP,0.98,20.6,5.0,34.0
+890DOWN,890,35,0.9226736566186108,time,80.0,Sainik Vihar / Raksha Enclave,Ps Chankya Puri,DOWN,0.99,46.6,10.8,19.0
+890UP,890,35,0.9831288343558282,time,102.0,Kendriya Terminal (Pt. Pant Marg),Hastsal Village Lig Flats,UP,0.99,39.1,10.8,19.0
+891DOWN,891,35,0.9935913868238914,time,77.0,E Block Jahangir Puri,Gulab House,DOWN,1.0,185.4,49.0,4.0
+891UP,891,36,0.9762476007677543,time,71.0,Desu Office,K Block Jahangir Puri,UP,1.0,172.3,49.0,4.0
+892DOWN,892,62,0.9961368653421634,time,147.0,Najafgarh Health Centre / Delhi Gate,Jhandewalan,DOWN,0.99,80.8,11.1,26.0
+892UP,892,49,0.9962453066332916,time,125.0,New Delhi Railway Station Gate 2,Chhawla Village,UP,0.99,38.4,11.1,26.0
+893DOWN,893,45,0.9793253536452666,time,99.0,Uttam Nagar Terminal (Out Gate),High Court,DOWN,0.04,49.5,4.5,50.0
+893UP,893,45,0.9882044560943644,time,106.0,Nizamuddin Railway Station,Dabri Crossing (Pankha Road),UP,0.04,39.6,4.5,50.0
+894DOWN,894,40,0.9874453110138862,time,98.0,Moti Nagar Industrial Area,Batla House,DOWN,0.99,223.8,25.4,9.0
+894UP,894,37,0.9993219189693169,time,100.0,Okhla,Shadi Pur Depot,UP,0.99,244.4,25.4,9.0
+8ADOWN,8A,23,1.0,time,70.0,Noida Ph-2,Kalkaji Mandir,DOWN,1.0,66.1,8.4,14.0
+8AUP,8A,19,0.9923913043478261,time,29.0,Kalkaji Mandir,Mahamaya Flyover West,UP,1.0,83.4,8.4,14.0
+8DOWN,8,26,0.9998280309544282,time,60.0,Noida Ph-2,Badarpur,DOWN,1.0,284.8,30.3,4.0
+8UP,8,21,0.9998867881806861,time,39.0,Badarpur Border,Aagha Pur Village,UP,1.0,372.1,30.3,4.0
+901ADOWN,901A,28,0.996309963099631,time,53.0,Puspanjali Enclave,Khyber Pass,DOWN,0.2,25.0,8.5,16.0
+901AUP,901A,30,1.0,time,66.0,Nityanand Marg,Puspanjali Enclave,UP,0.12,22.6,8.5,16.0
+901CLDOWN,901CL,32,0.9983333333333333,time,66.0,Mangol Puri Y Block,Jama Masjid,DOWN,0.25,31.2,15.4,12.0
+901CLUP,901CL,36,0.98828125,time,97.0,Zakir Husain College,Mangolpur Kalan Village,UP,0.23,33.4,15.4,12.0
+901DOWN,901,43,0.9971509971509972,time,83.0,Y Block Mangol Puri,Darya Ganj,DOWN,0.85,204.4,44.0,5.0
+901UP,901,49,0.9969577121995741,time,107.0,Delight Cinema,Mangol Pur Khurd,UP,0.79,172.4,44.0,5.0
+907DOWN,907,21,0.9968253968253968,time,67.0,Nilothi Village,Burari Xing,DOWN,0.99,19.4,7.0,24.0
+907UP,907,26,0.9764150943396226,time,80.0,Wazirabad Xing,Aman Puri,UP,0.97,16.3,7.0,24.0
+908DOWN,908,28,0.9991315675206253,time,51.0,Sultan Puri Terminal,Kirti Nagar,DOWN,0.01,107.1,13.8,10.0
+908UP,908,26,0.9648473635522664,time,64.0,Moti Nagar,C Block Sultan Puri,UP,0.02,68.9,13.8,10.0
+910DOWN,910,31,0.9951219512195122,time,68.0,Sayed Gaon Nangloi (T),Ndpo,DOWN,0.98,82.3,23.6,7.0
+910UP,910,28,0.9967213114754099,time,84.0,Shivaji Stadium Terminal ( Connaught Place ),Pachim Vihar Water Tank,UP,0.98,64.4,23.6,7.0
+911DOWN,911,29,0.9876237623762376,time,74.0,West Enclave / Sansad Vihar (T),Sfs Flat Sec2 Power House,DOWN,0.99,23.0,5.4,31.0
+911UP,911,24,0.9909638554216867,time,71.0,Mangla Puri Terminal,Rajdhani Enclave / Mahindra Park,UP,0.99,19.2,5.4,31.0
+913DOWN,913,40,0.9447115384615384,votes,87.0,Khajooi,Qamruddin Nagar Terminal,DOWN,1.0,18.2,8.4,20.0
+913UP,913,33,0.8501440922190202,votes,57.0,Madipur Jj Colony,Dayal Pur,UP,0.98,17.6,8.4,20.0
+918DOWN,918,43,0.9930327868852459,time,86.0,Quamruddin Nagar,Zakir Hussain College,DOWN,0.99,112.4,44.0,5.0
+918UP,918,38,0.9980870396939263,time,97.0,Delhi Sectt,Udhyog Nagar,UP,0.99,104.2,44.0,5.0
+919DOWN,919,28,0.9185441941074524,time,62.0,Chhath Park Mangol Puri,Dsidc Office Bawana,DOWN,1.0,62.4,16.2,9.0
+919UP,919,29,0.9987745098039216,time,65.0,Bawana Jj Colony Crpf Camp Ghogha Airforce Station,District Park Sector 20,UP,0.99,50.4,16.2,9.0
+923DOWN,923,46,0.9899909008189263,time,91.0,Dichaon Kalan Depot,Azad Market,DOWN,0.98,54.6,14.8,15.0
+923UP,923,40,0.9972196478220574,time,104.0,Old Delhi Railway Station,Bakkarwala More,UP,0.98,49.4,14.8,15.0
+924DOWN,924,19,0.9941520467836257,time,86.0,Kanjhawala Village,Sarai Rohella,DOWN,0.99,14.2,4.1,26.0
+925DOWN,925,17,1.0,time,70.0,Nilothi X-Ing,Guru Govind Singh Marg,DOWN,0.97,11.9,5.0,18.0
+926DOWN,926,53,0.9997392438070404,time,86.0,Indian Oil Corporation,Isbt Nityanand Marg,DOWN,0.99,156.4,55.6,4.0
+926STL-GHD-IDOWN,926STL-GHD-I,20,1.0,time,54.0,Ghuman Hera More / Shikarpur Crossing,Ghevra Crossing Rohtak Road,DOWN,0.96,20.4,8.6,9.0
+926UP,926,49,0.9994138335287222,time,92.0,Peeli Kothi,Tikri Village,UP,0.99,158.4,55.6,4.0
+928DOWN,928,52,0.9932773109243698,time,121.0,Jonti Shivalaya,Isbt Kashmere Gate (Lothian Road),DOWN,0.02,54.4,11.8,19.0
+928UP,928,39,0.9967355821545157,time,86.0,Ice Factory (Rani Jhansi Road),Ghevra Village,UP,0.01,49.2,11.8,19.0
+929DOWN,929,44,0.9887278582930756,time,89.0,Rani Khera Village,Kashmere Gate City Bus Terminal,DOWN,0.02,61.2,17.8,12.0
+929EDOWN,929E,22,0.9880668257756563,votes,53.0,Rani Khera Village,Zakhira (Rohtak Road),DOWN,0.01,17.0,7.8,9.0
+929UP,929,42,0.9864253393665159,time,108.0,Old Delhi Railway Station (T),Mundka Railway Station,UP,0.02,57.4,17.8,12.0
+930DOWN,930,37,0.9655870445344129,time,91.0,Keshav Maha Vidhyala,Kailash Colony,DOWN,0.99,33.4,7.6,28.0
+930UP,930,26,0.95,time,99.0,Nehru Place,Shakur Pur A-Block,UP,0.99,24.2,7.6,28.0
+931DOWN,931,32,0.9990521327014218,time,67.0,Bakkarwala Village,Punjabi Bagh Terminal,DOWN,0.99,52.6,12.2,13.0
+931UP,931,32,0.9812138728323699,time,77.0,Moti Nagar B-Block,Bakkarwala X-Ing,UP,0.99,36.4,12.2,13.0
+932ADOWN,932A,23,0.9614035087719298,votes,42.0,Rohini Sec9 /7,Harsh Vihar Terminal,DOWN,0.93,12.6,7.2,19.0
+932AUP,932A,25,0.9872340425531915,time,78.0,Harsh Vihar Terminal,Sai Baba Chowk Rohini,UP,0.98,17.2,7.2,19.0
+934DOWN,934,21,0.9969040247678018,time,51.0,Ghevra Crossing,Punjabi Bagh,DOWN,0.99,20.0,7.3,18.0
+934UP,934,18,0.99609375,time,59.0,New Moti Nagar B Blk.,Hiran Kudna More,UP,1.0,20.0,7.3,18.0
+935DOWN,935,35,0.9985228951255539,time,86.0,Majra Dabas Village,Ashok Vihar Crossing,DOWN,0.99,35.5,9.4,16.0
+935UP,935,24,0.9769736842105263,time,45.0,Azadpur Terminal,Peera Garhi Metro Station / Mian Wali Nagar,UP,0.99,24.6,9.4,16.0
+937ADOWN,937A,41,0.9908366533864542,time,79.0,Sultan Puri Terminal,Isbt Kashmiri Gate,DOWN,0.01,118.4,20.8,8.0
+937AUP,937A,32,0.9992088607594937,time,74.0,Old Delhi Railway Station,Mangol Puri S Block,UP,0.01,72.2,20.8,8.0
+938ADOWN,938A,42,0.9996621621621622,time,66.0,Pvc Market,Richi Rich Shalimar Bagh,DOWN,0.99,128.8,33.2,5.0
+938AUP,938A,41,0.9973873285434357,time,65.0,Azadpur Terminal,Ghevra Crossing Rohtak Road,UP,1.0,138.8,33.2,5.0
+938BDOWN,938B,18,0.9935897435897436,votes,15.0,Friends Enclave Mundka,Rithala Metro Station,DOWN,0.97,13.8,5.2,11.0
+938BUP,938B,20,0.9889135254988913,votes,24.0,Rithala Metro Station,Mundka Village (Metro Station),UP,1.0,18.6,5.2,11.0
+939DOWN,939,43,0.9924146649810367,time,89.0,E Block Mangol Puri,Ram Prastha Temple,DOWN,0.99,83.0,28.5,7.0
+939LSTLUP,939LSTL,9,1.0,time,23.0,Rani Khera Depot 1,Jwala Puri / Nangloi Depot,UP,0.02,12.4,8.0,5.0
+939UP,939,44,0.9423963133640553,time,97.0,Anand Vihar Isbt Terminal,Multan Nagar,UP,0.99,75.9,28.5,7.0
+940DOWN,940,31,0.9975062344139651,time,63.0,S Block Mangol Puri,Rml Hospital,DOWN,0.33,59.0,10.2,15.0
+940STLDOWN,940STL,27,0.9637305699481865,time,62.0,Kharkhari Nahar / Khera Dabur,Peera Garhi Metro Station / Mian Wali Nagar,DOWN,1.0,23.4,9.5,15.0
+940STLUP,940STL,23,0.9961389961389961,votes,61.0,Nangloi Post Office,Najafghar Health Centre,UP,0.99,11.4,9.5,15.0
+940UP,940,24,0.989247311827957,time,65.0,Shivaji Stadium,Peera Garhi,UP,0.26,47.6,10.2,15.0
+943DOWN,943,54,0.9956935630099728,time,115.0,Sultan Puri (T),Hassan Pur Depot,DOWN,0.99,214.2,18.8,13.0
+943UP,943,55,0.9961283185840708,time,107.0,Anand Vihar Isbt Main Road,Mangol Puri S Block,UP,0.98,170.8,18.8,13.0
+944DOWN,944,32,1.0,time,71.0,Sultan Puri (T),Talkatora Stadium,DOWN,0.98,151.5,31.8,5.0
+944UP,944,31,0.996600291403594,time,71.0,Kendriya Terminal / Gurudwara Rakab Gunj,Q Block Mangolpuri,UP,0.96,119.2,31.8,5.0
+946DOWN,946,59,0.9979818365287588,time,107.0,Q Block Mangolpuri,Ram Prastha Temple,DOWN,0.99,93.1,29.6,8.0
+946UP,946,57,0.9853300733496333,time,110.0,Anand Vihar Isbt Terminal,Mangol Puri Y Block,UP,0.98,77.2,29.6,8.0
+947ADOWN,947A,33,0.9003831417624522,votes,100.0,Palam Rly Flyover-Dc1925,Bhati Mines,DOWN,0.97,17.0,2.0,60.0
+947DOWN,947,28,0.9482758620689655,time,98.0,Ghevra Fatak,Santoor Hotel,DOWN,0.99,22.3,5.7,44.0
+947UP,947,32,0.994750656167979,time,132.0,Igi Airport Terminal-2,Gahevra X-Ing,UP,0.98,24.8,5.7,44.0
+948DOWN,948,14,1.0,time,67.0,A-9 Narela Terminal,Bajitpur Village,DOWN,1.0,17.0,6.8,17.0
+948UP,948,18,0.9886685552407932,votes,26.0,Kanjhawala Chowk,A-9 Narela Terminal,UP,0.99,14.2,6.8,17.0
+949ADOWN,949A,28,0.9672897196261683,votes,54.0,Rajdhani Park,Jheel,DOWN,0.99,12.2,7.6,28.0
+949AUP,949A,40,0.9742990654205608,time,141.0,Jheel,Hiran Kudna More,UP,0.98,25.4,7.6,28.0
+949DOWN,949,52,0.9969635627530364,time,93.0,Tikri Village,Ajmeri Gate,DOWN,1.0,140.0,44.0,5.0
+949UP,949,56,0.9974432726110578,time,113.0,Igi Stadium,Tikri Hospital,UP,0.99,140.6,44.0,5.0
+950DOWN,950,24,0.9727272727272728,votes,102.0,B Block Mangol Puri,Jhandewalan,DOWN,0.99,11.7,5.6,37.0
+950UP,950,16,1.0,time,84.0,Shaheed B.S. Marg,Madipur Jj Colony Metro Station,UP,0.99,14.2,5.6,37.0
+951DOWN,951,15,1.0,time,67.0,West Enclave,P.S. Pahar Gunj,DOWN,0.98,12.2,3.6,42.0
+951UP,951,15,0.9836065573770492,time,64.0,P.S. Pahar Gunj,Samrat Enclave,UP,0.99,11.6,3.6,42.0
+953DOWN,953,40,0.9992872416250891,time,80.0,S Block Mangol Puri,Faiz Road,DOWN,0.95,69.2,19.6,9.0
+953LSTLDOWN,953LSTL,16,0.9880952380952381,votes,32.0,Peera Garhi Metro Station,Rani Khera Depot 1,DOWN,0.01,14.6,10.2,8.0
+953LSTLUP,953LSTL,18,1.0,votes,30.0,Rani Khera Depot Crossing,D Block Mangol Puri (T),UP,0.01,12.4,10.2,8.0
+953STLDOWN,953STL,22,1.0,time,46.0,D Block Mangol Puri (T),East Patel Nagar,DOWN,0.04,24.2,3.7,35.0
+953STLUP,953STL,25,0.972972972972973,time,64.0,R Block Rajendra Nagar,Peeragarhi Chowk Flyover,UP,0.03,24.0,3.7,35.0
+953UP,953,36,0.9940728196443692,time,84.0,Ps Kamla Market,Ashoka Park,UP,0.91,54.4,19.6,9.0
+954DOWN,954,34,0.9935691318327974,time,69.0,Sultanpuri C Block,Paharganj Police Station,DOWN,0.02,43.4,6.5,26.0
+954UP,954,33,0.9884297520661157,time,77.0,Delhi Gate / Ambedkar Stadium Terminal,Jalebi Chowk Sultan Puri Ab Block,UP,0.02,36.2,6.5,26.0
+957DOWN,957,51,0.995,time,105.0,Rohini Sec 22 Pocket 7,Dr Rml Hospital (Kharak Singh Marg),DOWN,0.99,114.4,28.8,8.0
+957UP,957,51,0.9984962406015038,time,116.0,Shivaji Stadium Terminal ( Connaught Place ),Rohini Sec21,UP,1.0,92.0,28.8,8.0
+961DOWN,961,17,0.9853658536585366,votes,60.0,Ghevra Crossing (Kanjhawala Road),Narela A9,DOWN,0.04,12.0,5.4,43.0
+961UP,961,44,0.9606481481481481,time,152.0,Narela A9 Bus Terminal,Jai Vihar,UP,0.02,32.6,5.4,43.0
+962ADOWN,962A,47,1.0,time,100.0,Majra Dabas Village,Kendriya Terminal (Pt. Pant Marg),DOWN,0.99,38.9,9.6,21.0
+962AUP,962A,32,0.9468085106382979,time,79.0,Hanuman Mandir / Shivaji Stadium,Peeragarhi Chowk Flyover,UP,1.0,26.1,9.6,21.0
+962DOWN,962,43,0.9868421052631579,time,102.0,Jonti Village Shivalaya / Jonti Village,Ps Mandir Marg,DOWN,0.99,67.2,20.6,12.0
+962UP,962,45,1.0,time,123.0,Kendriya Terminal (Church Road) / North Block Lane,Ladpur Village,UP,0.99,65.6,20.6,12.0
+963DOWN,963,20,0.9686274509803922,votes,36.0,Bakkar Wala Jj Colony,Peera Garhi,DOWN,0.98,13.6,3.6,16.0
+964DOWN,964,24,0.9672727272727273,time,109.0,Jd Block Pitam Pura,Lajpat Nagar Xing,DOWN,1.0,24.3,8.0,24.0
+964UP,964,36,0.9289940828402367,votes,66.0,Nehru Place,Sraswati Vihar C-Block,UP,0.99,16.2,8.0,24.0
+966DOWN,966,53,0.9996038819568231,time,91.0,Qumruddin Nagar,Hazrat Nizamuddin Extn,DOWN,0.99,318.0,58.9,4.0
+966EXTDOWN,966EXT,21,0.9883040935672515,time,88.0,P Block Mangolpuri / Chhath Park Mangolpuri,Super Bazar,DOWN,0.99,15.6,8.9,19.0
+966EXTUP,966EXT,29,0.9791666666666666,time,65.0,Rajdoot Hotel,Ordinance Depot,UP,0.99,22.8,8.9,19.0
+966UP,966,53,0.9926854754440961,time,99.0,Nizamuddin Railway Station,Nangloi,UP,0.99,240.9,58.9,4.0
+968DOWN,968,44,0.9455252918287937,time,100.0,Dhansa Border,Paschim Vihar Super Bazar,DOWN,1.0,46.6,18.4,14.0
+968UP,968,52,0.9927760577915377,time,132.0,Inder Lok Metro Station,Bakkar Garh Xing,UP,0.99,56.3,18.4,14.0
+970DOWN,970,41,0.9871121718377088,time,88.0,Ayodhya Chowk,Claridges Hotel,DOWN,1.0,93.6,17.4,11.0
+970UP,970,41,0.9930822444273636,time,89.0,Lodhi Road Central School,Nav Durga Mandir,UP,1.0,60.6,17.4,11.0
+971ADOWN,971A,39,0.9722627737226277,time,84.0,Shalimar Bagh A Block,Ram Prastha Crossing,DOWN,0.99,34.8,11.6,14.0
+971AUP,971A,29,0.9913194444444444,time,62.0,Anand Vihar Isbt Terminal,Gtb Nagar / Gtb Nagar Metro Station,UP,0.99,44.3,11.6,14.0
+971DOWN,971,67,0.9919218241042346,time,111.0,Rohini Sec 3,Ram Prastha Crossing,DOWN,0.99,308.9,61.1,4.0
+971UP,971,63,0.9977461614311874,time,115.0,Anand Vihar Isbt,Ayodhya Chowk,UP,0.99,317.2,61.1,4.0
+972AEXTDOWN,972AEXT,27,0.9674556213017751,votes,45.0,West Enclave / Sansad Vihar (T),Bawana Soap Factory,DOWN,0.98,13.8,6.1,18.0
+972AEXTUP,972AEXT,28,0.9147540983606557,votes,47.0,Kanjhawala Chowk,West Enclave / Sansad Vihar (T),UP,1.0,12.6,6.1,18.0
+972DOWN,972,43,0.9831730769230769,time,91.0,Uttam Nagar Terminal,Aditi College,DOWN,0.99,107.2,31.0,7.0
+972EXDOWN,972EX,41,1.0,time,98.0,Auchandi Village,Major Bhupinder Singh Nagar,DOWN,1.0,22.0,9.4,24.0
+972EXTDOWN,972EXT,37,0.9979838709677419,time,83.0,Uttam Nagar Terminal (Out Gate),Chandpur Kalan Crossing,DOWN,0.99,26.8,9.2,21.0
+972EXTUP,972EXT,32,0.9968354430379747,time,88.0,Bawana,Janak Puri District Centre,UP,0.98,20.0,9.2,21.0
+972EXUP,972EX,44,0.9984025559105432,time,110.0,Uttam Nagar Terminal (Out Gate),Dariyapur Gaon,UP,0.99,30.2,9.4,24.0
+972UP,972,46,0.984743411927878,time,93.0,Daria Pur School,Krishna Park Extn.,UP,0.99,102.4,31.0,7.0
+974DOWN,974,52,0.991695163654128,time,98.0,Hamdard Nagar,Madipur Jj Colony Metro Station,DOWN,0.99,99.4,21.6,10.0
+974UP,974,59,0.9894503053858967,time,105.0,Lokesh Cinema,Batra Hospital,UP,0.99,92.2,21.6,10.0
+975DOWN,975,21,0.9624413145539906,time,57.0,Madhuban Chowk,East Patel Nagar,DOWN,0.99,15.2,4.9,28.0
+975UP,975,30,0.9142011834319527,votes,59.0,North Avenue,Rithala Metro Station,UP,1.0,13.3,4.9,28.0
+978DOWN,978,41,0.9994693083318592,time,82.0,Dichaon Kalan Depot,Shalimar Bagh Crossing,DOWN,0.99,218.5,63.8,4.0
+978STLDOWN,978STL,18,0.995768688293371,time,48.0,Nangloi Depot / Jwala Puri,Najafgarh Nangloi Stand,DOWN,1.0,46.0,30.8,4.0
+978STLUP,978STL,14,1.0,time,32.0,Najafgarh Nangloi Stand,Ram Nagar Cbqs / Qamruddin Nagar Crossing / Qamruddin Nagar,UP,0.99,29.5,30.8,4.0
+978UP,978,47,0.9974142389243233,time,98.0,Majlis Park,P.S. Najafgarh,UP,0.99,222.5,63.8,4.0
+979DOWN,979,33,0.9807073954983923,time,83.0,Narela A9 Bus Terminal,Qamruddin Nagar Terminal,DOWN,0.01,40.4,12.0,16.0
+979UP,979,32,0.9923312883435583,time,88.0,Nangloi Jj Colony Lokesh Cinema,New Anaj Mandi Crossing,UP,0.01,46.0,12.0,16.0
+980DOWN,980,33,0.9906542056074766,time,64.0,Qamruddin Nagar Terminal,Talkatora Stadium,DOWN,0.98,43.2,7.4,22.0
+980UP,980,29,0.8951841359773371,time,76.0,Kendriya Terminal / Gurudwara Rakab Gunj,Inder Enclave,UP,0.99,39.0,7.4,22.0
+981DOWN,981,35,0.9988465974625144,time,87.0,Tikri Border Metro Station (T),Ramdev Chowk (Narela),DOWN,0.02,43.8,9.2,22.0
+981UP,981,37,0.9964830011723329,time,91.0,Singhu Border Ramdev Marg,Ghevra Crossing Rohtak Road,UP,0.01,54.2,9.2,22.0
+982ADOWN,982A,18,1.0,time,39.0,Sultan Puri (T),Haidarpur Water Works,DOWN,1.0,11.2,6.0,10.0
+982DOWN,982,44,0.9923002887391723,time,101.0,Sultan Puri Terminal,Dilshad Garden Gt Road,DOWN,0.99,58.0,22.4,10.0
+982UP,982,49,0.9911678115799804,time,107.0,New Seema Puri,Avantika Xing,UP,0.99,66.1,22.4,10.0
+983DOWN,983,18,0.9838709677419355,time,87.0,Punjab Khor,Punjabi Bagh,DOWN,0.01,13.5,2.0,54.0
+984ADOWN,984A,21,0.9090909090909091,time,87.0,Lajpat Nagar,Rohini Sector 7/8 Xing,DOWN,1.0,18.5,9.0,23.0
+984AUP,984A,31,0.903041825095057,time,97.0,Rohini Sector 7/8 Xing,South Extension 2,UP,0.99,28.2,9.0,23.0
+985_DOWN,985_,41,0.9964444444444445,time,73.0,Shahbad Dairy Block A,West Patel Nagar,DOWN,0.99,57.6,14.8,12.0
+985_UP,985_,37,0.9910828025477707,time,86.0,Npl Colony,Rohini Sec 16 (Maharaja Aggarsen Dharam Sthal),UP,0.99,50.8,14.8,12.0
+988DOWN,988,50,0.9840425531914894,time,115.0,Katevara Village,Ps Mandir Marg,DOWN,0.02,46.8,7.3,42.0
+988UP,988,45,0.987410071942446,time,173.0,Gurudwara Rakab Ganj,Bajit Pur,UP,0.02,34.9,7.3,42.0
+989DOWN,989,21,1.0,time,66.0,B Block Mangol Puri,Chitra Gupta Road,DOWN,0.02,23.9,7.2,22.0
+989UP,989,25,0.9835294117647059,time,73.0,Super Bazar,Multan Nagar,UP,0.02,26.4,7.2,22.0
+990ADOWN,990A,38,0.9489539748953975,time,82.0,Rohini Sector 25 Deep Vihar,Gole Market (St. Columbas School),DOWN,0.99,50.8,37.0,5.0
+990AUP,990A,34,0.9485798237022527,time,88.0,Shahid Bhagat Singh Mg.,Dav Public School,UP,0.99,89.8,37.0,5.0
+990CDOWN,990C,24,1.0,time,48.0,Auchandi Border,Rohini Sector 25 Deep Vihar,DOWN,1.0,57.8,17.8,7.0
+990CUP,990C,24,0.9940878378378378,time,50.0,Rithala Metro Station,Harewali Xing,UP,1.0,70.7,17.8,7.0
+990DOWN,990,41,0.9305279265493497,time,82.0,Rithala Village,Gurudwara Bangla Sahib,DOWN,0.99,260.2,41.8,5.0
+990EXTDOWN,990EXT,51,0.9919797382861967,time,92.0,Rohini Sec 23 Pocket 1 (Green Hill Aptt.),Talkatora Stadium,DOWN,0.99,189.6,48.1,5.0
+990EXTUP,990EXT,46,0.9793398841017888,time,110.0,Shivaji Stadium Terminal,Rohini Sec 23 Pocket 1 (Green Hill Aptt.),UP,0.99,157.1,48.1,5.0
+990UP,990,36,0.9506675718488345,time,100.0,Shahid Bhagat Singh Mg.,Rohini West Metro Station,UP,0.99,185.2,41.8,5.0
+991DOWN,991,45,0.9947916666666666,time,80.0,Rani Khera Depot Crossing,Talkatora Stadium,DOWN,0.02,84.9,14.8,13.0
+991STLDOWN,991STL,30,0.9983739837398374,time,53.0,Rani Khera Depot Crossing,Punjabi Bagh Terminal,DOWN,0.01,77.6,15.0,8.0
+991STLUP,991STL,28,0.999104744852283,time,54.0,Karampura Terminal,Friends Enclave Mundka,UP,0.01,65.0,15.0,8.0
+991UP,991,48,0.9696799550814149,time,98.0,Shivaji Stadium Terminal,Mundka School (Rani Khera Road),UP,0.02,79.2,14.8,13.0
+992DOWN,992,38,0.9967105263157895,time,115.0,Sultan Puri Terminal,Babar Pur Extn,DOWN,0.99,33.8,8.8,27.0
+992UP,992,38,0.9943820224719101,time,100.0,Lig Flats Loni Road,Mangol Puri A Block,UP,0.99,35.0,8.8,27.0
+998DOWN,998,28,0.9985795454545454,time,55.0,Loknayak Puram / Bakkarwala,Maharaja Agrasen Hospital,DOWN,1.0,31.8,6.9,22.0
+998UP,998,32,0.9910233393177738,time,80.0,E.S.I. Hospital,Bakkarwala Crossing,UP,0.98,29.2,6.9,22.0
+AIRPORT-05UP,AIRPORT-05,27,0.9752650176678446,votes,25.0,Palam Colony Flyover,Igi Airport Terminal 2 (Air India Office),UP,0.98,14.5,4.3,10.0
+AIRPORT-06DOWN,AIRPORT-06,23,1.0,time,75.0,Sultanpuri Machhi Market / Sultanpuri D Block,Aerocity Metro Station,DOWN,0.99,18.5,7.2,24.0
+AIRPORT-06UP,AIRPORT-06,26,0.9523809523809523,time,81.0,Igi Airport Terminal 2 (Air India Office),B Block Mangol Puri,UP,0.98,20.4,7.2,24.0
+AIRPORT-08DOWN,AIRPORT-08,34,0.9795081967213115,time,80.0,Dhansa Bus Stand / Dhansa Bus Stand Metro Station,Aerocity Metro Station,DOWN,0.06,26.9,3.2,52.0
+AIRPORT-08UP,AIRPORT-08,30,0.9902200488997555,time,65.0,Igi Airport Terminal 2 (Air India Office),Najafgarh Dhansa Stand / Dhansa Crossing,UP,0.01,25.6,3.2,52.0
+AIRPORT-EXP-04UP,AIRPORT-EXP-04,25,0.9919028340080972,time,91.0,Isbt Kashmiri Gate,Aerocity Metro Station,UP,1.0,19.7,12.2,9.0
+AIRPORT-STLDOWN,AIRPORT-STL,6,1.0,votes,11.0,Palam Airport / Igi Airport T1,Igi Airport Terminal 3,DOWN,1.0,66.9,36.8,4.0
+AIRPORT-STLUP,AIRPORT-STL,7,1.0,votes,11.0,Igi Airport Terminal 3,Palam Airport / Igi Airport T1,UP,1.0,58.0,36.8,4.0
+BPEXPDOWN,BPEXP,46,0.9050991501416431,votes,81.0,Uttam Nagar (Najafgarh Road),Isbt Sarai Kale Khan,DOWN,0.49,28.6,9.7,15.0
+BPEXPUP,BPEXP,50,0.8820577164366374,votes,41.0,Sarai Kale Khan Isbt,Uttam Nagar Bus Terminal (In Gate) Uttam Nagar East Metro Station,UP,0.52,32.2,9.7,15.0
+CBD2(+)UP,CBD2(+),28,0.907258064516129,votes,54.0,Supreme Court / Pragati Maidan Metro Station,Janpath Market,UP,0.99,13.2,2.5,30.0
+CBD2(-)DOWN,CBD2(-),31,0.918918918918919,votes,82.0,Kailash Bhawan / Scindia House,Sarojini Nagar Depot,DOWN,0.99,21.4,2.8,36.0
+D-004UP,D-004,22,0.7048639736191261,votes,32.0,Dda Flats Munirka (Nelson Mandela Marg),Munirka Famliy Planing,UP,0.99,99.2,8.2,6.0
+D-006DOWN,D-006,22,1.0,time,56.0,Sunehari Pulla Depot / Jawahar Lal Nehru Stadium Terminal,Gazipur Depot,DOWN,0.99,119.8,14.4,10.0
+D-006UP,D-006,23,0.9974411463664279,time,64.0,Anand Vihar Isbt Terminal,Ishpat Bhawan,UP,0.99,109.5,14.4,10.0
+D-010DOWN,D-010,27,0.9983700081499592,time,35.0,Modern School Vasant Vihar F Block,Lodhi Garden / Mousam Bhawan,DOWN,1.0,67.4,8.2,14.0
+D-010UP,D-010,31,0.95817843866171,time,61.0,Sunehari Pulla Depot / Jawahar Lal Nehru Stadium Terminal,Indian Airlines/Priya Cinema,UP,1.0,50.2,8.2,14.0
+D-014DOWN,D-014,14,0.9982593559617058,time,39.0,Gupta Market,Pushpa Bhawan,DOWN,0.99,52.8,15.6,6.0
+D-014UP,D-014,17,0.9970326409495549,time,36.0,Central Market Sec 5,Central School (Mckr),UP,1.0,92.6,15.6,6.0
+D-018DOWN,D-018,20,0.9964139344262295,time,60.0,Bharti Nagar,East Guru Angad Nagar,DOWN,0.99,107.3,17.6,7.0
+D-018UP,D-018,25,0.9862888482632541,time,51.0,Jheel Terminal,Dayal Singh College,UP,0.98,103.0,17.6,7.0
+D-022DOWN,D-022,23,0.9919659735349716,time,65.0,Madanpur Khadar Jj Colony,South Extension 2,DOWN,0.99,81.8,20.4,7.0
+D-022UP,D-022,22,0.997651203758074,time,57.0,Safdurjung Terminal,Shaheen Bagh,UP,1.0,76.1,20.4,7.0
+D-028DOWN,D-028,26,0.9940267041461701,time,39.0,Hamdard Nagar / Sangam Vihar,Yusuf Sarai,DOWN,1.0,115.6,20.3,6.0
+D-028UP,D-028,26,0.9978479196556671,time,65.0,Sarojini Nagar Depot,Alaknanda Apartments,UP,0.99,92.2,20.3,6.0
+D-030DOWN,D-030,38,0.9658289241622575,time,68.0,Poorvanchal Hostel (T),Maharani Bagh,DOWN,0.99,183.4,19.4,9.0
+D-030UP,D-030,36,0.9757037037037037,time,79.0,Bala Sahib Gurudwara,Central School,UP,0.99,147.8,19.4,9.0
+D-032DOWN,D-032,31,1.0,time,78.0,Crpf Camp,Sadhna Enclave,DOWN,1.0,37.7,10.0,16.0
+D-032UP,D-032,26,0.9879807692307693,time,67.0,North Point (Nursing Home),Satyam/Doctors Apartments,UP,0.99,31.8,10.0,16.0
+D-034DOWN,D-034,33,0.9958226966813646,time,65.0,Air Traffic Control Office,Central School Lodhi Road,DOWN,0.99,176.7,25.3,6.0
+D-034UP,D-034,37,0.9981269900730474,time,68.0,18Block Lodhi Colony,New Custom House,UP,0.99,272.9,25.3,6.0
+D-036DOWN,D-036,42,0.9968680089485459,time,83.0,Sarder Patel Vidya Niketan,Nehru Nagar,DOWN,0.99,91.8,17.0,12.0
+D-036UP,D-036,45,0.9833183047790802,time,93.0,Nizamuddin Railway Station,Bhim Basti,UP,0.99,102.6,17.0,12.0
+D-042DOWN,D-042,28,0.9973913043478261,time,46.0,Tughalqabad Village,Kidwai Nagar Metro Station,DOWN,0.99,63.6,12.0,10.0
+D-042UP,D-042,26,0.9966367713004485,time,54.0,Kidwai Nagar Metro Station,Majeedia Hospital,UP,1.0,45.4,12.0,10.0
+D-044DOWN,D-044,23,0.9760348583877996,time,52.0,Hamdard Nagar / Sangam Vihar,Lajpat Nagar Crossing,DOWN,1.0,47.0,9.4,14.0
+D-044STLDOWN,D-044STL,9,1.0,votes,25.0,Jln Stadium / Sunehri Pulla Depot,Nizamuddin Railway Station,DOWN,0.99,18.8,5.6,8.0
+D-044UP,D-044,17,1.0,time,58.0,Nizamuddin Railway Station,Tara Apartments Terminal,UP,1.0,37.6,9.4,14.0
+D-046DOWN,D-046,25,0.9992902767920511,time,54.0,Chhatarpur Ext / Nanda Hospital,Andrews Ganj,DOWN,1.0,70.8,13.2,11.0
+D-046UP,D-046,27,0.9967400162999185,time,70.0,Lajpat Nagar (Ring Road),Chhatarpur Village,UP,1.0,60.4,13.2,11.0
+D-0501DOWN,D-0501,16,1.0,time,37.0,Harsh Vihar Terminal,Shastri Park Pusta Road,DOWN,0.99,36.0,16.2,6.0
+D-0501UP,D-0501,14,0.9520958083832335,time,39.0,Metro Train Depot,B R Ambedkar College (Loni Road Xing),UP,0.98,35.4,16.2,6.0
+D-052DOWN,D-052,25,0.9941477688368691,time,38.0,Mehrauli Terminal,Sarojini Nagar Market (B H Singh Marg),DOWN,0.99,69.4,8.8,13.0
+D-052UP,D-052,26,0.9977011494252873,time,54.0,Jor Bagh Metro Station,Dda Flats Lado Sarai,UP,0.99,48.0,8.8,13.0
+D-054DOWN,D-054,15,0.99,time,51.0,Sarvpriya Vihar / Hauz Khas Metro Station,National Stadium,DOWN,0.99,22.0,4.2,29.0
+D-054UP,D-054,18,0.9972451790633609,time,49.0,Ito,Panchsheel Club,UP,0.99,19.7,4.2,29.0
+D-060DOWN,D-060,25,0.9948979591836735,time,58.0,Mithapur Chowk (T),Lajpat Nagar (Ring Road),DOWN,0.99,101.4,19.0,8.0
+D-060UP,D-060,25,1.0,time,71.0,Jal Vihar Terminal,Ntpc Gate No 3,UP,1.0,77.8,19.0,8.0
+D-070DOWN,D-070,16,1.0,time,42.0,C Block Vikas Puri,Dwarka Sec 3/4,DOWN,1.0,19.6,6.2,18.0
+D-070UP,D-070,17,1.0,time,49.0,Ggs Ip University,Vikas Puri Crossing,UP,1.0,15.8,6.2,18.0
+D-072DOWN,D-072,14,1.0,time,34.0,Nangloi Metro Station,C Block Vikaspuri / C-D Block Vikas Puri,DOWN,0.99,39.1,7.5,12.0
+D-072UP,D-072,16,1.0,time,35.0,Uttam Nagar Terminal / Uttam Nagar East Metro Station,Narain Dharamkanta / Qamaruddin Nagar Xing,UP,1.0,38.6,7.5,12.0
+D-1103DOWN,D-1103,14,0.9824723247232472,time,27.0,Ats Tower,Arya Bhatt Collage,DOWN,0.98,103.5,27.2,4.0
+D-1103UP,D-1103,17,0.9380530973451328,time,24.0,Anand Niketan / Du South Campus,Santoor Hotel,UP,0.99,226.0,27.2,4.0
+D-1104DOWN,D-1104,18,0.9292328042328042,time,28.0,Munirka,Santoor Hotel,DOWN,0.99,86.4,19.6,6.0
+D-1104UP,D-1104,20,0.9931412894375857,time,62.0,Ats Tower,Vasant Vihar Police Station,UP,0.98,78.6,19.6,6.0
+D-2001DOWN,D-2001,13,0.9980769230769231,time,45.0,Band Road,Radio Colony,DOWN,0.99,43.0,14.0,8.0
+D-2001UP,D-2001,13,0.9811320754716981,time,46.0,Gtb Nagar Metro Station,Sangam Vihar,UP,0.99,34.2,14.0,8.0
+D-2201DOWN,D-2201,19,0.9921875,time,42.0,Bakhtawarpur Mcd School (T),Mukund Pur Crossing,DOWN,0.98,38.2,12.3,10.0
+D-2201UP,D-2201,17,0.9859550561797753,time,60.0,Adarsh Nagar Metro Station,Kushak Pur Village / Ss International School,UP,0.98,34.7,12.3,10.0
+D-2202DOWN,D-2202,14,0.9786096256684492,time,48.0,Shri Krishna Apartments,Delhi Engg College Shahbad,DOWN,1.0,43.8,18.6,7.0
+D-2202UP,D-2202,18,0.9509761388286334,time,54.0,Samaypur Badli Metro / Railway Staion,Bhor Garh,UP,0.98,107.8,18.6,7.0
+D-2301DOWN,D-2301,15,1.0,time,34.0,Bawana,Prehlad Vihar (Deep Vihar) Rohini Sec 25,DOWN,0.99,52.2,16.0,6.0
+D-2301UP,D-2301,10,0.9924026590693258,time,36.0,Rithala Metro Station,Dsidc Office Bawana,UP,1.0,71.0,16.0,6.0
+D-3201DOWN,D-3201,12,1.0,votes,41.0,Rohini Sec-18/19 Metro Station,Rajiv Nagar Extention,DOWN,1.0,17.0,5.7,15.0
+D-3201UP,D-3201,9,1.0,votes,27.0,Rajiv Nagar Extention,Rohini Sec-18/19 Metro Station,UP,0.98,11.6,5.7,15.0
+D-3301DOWN,D-3301,14,1.0,time,28.0,Karala X-Ing,Rohini Sec- 24 Pocket- 2,DOWN,0.98,39.3,8.4,10.0
+D-3301UP,D-3301,18,1.0,votes,37.0,Rithala Metro Station,Karala X-Ing,UP,0.97,39.0,8.4,10.0
+D-3302DOWN,D-3302,9,1.0,votes,15.0,Rm Stadium,Begumpur,DOWN,0.97,37.5,8.6,6.0
+D-3302UP,D-3302,9,1.0,votes,19.0,Begumpur,Vijay Vihar,UP,0.98,22.6,8.6,6.0
+D-3304DOWN,D-3304,17,0.9875776397515528,time,62.0,Katevara Village,Telephone Exchange,DOWN,0.99,23.4,9.6,17.0
+D-3304UP,D-3304,23,0.9595959595959596,votes,84.0,Rithala Metro Station,Qutabgarh Village,UP,0.99,16.8,9.6,17.0
+D-3305DOWN,D-3305,17,0.990625,votes,29.0,Qutabgarh Village,Rithala Metro Station,DOWN,0.99,14.2,8.2,10.0
+D-3305UP,D-3305,18,0.9686746987951808,votes,36.0,Rithala Metro Station,Qutabgarh Village,UP,1.0,18.3,8.2,10.0
+D-3901DOWN,D-3901,10,1.0,time,36.0,Majra Dabas,Hiran Kudna Village,DOWN,1.0,11.0,5.0,11.0
+D-4501DOWN,D-4501,22,1.0,time,54.0,Over Had Tank,Guru Angad Nagar,DOWN,1.0,87.2,18.6,5.0
+D-4501UP,D-4501,19,0.9949174078780177,time,22.0,Guru Angad Nagar,Ras Vihar,UP,1.0,104.0,18.6,5.0
+D-4503DOWN,D-4503,24,0.9974293059125964,time,60.0,Harsh Vihar Terminal,Gazi Pur Village,DOWN,0.99,36.0,13.2,9.0
+D-4503UP,D-4503,21,1.0,time,38.0,Mayur Vihar Phase Iii (T) Paper Market,Old Seema Puri / Dilshad Garden J N K Pocket,UP,1.0,43.2,13.2,9.0
+D-5401DOWN,D-5401,19,0.9902912621359223,votes,31.0,Laxmi Nagar Xing,Anand Vihar Isbt,DOWN,0.98,21.0,10.2,9.0
+D-5401UP,D-5401,19,0.9933628318584071,votes,44.0,Anand Vihar Main Stand,Akshardham Metro Station,UP,0.99,18.2,10.2,9.0
+D-5403DOWN,D-5403,31,0.99644128113879,time,52.0,Kerala School,Geeta Colony / Geeta Colony Pusta Road,DOWN,0.99,62.0,22.9,6.0
+D-5403UP,D-5403,28,0.9839762611275964,time,71.0,Shastri Park Metro Station,Fire Station,UP,0.99,89.6,22.9,6.0
+D-6102DOWN,D-6102,9,1.0,time,25.0,Janak Puri B-1,Maya Puri Depot,DOWN,1.0,25.5,10.2,6.0
+D-6102UP,D-6102,12,1.0,votes,21.0,Naraina Vihar,Janak Puri B-1,UP,0.99,25.0,10.2,6.0
+D-7101DOWN,D-7101,14,0.9683972911963883,time,22.0,Vasant Vihar Cpwd Colony,Vasant Vihar Bpc,DOWN,1.0,47.8,7.0,13.0
+D-7101UP,D-7101,12,0.8754789272030651,time,49.0,Priya Cineme Crossing,Shopping Center,UP,1.0,41.4,7.0,13.0
+D-7102DOWN,D-7102,14,0.9146341463414634,time,43.0,Cisf,Vasant Vihar Bpc,DOWN,0.98,18.8,7.2,13.0
+D-7102UP,D-7102,14,0.9756756756756757,time,30.0,Vasant Kunj Sec-A,Mahipal Pur Village,UP,0.99,20.5,7.2,13.0
+D-7701ADOWN,D-7701A,9,1.0,time,15.0,Aiims-Capfims,Chhatarpur Mandir,DOWN,1.0,39.0,6.6,6.0
+D-7701AUP,D-7701A,10,1.0,time,6.0,Chhatarpur Metro Station,South Asian University,UP,0.99,65.2,6.6,6.0
+D-7701DOWN,D-7701,16,0.9933333333333333,time,42.0,Bhati Kalan,Chhattarpur Mandir,DOWN,0.99,24.0,7.6,12.0
+D-7701UP,D-7701,13,0.9893238434163701,time,28.0,Chhttarpur Metro Station,Shani Dham Mandir,UP,1.0,32.8,7.6,12.0
+D-7702DOWN,D-7702,11,1.0,time,51.0,Panchsheel Park Metro Station,Cambridge School,DOWN,1.0,19.4,6.7,16.0
+D-7702UP,D-7702,11,1.0,time,37.0,Deoli Village,Panchsheel Enclave,UP,1.0,32.2,6.7,16.0
+D-7703DOWN,D-7703,11,1.0,votes,14.0,Khanpur Extension / Devli Road Xing / Dakshin Puri G-Block,Lado Sarai Firni Road (T),DOWN,1.0,21.5,5.8,11.0
+D-7703UP,D-7703,9,0.9762308998302207,time,32.0,Saket Metro Station,Tigri,UP,1.0,28.1,5.8,11.0
+D-7901DOWN,D-7901,26,0.9835526315789473,time,92.0,Dwarka Sec 1,Saket A Block (Metro Station),DOWN,0.97,17.4,4.0,52.0
+D-7901UP,D-7901,17,1.0,time,97.0,Saket Court,Dwarka Gate (Palam Health Center) (Metro Station),UP,0.95,18.8,4.0,52.0
+D-8702DOWN,D-8702,15,0.9903846153846154,time,59.0,Chirag Delhi,Hamdard Nagar / Sangam Vihar,DOWN,0.99,19.0,5.8,18.0
+D-8702UP,D-8702,12,0.918918918918919,time,28.0,Hamdard Nagar / Sangam Vihar,Psri,UP,1.0,20.8,5.8,18.0
+D-8802DOWN,D-8802,17,1.0,votes,71.0,Madanpur Khadar Terminal,Nehru Place Terminal,DOWN,1.0,11.0,6.4,20.0
+D-8802UP,D-8802,13,0.9967637540453075,votes,37.0,Nehru Place Terminal,Madanpur Khadar Terminal,UP,0.99,12.9,6.4,20.0
+D-9101DOWN,D-9101,15,0.9662162162162162,time,35.0,Aerocity,Princess Park,DOWN,0.98,110.8,20.0,5.0
+D-9101UP,D-9101,17,1.0,time,42.0,Dwarka Sec-10 Metro Station,Mehram Nagar Police Station,UP,0.99,129.9,20.0,5.0
+D-9901DOWN,D-9901,12,1.0,time,42.0,Dhansa Border,Khera More,DOWN,0.97,21.8,8.8,11.0
+D-9901UP,D-9901,11,0.9940119760479041,time,33.0,Dhansa Bus Stand Metro Station,Dhansa Village,UP,0.98,24.6,8.8,11.0
+D-9902UP,D-9902,10,1.0,time,28.0,Dhansa Bus Stand Metro Station,Malik Pur X-Ing,UP,0.99,12.4,6.4,8.0
+D-9905DOWN,D-9905,8,0.9096209912536443,time,20.0,Dwarka Sec-8 Apj School,Classic Appartement Dwarka Sec-22,DOWN,0.99,43.6,13.8,5.0
+D-9905UP,D-9905,8,1.0,time,28.0,Dwarka Sec21 Metro Station,Dwarka Sec-7,UP,0.99,43.0,13.8,5.0
+D-9906(+)UP,D-9906(+),15,0.9501557632398754,votes,19.0,Kakrola Crossing,Dwarka Metro Station,UP,1.0,27.2,6.2,6.0
+D-9906(-)DOWN,D-9906(-),15,0.9388794567062818,votes,16.0,Delhi Public School,Dwarka Metro Station,DOWN,1.0,24.0,7.0,5.0
+D-9907DOWN,D-9907,11,1.0,votes,11.0,Jharoda School,Dhansa Stand Metro Station,DOWN,1.0,29.6,12.8,4.0
+D-9907UP,D-9907,9,1.0,votes,23.0,Dhansa Stand Metro Station,Jharoda Kalan Border (Satyam Puram),UP,1.0,21.8,12.8,4.0
+D-9911UP,D-9911,19,0.9790940766550522,votes,24.0,Dichaun Kalan Depot,Rawta Village,UP,1.0,12.2,7.0,6.0
+D-9912DOWN,D-9912,17,0.9941176470588236,time,44.0,Jhul Jhuli Village,Najafgarh Nangloi Stand,DOWN,0.98,16.1,9.4,11.0
+D-9912UP,D-9912,13,0.9941002949852508,time,42.0,Dichaun Kalan Depot,Ujwa Village,UP,0.99,18.6,9.4,11.0
+D-9913DOWN,D-9913,13,0.9747899159663865,time,48.0,Issapur,Issapur D B Temple,DOWN,0.99,19.8,10.5,9.0
+D-9913UP,D-9913,11,0.9833333333333333,time,31.0,Dhansa Bus Stand Metro Station,Issa Pur M C School,UP,0.98,23.7,10.5,9.0
+D-9914DOWN,D-9914,9,1.0,votes,21.0,Bakkar Garh Crossing,Dhansa Bus Stand Metro Station,DOWN,0.97,13.6,9.6,6.0
+D-9914UP,D-9914,9,0.9959677419354839,time,17.0,Dhansa Bus Stand Metro Station,Rawta Crossing,UP,0.98,16.8,9.6,6.0
+D-9916DOWN,D-9916,19,1.0,time,42.0,Jharoda Crossing,Bamnoli Village,DOWN,1.0,24.6,13.2,8.0
+D-9916UP,D-9916,19,0.9871630295250321,time,37.0,Dwarka Sector 22 Cluster Depot,Roshan Pura,UP,1.0,45.4,13.2,8.0
+D-9917DOWN,D-9917,6,1.0,time,21.0,Dhansa Bus Stand Metro,Kair B N College,DOWN,1.0,24.9,12.1,5.0
+D-9917UP,D-9917,6,0.9666666666666667,time,24.0,Dan Basco,Prem Nursery,UP,0.99,27.2,12.1,5.0
+D-9919DOWN,D-9919,22,0.9859353023909986,time,70.0,Kapashera Border,Nsit (Netaji Subhas Institute) / Sulahkul Mandir,DOWN,0.99,42.4,9.9,17.0
+D-9919UP,D-9919,25,0.9902723735408561,time,79.0,Dwarka Sec 3/4,Kapashera Village,UP,1.0,41.0,9.9,17.0
+DW-1DOWN,DW-1,20,0.9994239631336406,time,54.0,President Cabinet Apartments,Centaur Hotel / New Custom House,DOWN,0.01,141.5,8.0,13.0
+DW-1UP,DW-1,19,0.9722370528563802,time,33.0,Air Traffic Control Office,Dwarka Sec6 Telephone Exchange,UP,0.01,75.3,8.0,13.0
+DW-3DOWN,DW-3,40,0.9987593052109182,time,67.0,Rohini Sec 16 (Maharaja Aggarsen Dharam Sthal),Dps Matiyala (Delhi Public School ),DOWN,0.99,59.0,11.7,14.0
+DW-3STL-GHD-IDOWN,DW-3STL-GHD-I,16,1.0,time,65.0,Dwarka Sec 16C/Ggs Ip University,Khera Village,DOWN,0.99,15.0,7.9,16.0
+DW-3STL-GHD-IUP,DW-3STL-GHD-I,16,0.9661016949152542,time,43.0,Ghuman Hera Village Main Road / Ghumanhera School,Sumesh Vihar,UP,1.0,13.0,7.9,16.0
+DW-3UP,DW-3,40,0.974025974025974,time,81.0,Dwarka Sec 16C/Ggs Ip University,Rohini West Metro Station,UP,0.99,44.4,11.7,14.0
+DW-4DOWN,DW-4,18,0.9976303317535545,time,76.0,Palam Colony Flyover,Maharani Bagh,DOWN,0.03,28.0,6.4,32.0
+DW-4UP,DW-4,46,0.9910802775024777,time,110.0,Isbt Sarai Kale Khan,Dps Matiyala (Delhi Public School ),UP,0.01,52.4,6.4,32.0
+DW-5DOWN,DW-5,34,0.9991575400168492,time,76.0,President Cabinet Apartments,S.J. Hospital,DOWN,0.01,62.6,8.6,19.0
+DW-5UP,DW-5,34,0.997169143665959,time,70.0,Vikas Sadan,Vijay Enclave (New Dwarka Road),UP,0.08,66.2,8.6,19.0
+GL-23DOWN,GL-23,21,0.9986431478968792,time,36.0,Isbt Anand Vihar Main Road,Dharam Pura,DOWN,0.99,103.1,30.2,4.0
+GL-23UP,GL-23,20,0.99945085118067,time,40.0,Isbt Ring Road,Hasan Pur Village,UP,0.98,101.6,30.2,4.0
+GL-91DOWN,GL-91,31,0.946236559139785,votes,83.0,Sultan Puri Crossing,Shivaji Stadium Terminal,DOWN,1.0,12.0,3.7,28.0
+MC715DOWN,MC715,24,0.9949181253529079,time,35.0,Burari Crossing,Puspanjali Enclave,DOWN,0.98,110.1,32.5,4.0
+MC715UP,MC715,25,0.9942558746736292,time,43.0,Peragarhi Outer Ring Road,Ps Badli,UP,0.99,105.4,32.5,4.0
+ML06DOWN,ML06,27,0.9882937211777226,time,62.0,Ins Hostel,Natthupura Terminal,DOWN,0.99,115.9,27.5,5.0
+ML06STLDOWN,ML06STL,15,1.0,votes,28.0,Burari Authority,Keshav Nagar Mukti Ashram,DOWN,0.99,13.1,8.9,5.0
+ML06UP,ML06,20,0.985734664764622,time,45.0,Keshav Nagar Mukti Ashram,Mukharji Nagar Xing,UP,0.99,160.6,27.5,5.0
+ML96DOWN,ML96,25,0.926829268292683,time,46.0,Narela A6 Cpj College,Kewal Park Azadpur,DOWN,1.0,81.7,24.8,5.0
+ML96UP,ML96,28,0.9192439862542955,time,55.0,Kewal Park,Narela A9 Bus Terminal,UP,1.0,91.8,24.8,5.0
+OMS(+)BURARI-DHAULAKUAN,OMS(+)BURARI-DHAULAKUAN,107,0.9880427942101951,time,209.0,Burari Crossing,South Moti Bagh,,0.99,386.5,41.4,6.0
+OMS(+)DHAULAKUAN-BURARI,OMS(+)DHAULAKUAN-BURARI,63,0.9582159624413146,time,99.0,Golf Club (Carriappa Marg),Bhalaswa Crossing,,0.99,85.9,24.8,5.0
+OMS(+)UP,OMS(+),165,0.7618178324365873,votes,98.0,Krishna Park Extn.,Anand Vihar Isbt,UP,0.99,395.0,40.2,4.0
+OMS(-)DOWN,OMS(-),154,0.8480032271077047,time,202.0,Uttam Nagar Terminal,Distrist Centre Janak Puri,DOWN,0.99,484.0,35.4,6.0
+OMSEV(-)BH,OMSEV(-)BH,100,0.9959340894500321,time,163.0,Burari Crossing,Batra Hospital / Satya Narayan Mandir,,0.99,209.2,33.8,5.0
+OMSEV(-)HB,OMSEV(-)HB,73,0.9918422841604351,time,147.0,Majeedia Hospital,Wazirabad Crossing Gt Road,,0.99,123.2,26.8,6.0
+RL-75DOWN,RL-75,25,0.9934640522875817,time,84.0,Dwarka Sec-14 Metro Station,Gurudwara Bangla Sahib,DOWN,0.98,20.0,4.0,50.0
+RL-75UP,RL-75,27,0.9691011235955056,time,97.0,New Delhi Railway Station Gate 2,Dabri Crossing Dwarka Road,UP,0.98,21.8,4.0,50.0
+RL-77BDOWN,RL-77B,35,0.9921568627450981,time,81.0,Dps Matiyala (Delhi Public School ),Ndpo,DOWN,0.97,47.1,11.2,16.0
+RL-77BUP,RL-77B,37,0.9807956104252401,time,82.0,New Delhi Railway Station Gate 2,Dwarka Sec 2/6,UP,0.98,38.7,11.2,16.0
+RL-77DOWN,RL-77,32,0.9868686868686869,time,66.0,Mangla Puri Terminal,Regal / Palika Kendra,DOWN,0.04,69.4,10.0,16.0
+RL-77EXTDOWN,RL-77EXT,29,1.0,time,77.0,Dwarka Sector-6/10- 5/11 Xing,Regal / Palika Kendra,DOWN,0.02,27.9,5.9,29.0
+RL-77EXTUP,RL-77EXT,29,0.9690140845070423,time,76.0,New Delhi Railway Station Gate 2,Dwarka Sec1 /2 / Mahalaxmi Apartment,UP,0.01,22.2,5.9,29.0
+RL-77UP,RL-77,34,0.9949031600407747,time,72.0,New Delhi Railway Station Gate 2,Mangla Puri Xing,UP,0.03,54.0,10.0,16.0
+RL-79DOWN,RL-79,43,0.9974059662775616,time,104.0,Pochan Pur Village Dwarka Sec 23,Regal,DOWN,0.01,44.0,7.3,30.0
+RL-79UP,RL-79,43,0.9738562091503268,time,96.0,New Delhi Railway Station Gate 2,Baghdola Village,UP,0.03,43.2,7.3,30.0
+S1DOWN,S1,39,0.9938791124713083,time,78.0,Pandwala Crossing,Janakpuri East Nangli Zalib,DOWN,0.01,65.6,8.0,23.0
+S1UP,S1,33,0.9961941008563273,time,86.0,Tilak Nagar Terminal,Pandwala Khurd,UP,0.01,58.6,8.0,23.0
+TMS(+)UP,TMS(+),61,0.8630593132154006,time,131.0,Pragati Power Station,Indira Gandhi Stadium,UP,0.99,185.0,27.3,6.0
+TMS(-)DOWN,TMS(-),63,0.8812639642515161,time,166.0,Pragati Power Station,Pg Dav College / Sri Niwaspuri,DOWN,0.99,116.0,19.4,10.0
+YMS(+)UP,YMS(+),58,0.7676767676767676,votes,110.0,C-4 Yamuna Vihar,Kalyan Puri,UP,0.97,79.4,2.7,48.0
+YMS(-)DOWN,YMS(-),61,0.8045186640471512,votes,43.0,Gazi Pur Village,Mori Gate Terminal,DOWN,0.98,79.9,2.4,26.0
+YMSMINUS,YMSMINUS,68,0.7645362806343105,votes,54.0,Gazi Pur Dairy Farm,Khajuri (Wazirabad Road),,1.0,75.8,20.8,4.0
+YMSPLUS,YMSPLUS,67,0.8552763819095477,time,158.0,Shastri Park Metro Depot,Dharam Pura,,0.99,72.4,20.2,9.0
