@@ -18,12 +18,16 @@ from .stops import attach_positions
 
 OUT = ROOT / 'outputs'
 FIG = OUT / 'figures'
-BLUE, ORANGE, AQUA, GREY, INK = '#2a78d6', '#eb6834', '#1baf7a', '#9a9993', '#52514e'
-LEVEL_COLORS = ['#0ca30c', '#fab219', '#d03b3b']
+# SeatSense palette (matches the deck and app): plum, orange, violet; lilac for a reference series.
+# Checked: every pair >= 20 OKLab dE under normal, protan, deutan and tritan vision; >= 3:1 on white.
+PLUM, ORANGE, VIOLET, LILAC, INK = '#4E3268', '#D9730B', '#8C84C6', '#A39DCB', '#54456F'
+DAY_STYLE = {'Weekday': (PLUM, 'o'), 'Saturday': (ORANGE, 's'), 'Sunday': (VIOLET, '^')}
+LEVEL_COLORS = ['#2F7D3A', '#F2B321', '#B93A3A']
 
 plt.rcParams.update({
     'figure.dpi': 160, 'savefig.dpi': 160, 'figure.facecolor': 'white', 'axes.facecolor': 'white',
-    'axes.edgecolor': '#c9c8c2', 'axes.grid': True, 'grid.color': '#e6e5e0', 'grid.linewidth': 0.6,
+    'font.family': ['Roboto', 'DejaVu Sans'], 'axes.titlecolor': PLUM, 'text.color': INK, 'axes.axisbelow': True,
+    'axes.edgecolor': '#C9C5E2', 'axes.grid': True, 'grid.color': '#E7E5F3', 'grid.linewidth': 0.7,
     'axes.spines.top': False, 'axes.spines.right': False, 'axes.titleweight': 'bold', 'axes.titlesize': 12,
     'axes.labelcolor': INK, 'xtick.color': INK, 'ytick.color': INK, 'font.size': 10, 'legend.frameon': False,
     'lines.linewidth': 2.2,
@@ -55,8 +59,9 @@ def run():
             lambda g: float(np.average(g.level == 2, weights=g.eticket_riders + 1e-9)), include_groups=False)
     res['crowded_share_by_hour'] = {dt: {int(h): round(v, 3) for h, v in share[dt].items()} for dt in DAY_TYPES}
     fig, ax = plt.subplots(figsize=(10, 4))
-    for dt, c in zip(DAY_TYPES, [BLUE, ORANGE, AQUA]):
-        ax.plot(share[dt].index, share[dt].values * 100, color=c, marker='o', ms=4, label=dt)
+    for dt in DAY_TYPES:
+        c, m = DAY_STYLE[dt]
+        ax.plot(share[dt].index, share[dt].values * 100, color=c, marker=m, ms=5, label=dt)
     ax.set_xticks(list(share['Weekday'].index)); ax.set_xlabel('hour of day')
     ax.set_ylabel('% of rider-trips rated "Crowded"'); ax.legend(loc='upper right')
     ax.set_title('Crowding peaks at 08–09 h and 18–19 h on weekdays, much less at weekends')
@@ -108,31 +113,32 @@ def run():
         fig, axes = plt.subplots(1, 2, figsize=(11, 3.8))
         kn = c.loc['known routes']
         ax = axes[0]
-        bars = ax.bar(['A · direct counting', 'B · graph + ML'], kn['WMAPE'] * 100, color=[BLUE, ORANGE], width=0.55)
+        bars = ax.bar(['A · direct counting', 'B · graph + ML'], kn['WMAPE'] * 100, color=[PLUM, ORANGE], width=0.55)
         ax.bar_label(bars, fmt='%.1f%%', padding=2, color=INK); ax.set_ylabel('error (WMAPE, %)')
         ax.set_title('Routes with tickets: error on unseen week'); ax.grid(axis='x', visible=False)
         un = c.loc['unseen routes'].iloc[:2]
         ax = axes[1]
         bars = ax.bar(['naive network\naverage', 'B · graph + ML\n(no route data)'], un['busiest-10% found'] * 100,
-                      color=[GREY, ORANGE], width=0.55)
+                      color=[LILAC, ORANGE], width=0.55)
         ax.bar_label(bars, fmt='%.0f%%', padding=2, color=INK); ax.set_ylabel('busiest 10 % found (%)')
         ax.set_title('Routes with no tickets: hotspots found'); ax.grid(axis='x', visible=False); ax.set_ylim(0, 100)
         _save(fig, 'approach_comparison.png')
 
     # 7 - Figures for the deck: daily totals, hourly boardings, a route profile
     daily = df.groupby(['date', 'day_type'])['passenger_count'].sum().reset_index()
-    col = daily.day_type.map({'Weekday': BLUE, 'Saturday': ORANGE, 'Sunday': ORANGE, 'Holiday': GREY})
+    col = daily.day_type.map({'Weekday': PLUM, 'Saturday': ORANGE, 'Sunday': ORANGE, 'Holiday': LILAC})
     fig, ax = plt.subplots(figsize=(11, 3.6))
     ax.bar(daily.date, daily.passenger_count / 1e3, color=col.tolist(), width=0.75)
-    ax.set_ylabel('thousand e-ticket riders'); ax.set_title('Riders per day, October 2026 (blue weekday · orange weekend · grey holiday)')
+    ax.set_ylabel('thousand e-ticket riders'); ax.set_title('Riders per day, October 2026 (purple weekday · orange weekend · lilac holiday)')
     ax.grid(axis='x', visible=False)
     _save(fig, 'daily_riders.png')
 
     hourly = df[df.day_type.isin(DAY_TYPES)].groupby(['day_type', 'hour'])['passenger_count'].sum().unstack(0)
     hourly = hourly / df[df.day_type.isin(DAY_TYPES)].groupby('day_type')['date'].nunique()
     fig, ax = plt.subplots(figsize=(10, 3.8))
-    for dt, c in zip(DAY_TYPES, [BLUE, ORANGE, AQUA]):
-        ax.plot(hourly.index, hourly[dt] / 1e3, color=c, label=dt, marker='o', ms=3)
+    for dt in DAY_TYPES:
+        c, m = DAY_STYLE[dt]
+        ax.plot(hourly.index, hourly[dt] / 1e3, color=c, label=dt, marker=m, ms=4)
     ax.set_xticks(range(0, 24, 2)); ax.set_xlabel('hour of day'); ax.set_ylabel('thousand boardings / hour')
     ax.set_title('Boardings by hour: weekday peaks at 09:00 and 18:00'); ax.legend()
     _save(fig, 'hourly_boardings.png')
@@ -141,7 +147,7 @@ def run():
     fig, axes = plt.subplots(1, 2, figsize=(13, 4), sharey=True)
     for ax, d in zip(axes, ['UP', 'DOWN']):
         s = seg[(seg.route == f'{demo}{d}') & (seg.day_type == 'Weekday')]
-        for h, c, lab in [(9, BLUE, '09:00'), (13, GREY, '13:00'), (18, ORANGE, '18:00')]:
+        for h, c, lab in [(9, PLUM, '09:00'), (13, VIOLET, '13:00'), (18, ORANGE, '18:00')]:
             p = s[s.hour == h].sort_values('pos')
             ax.plot(p.pos, p.score, color=c, label=lab)
         ax.axhspan(0, 50, color=LEVEL_COLORS[0], alpha=0.06); ax.axhspan(50, 80, color=LEVEL_COLORS[1], alpha=0.08)

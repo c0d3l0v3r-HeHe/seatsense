@@ -2,7 +2,7 @@
 
 **Transport Stack Hackathon 2026 · Problem 2 (Crowdedness-aware journey planner) · Phase 1 submission**
 
-**Code:** [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)
+**Team:** c0d3l0v3r · **Code:** [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)
 
 Journey planners rank trips by time and changes, but a packed bus is a different trip. SeatSense turns one month of
 Delhi bus e-tickets into **how crowded each bus usually is, on every stretch between stops, hour by hour**, and shows

@@ -1,6 +1,6 @@
 # SeatSense — technical note
 
-*Transport Stack Hackathon 2026 · Problem 2: Crowdedness-aware journey planner · Phase 1 · code: [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)*
+*Transport Stack Hackathon 2026 · Problem 2: Crowdedness-aware journey planner · Phase 1 · team c0d3l0v3r · code: [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)*
 
 ## 1. Summary
 
