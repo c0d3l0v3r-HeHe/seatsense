@@ -4,6 +4,8 @@
 
 **Team:** c0d3l0v3r · **Code:** [github.com/c0d3l0v3r-HeHe/seatsense](https://github.com/c0d3l0v3r-HeHe/seatsense)
 
+**Demo video (67 s):** [docs/seatsense_demo.mp4](docs/seatsense_demo.mp4)
+
 Journey planners rank trips by time and changes, but a packed bus is a different trip. SeatSense turns one month of
 Delhi bus e-tickets into **how crowded each bus usually is, on every stretch between stops, hour by hour**, and shows
 that next to every journey option so a commuter can trade a few minutes for a seat. Operators get the flip side: the
