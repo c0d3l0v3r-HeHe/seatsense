@@ -1,6 +1,8 @@
-"""Re-record the demo: run the API on :8001, then `python record.py  python compose.py` (needs playwright, imageio-ffmpeg).
+"""Scripted walkthrough of the SeatSense app, recorded at phone size. Writes rec/*.webm and marks.json.
+
+Re-record the demo: run the API on :8001, then `python record.py && python compose.py`
+(needs playwright and imageio-ffmpeg; compose.py writes seatsense_demo.mp4).
 """
-"""Scripted walkthrough of the SeatSense app, recorded at phone size. Writes rec/*.webm and marks.json."""
 import asyncio, json, time, shutil
 from playwright.async_api import async_playwright
 
